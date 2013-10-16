@@ -1,0 +1,14 @@
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\bin\Debug\ShopifyAPIAdapterLibrary.dll
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\bin\Debug\ShopifyAPIAdapterLibrary.pdb
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonsoft.Json.dll
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonsoft.Json.xml
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ResolveAssemblyReference.cache
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.dll
+Z:\Visma\Shopify\shopify.net-master\Source\DotNet2.0\ShopifyAPIAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.pdb
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\ShopifyAPIAdapterLibrary.dll
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\ShopifyAPIAdapterLibrary.pdb
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonsoft.Json.dll
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonsoft.Json.xml
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ResolveAssemblyReference.cache
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.dll
+Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.pdb
