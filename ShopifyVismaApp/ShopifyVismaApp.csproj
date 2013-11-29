@@ -49,66 +49,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Csla">
-      <HintPath>..\NovaSDK\Csla.dll</HintPath>
-    </Reference>
-    <Reference Include="Csla.XmlSerializers">
-      <HintPath>..\NovaSDK\Csla.XmlSerializers.dll</HintPath>
-    </Reference>
-    <Reference Include="CSLAVismaEnvironment">
-      <HintPath>..\NovaSDK\CSLAVismaEnvironment.dll</HintPath>
-    </Reference>
-    <Reference Include="CSLAVismaExtensions">
-      <HintPath>..\NovaSDK\CSLAVismaExtensions.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.Common">
-      <HintPath>..\NovaSDK\Nova.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.Configuration">
-      <HintPath>..\NovaSDK\Nova.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.CustomerMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.CustomerMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.DynamicSqlCriteria">
-      <HintPath>..\NovaSDK\Nova.DynamicSqlCriteria.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.InvoiceMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.InvoiceMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.MaterialFlowMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.MaterialFlowMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.PayrollMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.PayrollMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.PricelistMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.PricelistMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.PurchaseOrderMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.PurchaseOrderMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.SalesOrderMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.SalesOrderMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.SDK.Contracts">
-      <HintPath>..\NovaSDK\Nova.SDK.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.TravelExpensesMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.TravelExpensesMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.UserDefinedFieldsMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.UserDefinedFieldsMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nova.WarehouseMgmtLibrary">
-      <HintPath>..\NovaSDK\Nova.WarehouseMgmtLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="NovaSDK">
-      <HintPath>..\NovaSDK\NovaSDK.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -119,13 +62,26 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Visma.Nova.Sdk">
+      <HintPath>..\NovaSDK\Visma.Nova.Sdk.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter.cs" />
     <Compile Include="Console.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Console.Designer.cs">
       <DependentUpon>Console.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet.cs">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -145,7 +101,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

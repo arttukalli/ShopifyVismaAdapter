@@ -12,3 +12,10 @@ Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonso
 Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ResolveAssemblyReference.cache
 Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.dll
 Z:\Visma\Shopify\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.pdb
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\ShopifyAPIAdapterLibrary.dll
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\ShopifyAPIAdapterLibrary.pdb
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonsoft.Json.dll
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\bin\Debug\Newtonsoft.Json.xml
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ResolveAssemblyReference.cache
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.dll
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\obj\Debug\ShopifyAPIAdapterLibrary.pdb

@@ -3,20 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
 using System.Configuration;
-
-using ShopifyAPIAdapterLibrary;
-
-using NovaSDK;
-using Nova.CustomerMgmtLibrary;
-using Nova.WarehouseMgmtLibrary;
-
-using Newtonsoft.Json;
-
 
 
 namespace ShopifyVismaApp
@@ -30,51 +22,52 @@ namespace ShopifyVismaApp
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            Log("Starting Integration Test.");
 
-            // Initialize connections to Shopify and Visma
-            Shopify shop = new Shopify();
-            Visma visma = new Visma();
+            int shopID = 1;
+            
 
-            // Get a list of Visma Articles
-            ArticleList list = visma.GetArticleList();
-            Log(string.Format("{0} products found in Visma database.", list.Count));
+            Adapter adapter = new Adapter();
+            adapter.Logged += delegate(object adapterSender, Adapter.LoggedEventArgs adaptere)
+            { UpdateTextBox(adaptere.text); };
 
-            int articlesCount = 0;
-            int articleLimit = 3;
-            foreach (ArticleInfo articleInfo in list)
-            {
-                string articleCode = articleInfo.ArticleCode;
-                Log(string.Format(" - Processing Visma Article {0} (Code: {1})", articleInfo.ArticleName, articleInfo.ArticleCode));
-                articlesCount += 1;
+            BackgroundWorker bw = new BackgroundWorker();
 
-                // Get full Article object from Visma
-                Article article = visma.GetArticleByCode(articleCode);
-                
-                // Save article as Shopify Product
-                string productData = shop.GetProductDataFromVismaArticle(article);
-                //Log(productData.ToString());
+            bw.DoWork += delegate(object bwSender, DoWorkEventArgs bwe)
+            { ((Adapter)bwe.Argument).UpdateRecords(shopID); };
+            bw.RunWorkerAsync(adapter);
+            //adapter.UpdateRecords(shopID);
 
-                object response = shop.CreateProduct(productData);
-                Log(" - Shopify Product created.");
-                //Log("Response " + response.ToString());
-
-                if (articlesCount >= articleLimit)
-                    break;
-            }
-
-
+            
         }
 
         /// <summary>
         /// Log to textarea.
         /// </summary>
         /// <param name="text"></param>
-        public void Log(string text)
+        public void UpdateTextBox(string text)
         {
-            OutputTextBox.Text += text + Environment.NewLine;
+            int maxText = 30000;
+            int trimToText = 20000;
+           
+            // Handle multiple threads
+            if (OutputTextBox.InvokeRequired)
+            {
+                //This techniques is from answer by @sinperX1
+                BeginInvoke((MethodInvoker)(() => { UpdateTextBox(text); }));
+                return;
+            }
+
+            // Trim if text in TextBox is too long to improve performance
+            string outputText = OutputTextBox.Text;
+            //outputText += text + Environment.NewLine;
+            if (outputText.Length > maxText)
+                OutputTextBox.Text = OutputTextBox.Text.Substring(outputText.Length - trimToText);
+
+            OutputTextBox.AppendText(text + Environment.NewLine);
         }
+
     }
+           
 
 
 }
