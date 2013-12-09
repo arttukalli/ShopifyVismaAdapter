@@ -200,7 +200,7 @@ namespace ShopifyVismaApp
 
             obj.tags = tags;
 
-            string variantName = (string.IsNullOrEmpty(article.FamilyCode)) ? "Default" : article.FamilyCode;
+            string variantName = (string.IsNullOrEmpty(article.FamilyCode)) ? "Default" : article.ArticleName;
 
             Variant variant = new Variant();
             variant.title = "";
@@ -374,9 +374,9 @@ namespace ShopifyVismaApp
             return data;
         }
 
-        public string GetProductVariantData(Article article, int? pricelistNumber, int? customerNumber, int? quantity, decimal price)
+        public string GetProductVariantData(Article article, int? pricelistNumber, int? customerNumber, int? quantity, decimal? price)
         {
-            string variantName = (string.IsNullOrEmpty(article.FamilyCode)) ? "Default" : article.FamilyCode;
+            string variantName = (string.IsNullOrEmpty(article.FamilyCode)) ? "Default" : article.ArticleName;
 
             if (pricelistNumber != null)
                 variantName += string.Format(" [P:{0}]", pricelistNumber);
@@ -390,7 +390,7 @@ namespace ShopifyVismaApp
             Variant variant = new Variant();
             variant.title = "";
             variant.option1 = variantName;
-            variant.price = this.ToPrice(price);
+            variant.price = (price == null) ? this.ToPrice(article.Price1) : this.ToPrice(price.Value);
             variant.sku = article.ArticleCode;
             variant.barcode = article.EanCode;
             variant.grams = this.ToGrams(article.Weight);

@@ -83,7 +83,7 @@ namespace ShopifyVismaApp
 
 
             // Update Customers
-            bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 1);
+            bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 100);
 
             // Update Products
             bool resultProducts = UpdateProducts(lastVismaUpdateDate, 100);
@@ -195,6 +195,8 @@ namespace ShopifyVismaApp
                 // Get full Article object from Visma
                 Article article = visma.GetArticleByCode(articleCode);
 
+                string familyCode = article.FamilyCode;
+
                 //Log(article.ProductGroupObject.Description.ToString());
 
                 if ((article.ArticleType == 5) || (article.ArticleType == 25) || (article.ArticleType == 44))
@@ -210,28 +212,67 @@ namespace ShopifyVismaApp
                         if (productDT.Count == 0)
                         {
 
-                            string productData = shop.GetProductDataFromVismaArticle(article);
-
-                            //Log(productData.ToString());
-
-                            try
+                            // Check if article has FamilyCode and if we already have a Shopify product with such FamilyCode
+                            if (!string.IsNullOrEmpty(familyCode))
                             {
-                                object response = shop.CreateProduct(productData);
+                                DataSet.ProductDataTable productFamilyDT = productTA.GetDataByFamilyCode(shop.ID, familyCode);
 
-                                Log("Response " + response.ToString());
-                                JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                long.TryParse(productResponse["product"]["id"].ToString(), out shopifyProductID);
-                                long.TryParse(productResponse["product"]["variants"][0]["id"].ToString(), out shopifyVariantID);
-                                Log(string.Format(" - Shopify Product [{0}] created.", shopifyProductID));
-
-                                //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
-
-                                productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, null, null, null);
-                                articleUpdates += 1;
+                                if (productFamilyDT.Count > 0)
+                                {
+                                    // Use existing Shopify Product ID and add this article as its variant
+                                    shopifyProductID = productFamilyDT[0].ShopifyProductID;
+                                }
                             }
-                            catch (System.Net.WebException ex)
+
+                            if (shopifyProductID == 0)
                             {
-                                LogError(ex.ToString());
+                                // Create article as a new Shopify Product
+
+                                string productData = shop.GetProductDataFromVismaArticle(article);
+
+                                //Log(productData.ToString());
+
+                                try
+                                {
+                                    object response = shop.CreateProduct(productData);
+
+                                    //Log("Response " + response.ToString());
+                                    JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                                    long.TryParse(productResponse["product"]["id"].ToString(), out shopifyProductID);
+                                    long.TryParse(productResponse["product"]["variants"][0]["id"].ToString(), out shopifyVariantID);
+                                    Log(string.Format(" - Shopify Product [{0}] created.", shopifyProductID));
+
+                                    //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
+
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, null, null, null, familyCode);
+                                    articleUpdates += 1;
+                                }
+                                catch (System.Net.WebException ex)
+                                {
+                                    LogError(ex.ToString());
+                                }
+                            }
+                            else
+                            {
+                                // Create article as a new Variant of existing Shopify Product (with the same FamilyCode)
+                                string productVariantData = shop.GetProductVariantData(article, null, null, null, null);
+
+                                try
+                                {
+                                    object response = shop.CreateProductVariant(shopifyProductID, productVariantData);
+
+                                    //Log("Response " + response.ToString());
+                                    JObject productVariantResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                                    long.TryParse(productVariantResponse["variant"]["id"].ToString(), out shopifyVariantID);
+                                    Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
+
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, null, null, null, familyCode);
+
+                                }
+                                catch (System.Net.WebException ex)
+                                {
+                                    LogError(ex.ToString());
+                                }
                             }
                         }
                         else
@@ -363,6 +404,7 @@ namespace ShopifyVismaApp
                                     long shopifyProductID = genericProducts[0].ShopifyProductID;
                                     long shopifyVariantID = 0;
                                     Article article = visma.GetArticleByCode(articleCode);
+                                    string famiyCode = article.FamilyCode;
 
                                     if (article != null)
                                     {
@@ -379,7 +421,7 @@ namespace ShopifyVismaApp
                                             long.TryParse(productVariantResponse["variant"]["id"].ToString(), out shopifyVariantID);
                                             Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
 
-                                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, pricelistNumber, null, quantity, price);
+                                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, pricelistNumber, null, quantity, price, famiyCode);
 
                                         }
                                         catch (System.Net.WebException ex)
@@ -456,6 +498,7 @@ namespace ShopifyVismaApp
                                 long shopifyProductID = genericProducts[0].ShopifyProductID;
                                 long shopifyVariantID = 0;
                                 Article article = visma.GetArticleByCode(articleCode);
+                                string famiyCode = article.FamilyCode;
 
                                 if (article != null)
                                 {
@@ -474,7 +517,7 @@ namespace ShopifyVismaApp
 
                                         //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
 
-                                        productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, customerSpecificNumber, quantity, price);
+                                        productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, customerSpecificNumber, quantity, price, famiyCode);
            
                                     }
                                     catch (System.Net.WebException ex)
