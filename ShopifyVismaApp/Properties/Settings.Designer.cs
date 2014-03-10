@@ -32,5 +32,15 @@ namespace ShopifyVismaApp.Properties {
                 return ((string)(this["ShopifyVismaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=YR5;Integrated Security=True")]
+        public string YR5ConnectionString {
+            get {
+                return ((string)(this["YR5ConnectionString"]));
+            }
+        }
     }
 }

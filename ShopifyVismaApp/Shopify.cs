@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Configuration;
+using System.Data;
+using System.Globalization;
+
 
 using ShopifyAPIAdapterLibrary;
 
@@ -12,6 +15,7 @@ using Nova.WarehouseMgmtLibrary;
 using Nova.PricelistMgmtLibrary;
 
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ShopifyVismaApp
 {
@@ -21,6 +25,28 @@ namespace ShopifyVismaApp
         private string _token;
         public string account;
         public int ID;
+        public DataSet.ShopRow data = null;
+        public List<int> articleTypes = null;
+        public Dictionary<int, string> termsOfPayment = null;
+        public Dictionary<int, string> deliveryMethods = null;
+
+        public static Shopify GetShopByID(int ID)
+        {
+            DataSetTableAdapters.ShopTableAdapter shopTA = new DataSetTableAdapters.ShopTableAdapter();
+            DataSet.ShopDataTable shopDT = shopTA.GetDataByID(ID);
+            if (shopDT.Count > 0)
+            {
+                Shopify shop = new Shopify(ID, shopDT[0].ShopifyStoreAccount, shopDT[0].ShopifyAccessToken);
+                shop.data = shopDT[0];
+                return shop;
+
+                
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         /// <summary>
         /// Initialize Shopify by creating a Shopify API Client object.
@@ -48,6 +74,50 @@ namespace ShopifyVismaApp
 
             return api;
         }
+
+        /// <summary>
+        /// Get shop settings and turn them into lists and dictionaries
+        /// </summary>
+        public void ProcessShopData()
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(data.ArticleTypes))
+                    articleTypes = data.ArticleTypes.Split(',').Select(int.Parse).ToList();
+
+                if (!string.IsNullOrEmpty(data.TermsOfPayment))
+                {
+                    termsOfPayment = data.TermsOfPayment.Split(';').Select(s => s.Split(':')).ToDictionary(a => int.Parse(a[0].Trim()), a => a[1].Trim());
+                }
+
+                if (!string.IsNullOrEmpty(data.DeliveryMethod))
+                {
+                    deliveryMethods = data.DeliveryMethod.Split(';').Select(s => s.Split(':')).ToDictionary(a => int.Parse(a[0].Trim()), a => a[1].Trim());
+                }
+            }
+            catch (StrongTypingException ex) { }
+
+        }
+
+        /// <summary>
+        /// Get key by looking for string in dictionary.
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public int? GetValueIDFromShopData(Dictionary<int, string> dict, string text) {
+            int? value = null;
+
+            if (!string.IsNullOrEmpty(text))
+            {
+                var keys = dict.Where(kv => text.Contains(kv.Value)).Select(kv => kv.Key);
+                if (keys.Count() > 0)
+                    value = keys.First();
+            }
+
+            return value;
+        }
+
 
 
         /// <summary>
@@ -88,18 +158,11 @@ namespace ShopifyVismaApp
             return response;
         }
 
-        /// <summary>
-        /// Creates a new product image in Shopify.
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        public object CreateProductImage(long productID, object data)
+        public object UpdateProduct(object data, long id)
         {
-            string url = string.Format("/admin/products/{0}/images.json", productID);
-            object response = this._api.Post(url, data);
+            object response = this._api.Put("/admin/products/" + id.ToString() + ".json", data);
             return response;
         }
-
 
         /// <summary>
         /// Creates a new product variant in Shopify.
@@ -114,6 +177,33 @@ namespace ShopifyVismaApp
         }
 
         /// <summary>
+        /// Updates a product variant in Shopify.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public object UpdateProductVariant(object data, long variantID)
+        {
+            string url = string.Format("/admin/variants/{0}.json", variantID);
+            object response = this._api.Put(url, data);
+            return response;
+        }
+
+        /// <summary>
+        /// Creates a new product image in Shopify.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public object CreateProductImage(long productID, object data)
+        {
+            string url = string.Format("/admin/products/{0}/images.json", productID);
+            object response = this._api.Post(url, data);
+            return response;
+        }
+
+
+
+
+        /// <summary>
         /// Creates a new customer in Shopify.
         /// </summary>
         /// <param name="data"></param>
@@ -124,16 +214,27 @@ namespace ShopifyVismaApp
             return response;
         }
 
+        public object UpdateCustomer(object data, long id)
+        {
+            object response = this._api.Put("/admin/customers/" + id.ToString() + ".json", data);
+            return response;
+        }
+
 
         /// <summary>
         /// Get list of Orders from Shopify.
         /// </summary>
         /// <param name="changedDate">Set to retrieve Orders created or modified after this date.</param>
         /// <returns></returns>
-        public object GetOrders(DateTime changedDate)
+        public object GetOrders(DateTime? changedDate)
         {
+            string ordersUrl = "/admin/orders.json?limit=250";
+            if (changedDate.HasValue)
+            {
+                ordersUrl += "&updated_at_min=" + changedDate.Value.ToUniversalTime().ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fff'Z'"); ;
+            }
             //var data = { };
-            object response = this._api.Get("/admin/orders.json");
+            object response = this._api.Get(ordersUrl);
             return response;
         }
 
@@ -169,104 +270,65 @@ namespace ShopifyVismaApp
         /// </summary>
         /// <param name="article">Visma Article object</param>
         /// <returns>Product JSON string</returns>
-        public string GetProductDataFromVismaArticle(Article article) {
+        public string GetProductDataFromVismaArticle(Article article, DateTime? deliveryDate, string articleName, decimal? vatRate, bool includeVariants)
+        {
 
-            //string productData1 =
-            //    "{" +
-            //    "\"product\": {" +
-            //    "\"title\": \"" + article.ArticleName + "\"," +
-            //    "\"body_html\": \"\"," +
-            //    "\"product_type\": \"Product\"" +
-            //    "}" +
-            //    "}";
+ 
 
             ShopifyProductSimple obj = new ShopifyProductSimple();
-            obj.title = article.ArticleName;
-            obj.body_html = "";
+            obj.title = string.IsNullOrEmpty(articleName) ? article.ArticleName : articleName;
+            //obj.body_html = "";
             obj.product_type = "Product";
+            obj.published = (article.Points != 3);
 
             string tags = string.Format("+T{0}", article.ArticleType);
-            if (!string.IsNullOrEmpty(article.MouldCode) && (article.MouldCode.Trim().ToUpper() == "TILAUSTUOTE"))
+
+            if (article.Points == 1)
             {
                 tags += ",Order";
             }
 
-            if ((article.ProductGroupObject != null) && (!string.IsNullOrEmpty(article.ProductGroupObject.Description))) {
+            ProductGroup articleProductGroup = null;
+            try
+            {
+                articleProductGroup = article.ProductGroupObject;
+            }
+            catch (System.ArgumentOutOfRangeException ex)
+            {
+                // Note: article.ProductGroup sometimes throws an exception, ignore it.
+            }
+            if ((articleProductGroup != null) && (!string.IsNullOrEmpty(articleProductGroup.Description)))
+            {
                 tags += (string.IsNullOrEmpty(tags)) ? "" : ",";
                 tags += "\"" + article.ProductGroupObject.Description + "\"";
             }
 
-            
+            // VAT Rate as tag
+            if (vatRate.HasValue)
+            {
+                tags += string.Format(",+V{0}", vatRate.Value.ToString("0.##"));
+            }
+
+            // Delivery date as tag
+            if (deliveryDate != null)
+            {
+                tags += string.Format(",+D{0}", deliveryDate.Value.ToString("yyyy-MM-dd"));
+            }
 
             obj.tags = tags;
 
-            string variantName = (string.IsNullOrEmpty(article.FamilyCode)) ? "Default" : article.ArticleName;
+            //if (variantID.HasValue)
+            //    variant.id = variantID.Value;
 
-            Variant variant = new Variant();
-            variant.title = "";
-            variant.option1 = variantName;
-            variant.price = this.ToPrice(article.Price1);
-            variant.sku = article.ArticleCode;
-            variant.barcode = article.EanCode;
-            variant.grams = this.ToGrams(article.Weight);
-            variant.position = 1;
-            int inventoryQuantity = this.ToQuantity(article.DefaultWarehouse.Amount);
-            if (inventoryQuantity > 0)
+            if (includeVariants)
             {
-                variant.inventory_management = "shopify";
-                variant.inventory_quantity = inventoryQuantity;
+                Variant variant = GetProductVariantObject(article, null, null, null, null, null, true, articleName);
+                Variant variantVat = GetProductVariantObject(article, null, null, null, null, null, false, articleName);
+
+                List<Variant> variants = new List<Variant> { variant, variantVat };
+                obj.variants = variants;
             }
-            
-            List<Variant> variants = new List<Variant> { variant };
 
-            /*
-
-            int GeneralPricelistMaxNumber = 44;
-            for (int i = 0; i <= GeneralPricelistMaxNumber; i++)
-            {
-                try
-                {
-                    GeneralPricelist priceLlist = GeneralPricelist.Read(visma._context, i);
-
-                    //Log("Pricelist " + i.ToString());
-                    var pricelistItems = priceLlist.Where(x => x.ProductCode.Trim() == article.ArticleCode);
-                    foreach (PricelistItem pricelistItem in pricelistItems)
-                    {
-                        Variant variantCustom = new Variant();
-                        string title = string.Format("[G{0}]", i);
-                        if (pricelistItem.BatchSize > 0)
-                        {
-                            title += string.Format("[Q{0}]", this.ToQuantity(pricelistItem.BatchSize));
-                        }
-                        variantCustom.title = title;
-                        variantCustom.option1 = title;
-                        variantCustom.price = this.ToPrice(pricelistItem.ContractPrice);
-                        variantCustom.position = 2;
-                        variantCustom.sku = article.ArticleCode;
-                        variantCustom.barcode = article.EanCode;
-                        variantCustom.grams = this.ToGrams(article.Weight);
-                        if (quantity > 0)
-                        {
-                            variantCustom.inventory_management = "shopify";
-                            variantCustom.inventory_quantity = quantity;
-                        }
-
-                        variants.Add(variantCustom);
-                        //Log("PG " + i.ToString() + " " + pricelistItem.ContractPrice.ToString() + " " + pricelistItem.BatchSize.ToString());
-                    }
-                }
-                catch (Csla.DataPortalException ex)
-                {
-                    //Log(ex.ToString());
-                }
-
-
-            }
-             */
-
-
-
-            obj.variants = variants;
 
             // Serialize to Shopify JSON string
             string data = JsonConvert.SerializeObject(obj, Formatting.Indented);
@@ -280,15 +342,17 @@ namespace ShopifyVismaApp
         /// </summary>
         /// <param name="article">Visma Customer object</param>
         /// <returns>Customer JSON string</returns>
-        public string GetCustomertDataFromVismaCustomer(Customer customer)
+        public string GetCustomertDataFromVismaCustomer(Customer customer, Contact contact, Customer invoiceCustomer, long? addressID)
         {
+            Customer addressCustomer = (invoiceCustomer == null) ? customer : invoiceCustomer;
 
             ShopifyCustomerSimple obj = new ShopifyCustomerSimple();
+
             string name = customer.Name1;
             string[] nameParts = name.Split(new char[] {' '}, 2);
             string firstName = nameParts[0];
             string lastName = (nameParts.Length > 1) ? nameParts[1] : "";
-            string email = customer.Contacts[0].Email;
+            string email = contact.Email;
             string tags = string.Format("+C{0}", customer.Number);
 
             if (customer.PricelistId > 0)
@@ -299,45 +363,71 @@ namespace ShopifyVismaApp
             obj.email = email;
             obj.tags = tags;
 
+            //if (id.HasValue)
+            //    obj.id = id.Value;
+            
 
+            ShopifyAddress[] addresses = new ShopifyAddress[1];
 
-            ShopifyAddress[] addresses = new ShopifyAddress[customer.Contacts.Count];
+            ShopifyAddress adr = new ShopifyAddress();
 
-            for (int i = 0; i < customer.Contacts.Count; i++)
+            string[] contactNameParts = contact.Name.Split(new char[] { ' ' }, 2);
+            string contactFirstName = contactNameParts[0];
+            string contactLastName = (contactNameParts.Length > 1) ? contactNameParts[1] : "";
+
+            string[] cityParts = addressCustomer.City.Split(new char[] { ' ' }, 2);
+            string zip = cityParts[0];
+            string city = (cityParts.Length > 1) ? cityParts[1] : "";
+            long zipNumber;
+
+            string phone = (!string.IsNullOrEmpty(contact.Phone)) ? contact.Phone : contact.MobilePhone;
+
+            if (!long.TryParse(zip, out zipNumber))
             {
-                Contact contact = customer.Contacts[i];
-                ShopifyAddress adr = new ShopifyAddress();
-
-                string[] contactNameParts = contact.Name.Split(new char[] { ' ' }, 2);
-                string contactFirstName = contactNameParts[0];
-                string contactLastName = (contactNameParts.Length > 1) ? contactNameParts[1] : "";
-
-                string[] cityParts = customer.City.Split(new char[] { ' ' }, 2);
-                string zip = cityParts[0];
-                string city = (cityParts.Length > 1) ? cityParts[1] : "";
-                long zipNumber;
-
-                string phone = (!string.IsNullOrEmpty(contact.Phone)) ? contact.Phone : contact.MobilePhone;
-
-                if (!long.TryParse(zip, out zipNumber))
-                {
-                    zip = "";
-                    city = customer.City;
-                }
-
-                adr.first_name = contactFirstName;
-                adr.last_name = contactLastName;
-                adr.company = customer.Name1;
-                adr.address1 = customer.StreetAddress;
-                adr.city = city;
-                adr.zip = zip;
-                adr.country_code = customer.Country;
-                adr.phone = phone;
-
-                addresses[i] = adr;
+                zip = "";
+                city = addressCustomer.City;
             }
 
+            adr.first_name = contactFirstName;
+            adr.last_name = contactLastName;
+            adr.company = customer.Name1;
+            adr.address1 = addressCustomer.StreetAddress;
+            adr.city = city;
+            adr.zip = zip;
+            if (!string.IsNullOrEmpty(addressCustomer.Country))
+            {
+                if (addressCustomer.Country.Length == 2)
+                {
+                    adr.country_code = addressCustomer.Country;
+                }
+                else
+                {
+                    // Try to convert country name to country code
+                    string countryName = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(addressCustomer.Country.ToLower());
+                    var regions = CultureInfo.GetCultures(CultureTypes.SpecificCultures).Select(x => new RegionInfo(x.LCID));
+                    var englishRegion = regions.FirstOrDefault(region => region.EnglishName.Contains(countryName));
+                    if (englishRegion != null)
+                        adr.country_code = englishRegion.TwoLetterISORegionName;
+                }
+            }
+            
+            adr.phone = phone;
+            adr.@default = true;
+
+            if ((!string.IsNullOrEmpty(contactFirstName)) && (!string.IsNullOrEmpty(contactLastName))) {
+                obj.first_name = contactFirstName;
+                obj.last_name = contactLastName;
+            }
+
+            if (addressID.HasValue)
+                adr.id = addressID.Value;
+
+            addresses[0] = adr;
+         
+
+            obj.default_address = addresses[0];
             obj.addresses = addresses;
+             
 
             // Serialize to Shopify JSON string
             string data = JsonConvert.SerializeObject(obj, Formatting.Indented);
@@ -353,15 +443,6 @@ namespace ShopifyVismaApp
         public string GetProductImageData(Article article, string imageData)
         {
 
-            //string productData1 =
-            //    "{" +
-            //    "\"product\": {" +
-            //    "\"title\": \"" + article.ArticleName + "\"," +
-            //    "\"body_html\": \"\"," +
-            //    "\"product_type\": \"Product\"" +
-            //    "}" +
-            //    "}";
-
             ShopifyProductImage obj = new ShopifyProductImage();
 
             obj.position = 1;
@@ -374,9 +455,12 @@ namespace ShopifyVismaApp
             return data;
         }
 
-        public string GetProductVariantData(Article article, int? pricelistNumber, int? customerNumber, int? quantity, decimal? price)
+        public Variant GetProductVariantObject(Article article, long? variantID, int? pricelistNumber, int? customerNumber, int? quantity, decimal? price, bool taxable, string articleName)
         {
             string variantName = (string.IsNullOrEmpty(article.FamilyCode)) ? "Default" : article.ArticleName;
+
+            if (!string.IsNullOrEmpty(articleName))
+                variantName = variantName.StartsWith(articleName) ? variantName.Remove(0, articleName.Length).Trim() : variantName;
 
             if (pricelistNumber != null)
                 variantName += string.Format(" [P:{0}]", pricelistNumber);
@@ -387,6 +471,9 @@ namespace ShopifyVismaApp
             if ((quantity != null) && (quantity > 1))
                 variantName += string.Format(" [Q:{0}]", quantity);
 
+            if (!taxable)
+                variantName += " [V]";
+
             Variant variant = new Variant();
             variant.title = "";
             variant.option1 = variantName;
@@ -394,19 +481,105 @@ namespace ShopifyVismaApp
             variant.sku = article.ArticleCode;
             variant.barcode = article.EanCode;
             variant.grams = this.ToGrams(article.Weight);
+            variant.taxable = taxable;
             //variant.position = 1;
-            int inventoryQuantity = this.ToQuantity(article.DefaultWarehouse.Amount);
+            int inventoryQuantity = this.ToQuantity(article.DefaultWarehouse.Amount - article.DefaultWarehouse.OutwardAmount);
             if (inventoryQuantity > 0)
             {
                 variant.inventory_management = "shopify";
                 variant.inventory_quantity = inventoryQuantity;
             }
 
+
+            if (variantID.HasValue)
+                variant.id = variantID.Value;
+
+            return variant;
+
+        }
+
+        public string GetProductVariantData(Article article, long? variantID, int? pricelistNumber, int? customerNumber, int? quantity, decimal? price, bool taxable, string articleName)
+        {
+            Variant variant = GetProductVariantObject(article, variantID, pricelistNumber, customerNumber, quantity, price, taxable, articleName);
+
             // Serialize to Shopify JSON string
             string data = JsonConvert.SerializeObject(variant, Formatting.Indented);
             data = "{ \"variant\": " + data + "}";
+
             return data;
+
+            
+
         }
+
+        public void CreateUpdateProduct(Article article, ref long? shopifyProductID, ref long? shopifyVariantID, ref long? shopifyVariantVatID, DateTime? deliveryDate, string articleName, decimal? vatRate)
+        {
+            
+            object response = null;
+            long productID;
+            long variantID;
+            long variantVatID;
+
+            if (!shopifyProductID.HasValue)
+            {
+                // Create new Product
+                string productData = GetProductDataFromVismaArticle(article, deliveryDate,  articleName, vatRate, true);
+                response = CreateProduct(productData);
+
+                JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                long.TryParse(productResponse["product"]["id"].ToString(), out productID);
+
+                shopifyProductID = productID;
+                long.TryParse(productResponse["product"]["variants"][0]["id"].ToString(), out variantID);
+                long.TryParse(productResponse["product"]["variants"][1]["id"].ToString(), out variantVatID);
+                shopifyVariantID = variantID;
+                shopifyVariantVatID = variantVatID;
+            }
+            else
+            {
+                // Update existing Product
+                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, false);
+                response = UpdateProduct(productData, shopifyProductID.Value);
+
+                JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                long.TryParse(productResponse["product"]["id"].ToString(), out productID);
+
+                shopifyProductID = productID;
+
+                CreateUpdateProductVariant(article, shopifyProductID.Value, ref shopifyVariantID, null, null, null, null, true, articleName);
+                CreateUpdateProductVariant(article, shopifyProductID.Value, ref shopifyVariantVatID, null, null, null, null, false, articleName);
+            }
+        }
+
+        public void CreateUpdateProductVariant(Article article, long shopifyProductID, ref long? shopifyVariantID, int? pricelistNumber, int? customerNumber, int? quantity, decimal? price, bool taxable, string articleName)
+        {
+            string productVariantData = GetProductVariantData(article, shopifyVariantID, pricelistNumber, customerNumber, quantity, price, taxable, articleName);
+            long variantID;
+
+            if (!shopifyVariantID.HasValue)
+            {
+                object response = CreateProductVariant(shopifyProductID, productVariantData);
+
+                JObject productVariantResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                long.TryParse(productVariantResponse["variant"]["id"].ToString(), out variantID);
+                shopifyVariantID = variantID;
+            }
+            else
+            {
+                object response = UpdateProductVariant(productVariantData, shopifyVariantID.Value);
+
+                JObject productVariantResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                long.TryParse(productVariantResponse["variant"]["id"].ToString(), out variantID);
+                shopifyVariantID = variantID;
+            }
+        }
+
+        public void CreateUpdateProductVariants(Article article, long shopifyProductID, ref long? shopifyVariantID, ref long? shopifyVariantVatID, int? pricelistNumber, int? customerNumber, int? quantity, decimal? price, string articleName)
+        {
+            CreateUpdateProductVariant(article, shopifyProductID, ref shopifyVariantID, pricelistNumber, customerNumber, quantity, price, true, articleName);
+            CreateUpdateProductVariant(article, shopifyProductID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, false, articleName);
+        }
+        
 
     }
 }

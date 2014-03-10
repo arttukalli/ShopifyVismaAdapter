@@ -20,17 +20,19 @@ namespace ShopifyVismaApp
             InitializeComponent();
         }
 
+        
+
         private void RunButton_Click(object sender, EventArgs e)
         {
 
             int shopID = 1;
-            
+            BackgroundWorker bw = new BackgroundWorker();
 
             Adapter adapter = new Adapter();
             adapter.Logged += delegate(object adapterSender, Adapter.LoggedEventArgs adaptere)
             { UpdateTextBox(adaptere.text); };
 
-            BackgroundWorker bw = new BackgroundWorker();
+
 
             bw.DoWork += delegate(object bwSender, DoWorkEventArgs bwe)
             { ((Adapter)bwe.Argument).UpdateRecords(shopID); };
@@ -64,6 +66,11 @@ namespace ShopifyVismaApp
                 OutputTextBox.Text = OutputTextBox.Text.Substring(outputText.Length - trimToText);
 
             OutputTextBox.AppendText(text + Environment.NewLine);
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

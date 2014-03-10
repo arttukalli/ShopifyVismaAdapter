@@ -38,7 +38,7 @@
             this.RunButton.Name = "RunButton";
             this.RunButton.Size = new System.Drawing.Size(117, 23);
             this.RunButton.TabIndex = 0;
-            this.RunButton.Text = "Test Integration";
+            this.RunButton.Text = "Start";
             this.RunButton.UseVisualStyleBackColor = true;
             this.RunButton.Click += new System.EventHandler(this.RunButton_Click);
             // 

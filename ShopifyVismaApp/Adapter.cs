@@ -9,6 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
 using System.Configuration;
+using System.Globalization;
 
 using ShopifyAPIAdapterLibrary;
 
@@ -17,6 +18,7 @@ using Nova.CustomerMgmtLibrary;
 using Nova.WarehouseMgmtLibrary;
 using Nova.PricelistMgmtLibrary;
 using Nova.SalesOrderMgmtLibrary;
+using Nova.InvoiceMgmtLibrary;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -38,9 +40,12 @@ namespace ShopifyVismaApp
             }
         }
 
+
+
         DataSetTableAdapters.ShopTableAdapter shopTA;
         DataSetTableAdapters.CustomerTableAdapter customerTA;
         DataSetTableAdapters.ProductTableAdapter productTA;
+        DataSetTableAdapters.OrderTableAdapter orderTA;
 
         Shopify shop;
         Visma visma;
@@ -48,53 +53,62 @@ namespace ShopifyVismaApp
 
         public bool UpdateRecords(int shopID) {
 
-
             shopTA = new DataSetTableAdapters.ShopTableAdapter();
             customerTA = new DataSetTableAdapters.CustomerTableAdapter();
             productTA = new DataSetTableAdapters.ProductTableAdapter();
-         
-            DataSet.ShopDataTable shopsData = shopTA.GetDataByID(shopID);
-            if (shopsData.Count == 0)
+            orderTA = new DataSetTableAdapters.OrderTableAdapter();
+
+
+            // Initialize connections to Shopify and Visma
+            shop = Shopify.GetShopByID(shopID);
+
+            if (shop == null)
             {
-                LogError(string.Format("Unable to load shop {0}", shopID));
+                LogError(string.Format("Unable to load shop {0} from database", shopID), null);
                 return false;
             }
 
-            // Initialize connections to Shopify and Visma
-            shop = new Shopify(shopID, shopsData[0].ShopifyStoreAccount, shopsData[0].ShopifyAccessToken);
-            visma = new Visma(shopsData[0].VismaCompany);
+            shop.ProcessShopData();
+
+            visma = new Visma(shop.data.VismaCompany);
 
             DateTime? lastShopifyUpdateDate = null;
             try
             {
-                lastShopifyUpdateDate = shopsData[0].ShopifyUpdatedDate;
+                lastShopifyUpdateDate = shop.data.ShopifyUpdatedDate;
             }
             catch (StrongTypingException ex) { }
 
             DateTime? lastVismaUpdateDate = null;
             try
             {
-                lastVismaUpdateDate = shopsData[0].VismaUpdatedDate;
+                lastVismaUpdateDate = shop.data.VismaUpdatedDate;
             }
             catch (StrongTypingException ex) { }
 
-            Log(string.Format("\n== Starting new update for Shop {0} [{1}] at {2}. ==", shop.account, shopID, DateTime.Now));
+            DateTime currentUpdateDate = DateTime.Now;
+
+            Log(string.Format("\n== Starting new update for Shop {0} [{1}] at {2}. ==", shop.account, shopID, currentUpdateDate));
             Log(string.Format("Last Shopify update: {0}, Last Visma update: {1}\n", lastShopifyUpdateDate, lastVismaUpdateDate));
 
 
             // Update Customers
-            bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 100);
+            bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 0);
 
             // Update Products
-            bool resultProducts = UpdateProducts(lastVismaUpdateDate, 100);
+            bool resultProducts = UpdateProducts(lastVismaUpdateDate, 0, true);
 
             // Update Specific Prices
-            bool resultPrices = UpdateSpecificPrices(lastVismaUpdateDate, 0, 1);
+            bool resultPrices = UpdateSpecificPrices(lastVismaUpdateDate, 50, 0);
 
             // Update Orders
-            //bool resultOrders = UpdateOrders(visma.orderType, lastShopifyUpdateDate, 1);
+            bool resultOrders = UpdateOrders(lastShopifyUpdateDate, 0);
 
-            Log("\n=== Finished update.===\n\n");
+            // Update Shop update times
+            UpdateShop(currentUpdateDate, currentUpdateDate);
+
+
+            Log(string.Format("\n=== Finished update at {0}.===\n\n", DateTime.Now) );
 
             return true;
         }
@@ -115,49 +129,70 @@ namespace ShopifyVismaApp
                 // Get full Customer object from Visma
                 Customer customer = visma.GetCustomerByNumber(customerNumber);
 
-                Log(string.Format("- Customer {0} [{1}]", customer.FullName, customer.Number));
-      
-                // Save article as Shopify Product
-                string email = (customer.Contacts.Count > 0) ? customer.Contacts[0].Email : "";
+                Customer invoiceCustomer = null;
+                if (customer.InvoiceCustomerID > 0)
+                    invoiceCustomer = visma.GetCustomerByNumber(customer.InvoiceCustomerID);
 
-                if (!string.IsNullOrEmpty(email))
+                int contactNumber = 0;
+
+                foreach (Contact contact in customer.Contacts)
                 {
+                    contactNumber++;
 
-                    DataSet.CustomerDataTable customerDT = customerTA.GetDataByCustomerNumber(shop.ID, customerNumber);
-                    if (customerDT.Count == 0)
+                    Log(string.Format("- Customer {0} - {1} [{2}]", customer.FullName, contactNumber.ToString(), customer.Number));
+
+                    // Save article as Shopify Product
+                    string email = contact.Email;
+
+
+                    if (!string.IsNullOrEmpty(email)) //  && (customerNumber == 600586)
                     {
 
-                        string data = shop.GetCustomertDataFromVismaCustomer(customer);
-
-                        //Log(data.ToString());
+                        DataSet.CustomerDataTable customerDT = customerTA.GetDataByCustomerNumber(shop.ID, customerNumber, contactNumber);
 
                         try
                         {
-                            object response = shop.CreateCustomer(data);
 
-                            //Log("Response " + response.ToString());
-                            JObject customerResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                            long shopifyID = 0;
-                            long.TryParse(customerResponse["customer"]["id"].ToString(), out shopifyID);
-                            Log(string.Format(" - Shopify Customer [{0}] created.", shopifyID));
+                            if (customerDT.Count == 0)
+                            {
+                                string data = shop.GetCustomertDataFromVismaCustomer(customer, contact, invoiceCustomer, null);
+                                //Log(data);
+                                object response = shop.CreateCustomer(data);
 
-                            customerTA.InsertCustomer(shop.ID, shopifyID, customer.Number);
+                                //Log("Response " + response.ToString());
+                                JObject customerResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                                long shopifyID = 0;
+                                long addressID = 0;
+                                long.TryParse(customerResponse["customer"]["id"].ToString(), out shopifyID);
+                                long.TryParse(customerResponse["customer"]["default_address"]["id"].ToString(), out addressID);
+                                Log(string.Format(" - Shopify Customer [{0}] created.", shopifyID));
+
+                                customerTA.InsertCustomer(shop.ID, shopifyID, customer.Number, addressID, contactNumber);
+                            }
+                            else
+                            {
+
+                                long shopifyID = customerDT[0].ShopifyCustomerID;
+                                long addressID = customerDT[0].ShopifyAddressID;
+                                string data = shop.GetCustomertDataFromVismaCustomer(customer, contact, invoiceCustomer, addressID);
+                                //Log(data);
+                                object response = shop.UpdateCustomer(data, shopifyID);
+
+                                Log(string.Format(" - Shopify Customer [{0}] updated.", shopifyID));
+                            }
                         }
                         catch (System.Net.WebException ex)
                         {
-                            LogError(ex.ToString());
+                            LogError("Unable to create or update Customer", ex);
                         }
+
                     }
                     else
                     {
-                        Log(" - Shopify Customer already exists.");
+                        Log(" - Unable to create customer - No email value");
                     }
-
                 }
-                else
-                {
-                    Log(" - Unable to create customer - No email value");
-                }
+                
        
 
                 customerCount += 1;
@@ -166,6 +201,7 @@ namespace ShopifyVismaApp
                     break;
 
             }
+            
 
             return true;
         }
@@ -185,9 +221,10 @@ namespace ShopifyVismaApp
             
             foreach (ArticleInfo articleInfo in list)
             {
-                long shopifyProductID = 0;
-                long shopifyVariantID = 0;
-                long shopifyImageID = 0;
+                long? shopifyProductID = null;
+                long? shopifyVariantID = null;
+                long? shopifyVariantVatID = null;
+                long? shopifyImageID = null;
 
                 string articleCode = articleInfo.ArticleCode;
                 articlesCount += 1;
@@ -196,10 +233,12 @@ namespace ShopifyVismaApp
                 Article article = visma.GetArticleByCode(articleCode);
 
                 string familyCode = article.FamilyCode;
+                string articleName = null;
+                decimal? vatRate = null;
 
                 //Log(article.ProductGroupObject.Description.ToString());
 
-                if ((article.ArticleType == 5) || (article.ArticleType == 25) || (article.ArticleType == 44))
+                if ((shop.articleTypes.Contains(article.ArticleType))) // && (article.FamilyCode == "532057")
                 {
 
                     Log(string.Format(" - Article {0} [{1}]", articleInfo.ArticleName, articleInfo.ArticleCode));
@@ -208,6 +247,14 @@ namespace ShopifyVismaApp
                     // Save article as Shopify Product
                     if (!string.IsNullOrEmpty(article.ArticleName))
                     {
+
+                        if (!string.IsNullOrEmpty(article.FamilyCode))
+                        {
+                            articleName = visma.GetCommonArticleNameForFamilyCode(article.FamilyCode);
+                        }
+
+                        vatRate = visma.GetVatRate(article.ArticleCode);
+
                         DataSet.ProductDataTable productDT = productTA.GetDataByArticleCode(shop.ID, articleCode);
                         if (productDT.Count == 0)
                         {
@@ -224,66 +271,79 @@ namespace ShopifyVismaApp
                                 }
                             }
 
-                            if (shopifyProductID == 0)
+                            if (shopifyProductID == null)
                             {
                                 // Create article as a new Shopify Product
 
-                                string productData = shop.GetProductDataFromVismaArticle(article);
-
-                                //Log(productData.ToString());
-
                                 try
                                 {
-                                    object response = shop.CreateProduct(productData);
 
-                                    //Log("Response " + response.ToString());
-                                    JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                    long.TryParse(productResponse["product"]["id"].ToString(), out shopifyProductID);
-                                    long.TryParse(productResponse["product"]["variants"][0]["id"].ToString(), out shopifyVariantID);
+                                    DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
+                                    Log(" - Delivery date: " + deliveryDate.ToString());
+
+                                    shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate);
                                     Log(string.Format(" - Shopify Product [{0}] created.", shopifyProductID));
 
                                     //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
 
-                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, null, null, null, familyCode);
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode);
                                     articleUpdates += 1;
                                 }
                                 catch (System.Net.WebException ex)
                                 {
-                                    LogError(ex.ToString());
+                                    LogError("Unable to create Shopify Product", ex);
                                 }
                             }
                             else
                             {
                                 // Create article as a new Variant of existing Shopify Product (with the same FamilyCode)
-                                string productVariantData = shop.GetProductVariantData(article, null, null, null, null);
 
                                 try
                                 {
-                                    object response = shop.CreateProductVariant(shopifyProductID, productVariantData);
+                                    shop.CreateUpdateProductVariants(article, shopifyProductID.Value, ref shopifyVariantID, ref shopifyVariantVatID, null, null, null, null, articleName);
 
-                                    //Log("Response " + response.ToString());
-                                    JObject productVariantResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                    long.TryParse(productVariantResponse["variant"]["id"].ToString(), out shopifyVariantID);
                                     Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
 
-                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, null, null, null, familyCode);
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode);
 
                                 }
                                 catch (System.Net.WebException ex)
                                 {
-                                    LogError(ex.ToString());
+                                    LogError("Unable to create Shopify Product Variant", ex);
                                 }
                             }
                         }
                         else
                         {
-                            shopifyProductID = productDT[0].ShopifyProductID;
-                            shopifyImageID = productDT[0].ShopifyImageID;
-                            Log(" - Shopify Product already exists.");
+                            //string productData = shop.GetProductDataFromVismaArticle(article, shopifyVariantID, shopifyVariantVatID);
+
+                            try
+                            {
+                                shopifyProductID = productDT[0].ShopifyProductID;
+                                shopifyVariantID = productDT[0].ShopifyVariantID;
+                                shopifyVariantVatID = productDT[0].ShopifyVariantVatID;
+                                shopifyImageID = productDT[0].ShopifyImageID;
+
+                                DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
+                                Log(" - Delivery date: " + deliveryDate.ToString());
+
+                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate);
+
+                                Log(string.Format(" - Shopify Product [{0}] updated.", shopifyProductID));
+
+                                articleUpdates += 1;
+                            }
+                            catch (System.Net.WebException ex)
+                            {
+                                LogError("Unable to update Shopify Product", ex);
+                            }
+
+                            
+                            //Log(" - Shopify Product already exists.");
                         }
 
                         // Product image
-                        if ((shopifyProductID > 0) && (updateArticleImages) && (shopifyImageID == 0))
+                        if ((shopifyProductID != null) && (updateArticleImages) && ((shopifyImageID == null) || (shopifyImageID == 0)))
                         {
                             string imagePath = visma.GetImageFilePath(articleCode);
                             if (File.Exists(imagePath))
@@ -313,11 +373,13 @@ namespace ShopifyVismaApp
 
                                     try
                                     {
-                                        object response = shop.CreateProductImage(shopifyProductID, productImageData);
+                                        object response = shop.CreateProductImage(shopifyProductID.Value, productImageData);
                                         //Log("Response " + response.ToString());
 
                                         JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                        long.TryParse(productResponse["image"]["id"].ToString(), out shopifyImageID);
+                                        long imageID;
+                                        long.TryParse(productResponse["image"]["id"].ToString(), out imageID);
+                                        shopifyImageID = imageID;
                                         Log(string.Format("  - New product image created {0}", shopifyImageID));
 
                                         if (shopifyImageID > 0)
@@ -328,7 +390,7 @@ namespace ShopifyVismaApp
                                     }
                                     catch (System.Net.WebException ex)
                                     {
-                                        LogError(ex.ToString());
+                                        LogError("Unable to create product Image", ex);
                                     }
 
                                     
@@ -362,6 +424,7 @@ namespace ShopifyVismaApp
         }            
 
 
+
         public bool UpdateSpecificPrices(DateTime? startDate, int pricelistrPricesLimit = 50, int customerPricesLimit = 0) {
 
             
@@ -376,70 +439,15 @@ namespace ShopifyVismaApp
                 {
                     GeneralPricelist generalPricelist = GeneralPricelist.Read(visma._context, pricelistNumber);
 
-                    if (generalPricelist.Count > 0)
+                    var filteredPricelist = generalPricelist.Where(x => ((!startDate.HasValue) || (x.EditStamp >= startDate.Value)));
+
+                    if (filteredPricelist.Count() > 0)
                     {
                         Log(string.Format("Pricelist {0} has {1} specific prices.", pricelistNumber, generalPricelist.Count));
 
-                        foreach (PricelistItem pricelistItem in generalPricelist)
+                        foreach (PricelistItem pricelistItem in filteredPricelist)
                         {
-                            Log(" -> " + pricelistItem.ProductCode + " (" + pricelistItem.Active.ToString() + " " + pricelistItem.GetIdValue().ToString() + ") " + pricelistItem.BatchSize.ToString() + "ks " + pricelistItem.ContractPrice.ToString());
-                            decimal price = pricelistItem.ContractPrice;
-                            string articleCode = pricelistItem.ProductCode;
-                            int? quantity = (int)pricelistItem.BatchSize;
-                            if (quantity <= 1)
-                                quantity = null;
-
-
-                            DataSet.ProductDataTable specificProducts = productTA.GetDataByArticleCodeSpecific(shop.ID, articleCode, pricelistNumber, null, quantity);
-
-
-                            if (specificProducts.Count == 0)
-                            {
-
-                                DataSet.ProductDataTable genericProducts = productTA.GetDataByArticleCode(shop.ID, articleCode);
-
-                                if (genericProducts.Count > 0)
-                                {
-
-                                    long shopifyProductID = genericProducts[0].ShopifyProductID;
-                                    long shopifyVariantID = 0;
-                                    Article article = visma.GetArticleByCode(articleCode);
-                                    string famiyCode = article.FamilyCode;
-
-                                    if (article != null)
-                                    {
-                                        string productVariantData = shop.GetProductVariantData(article, pricelistNumber, null, quantity, price);
-                                        //Log(productVariantData);
-                                        Log(" - Create specific price");
-
-                                        try
-                                        {
-                                            object response = shop.CreateProductVariant(shopifyProductID, productVariantData);
-
-                                            //Log("Response " + response.ToString());
-                                            JObject productVariantResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                            long.TryParse(productVariantResponse["variant"]["id"].ToString(), out shopifyVariantID);
-                                            Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
-
-                                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, pricelistNumber, null, quantity, price, famiyCode);
-
-                                        }
-                                        catch (System.Net.WebException ex)
-                                        {
-                                            LogError(ex.ToString());
-                                        }
-                                    }
-
-                                }
-                                else
-                                {
-                                    Log("  - Product not in Shopify");
-                                }
-
-                            }
-                            else
-                            {
-                            }
+                            UpdatePricelistItem(pricelistItem, pricelistNumber, null);
                         }
                     }
                     else
@@ -468,74 +476,16 @@ namespace ShopifyVismaApp
 
                 CustomerPricelist customerSpecificPricelist = CustomerPricelist.Read(visma._context, customerSpecificNumber);
 
+                var filteredPricelist = customerSpecificPricelist.Where(x => ((!startDate.HasValue) || (x.EditStamp >= startDate.Value)));
 
-                if (customerSpecificPricelist.Count > 0)
+
+                if (filteredPricelist.Count() > 0)
                 {
-                    Log(string.Format("Customer {0} has {1} specific prices.", customerSpecificNumber, customerSpecificPricelist.Count));
+                    Log(string.Format("Customer {0} has {1} specific prices.", customerSpecificNumber, filteredPricelist.Count()));
 
-                    foreach (PricelistItem pricelistItem in customerSpecificPricelist)
+                    foreach (PricelistItem pricelistItem in filteredPricelist)
                     {
-                        Log(" -> " + pricelistItem.ProductCode + " (" + pricelistItem.Active.ToString() + " " + pricelistItem.GetIdValue().ToString() + ") " + pricelistItem.BatchSize.ToString() + "ks " + pricelistItem.ContractPrice.ToString());
-                        decimal price = pricelistItem.ContractPrice;                        
-                        string articleCode = pricelistItem.ProductCode;
-                        int? quantity = (int)pricelistItem.BatchSize;
-                        if (quantity <= 1)
-                            quantity = null;
-
-
-                        DataSet.ProductDataTable specificProducts = productTA.GetDataByArticleCodeSpecific(shop.ID, articleCode, null, customerSpecificNumber, quantity);
-
-                        //Log(specificProducts.Count.ToString());
-
-                        if (specificProducts.Count == 0)
-                        {
-
-                            DataSet.ProductDataTable genericProducts = productTA.GetDataByArticleCode(shop.ID, articleCode);
-
-                            if (genericProducts.Count > 0)
-                            {
-
-                                long shopifyProductID = genericProducts[0].ShopifyProductID;
-                                long shopifyVariantID = 0;
-                                Article article = visma.GetArticleByCode(articleCode);
-                                string famiyCode = article.FamilyCode;
-
-                                if (article != null)
-                                {
-                                    string productVariantData = shop.GetProductVariantData(article, null, customerSpecificNumber, quantity, price);
-                                    //Log(productVariantData);
-                                    Log(" - Create specific price");
-
-                                    try
-                                    {
-                                        object response = shop.CreateProductVariant(shopifyProductID, productVariantData);
-
-                                        //Log("Response " + response.ToString());
-                                        JObject productVariantResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                        long.TryParse(productVariantResponse["variant"]["id"].ToString(), out shopifyVariantID);
-                                        Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
-
-                                        //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
-
-                                        productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, articleCode, null, customerSpecificNumber, quantity, price, famiyCode);
-           
-                                    }
-                                    catch (System.Net.WebException ex)
-                                    {
-                                        LogError(ex.ToString());
-                                    }
-                                }
-
-                            }
-                            else
-                            {
-                                Log("  - Product not in Shopify");
-                            }
-                            
-                        }
-                        else
-                        {
-                        }
+                        UpdatePricelistItem(pricelistItem, null, customerSpecificNumber);
                     }
                 }
                 else
@@ -553,11 +503,108 @@ namespace ShopifyVismaApp
             return true;
         }
 
-        public bool UpdateOrders(int orderType, DateTime? startDate, int orderLimit = 0)
+        public bool UpdatePricelistItem(PricelistItem pricelistItem, int? pricelistNumber, int? customerNumber)
+        {
+            //Log(" -> " + pricelistItem.ProductCode + " (" + pricelistItem.Active.ToString() + " " + pricelistItem.GetIdValue().ToString() + ") " + pricelistItem.BatchSize.ToString() + "ks " + pricelistItem.ContractPrice.ToString());
+            decimal price = pricelistItem.ContractPrice;
+
+            string articleCode = pricelistItem.ProductCode;
+            int? quantity = (int)pricelistItem.BatchSize;
+            if (quantity <= 1)
+                quantity = null;
+
+            Article article = visma.GetArticleByCode(articleCode);
+
+            // If pricelist has Discount value, use it to calculate the final price from currect Article price
+            if ((pricelistItem.ContractDiscount > 0) && (pricelistItem.ContractDiscount < 100) && (article != null))
+                price = Math.Round(article.Price1 * ((100 - pricelistItem.ContractDiscount) / 100), 2);
+
+            // Check if pricelist is valid by looking at the PVM and VOIMASSA fields
+            bool datesValid = true;
+            DateTime validFromDate;
+            DateTime validToDate;
+            DateTime.TryParse(pricelistItem.PricelistDate, out validFromDate);
+            DateTime.TryParse(pricelistItem.Valid, out validToDate);
+            datesValid = ((validFromDate == DateTime.MinValue) || (validFromDate <= DateTime.Now)) && ((validToDate == DateTime.MinValue) || (validToDate >= DateTime.Now));
+
+            if ((article != null) && (datesValid))  //  && (article.ArticleCode == "A0112")
+            {
+                string famiyCode = article.FamilyCode;
+                string articleName = null;
+
+                if (!string.IsNullOrEmpty(article.FamilyCode))
+                {
+                    articleName = visma.GetCommonArticleNameForFamilyCode(article.FamilyCode);
+                }
+
+                DataSet.ProductDataTable genericProducts = productTA.GetDataByArticleCode(shop.ID, articleCode);
+
+                if (genericProducts.Count > 0)
+                {
+                    long? shopifyProductID = genericProducts[0].ShopifyProductID;
+                    long? shopifyVariantID = null;
+                    long? shopifyVariantVatID = null;
+
+                    DataSet.ProductDataTable specificProducts = productTA.GetDataByArticleCodeSpecific(shop.ID, articleCode, pricelistNumber, customerNumber, quantity);
+
+
+                    if (specificProducts.Count == 0)
+                    {
+
+                        Log(" - Create specific price");
+
+                        try
+                        {
+
+                            shop.CreateUpdateProductVariants(article, shopifyProductID.Value, ref shopifyVariantID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, articleName);
+                            Log(string.Format(" - Shopify Product Variant [{0}] created for specific price.", shopifyVariantID));
+
+                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, pricelistNumber, customerNumber, quantity, price, famiyCode);
+
+                        }
+                        catch (System.Net.WebException ex)
+                        {
+                            LogError("Unable to create specific price.", ex);
+                            
+                        }
+
+
+                    }
+                    else
+                    {
+                        shopifyProductID = specificProducts[0].ShopifyProductID;
+                        shopifyVariantID = specificProducts[0].ShopifyVariantID;
+                        shopifyVariantVatID = specificProducts[0].ShopifyVariantVatID;
+
+                        try
+                        {
+
+                            shop.CreateUpdateProductVariants(article, shopifyProductID.Value, ref shopifyVariantID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, articleName);
+                            Log(string.Format(" - Shopify Product Variant [{0}] updated for specific price.", shopifyVariantID));
+
+                        }
+                        catch (System.Net.WebException ex)
+                        {
+                            LogError("Unable to update specific price.", ex);
+                        }
+                    }
+                }
+                else
+                {
+                    //Log("  - Product not in Shopify");
+                }
+            }
+
+            return true;
+        }
+
+       
+
+        public bool UpdateOrders(DateTime? startDate, int orderLimit = 0)
         {
 
             Log("\nLoading Orders from Shopify");
-            object ordersJson = shop.GetOrders();
+            object ordersJson = shop.GetOrders(startDate);
             //Log(ordersJson.ToString());
 
             JObject ordersJ = JsonConvert.DeserializeObject<JObject>(ordersJson.ToString());
@@ -572,46 +619,133 @@ namespace ShopifyVismaApp
 
                 ShopifyOrder order = orders[i];
 
+                DataSet.OrderDataTable orderDT = orderTA.GetDataByOrderID(shop.ID, order.id);
 
-                SalesOrder sales = SalesOrder.CreateNew(visma._context, 0);
-                sales.YourOrderNumber = order.name;
-                sales.OrderDate = order.created_at;
-                sales.OrderType = orderType;
-
-                // Billing address
-                if (order.billing_address != null)
+                if ((orderDT.Count == 0)) // && (order.order_number == 1008)
                 {
-                    ShopifyAddress address = order.billing_address;
-                    sales.OrdererName = string.Format("{0} {1}", address.first_name, address.last_name).Trim();
-                    sales.OrdererStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
-                    sales.OrdererCity = string.Format("{0} {1}", address.zip, address.city).Trim();
+
+                    int salesOrderType = 0;
+                    // Order Type - different values for pending and paid
+                    if (order.financial_status == "pending")
+                        salesOrderType = shop.data.OrderTypePending;
+                    else
+                        salesOrderType = shop.data.OrderType;
+
+                    SalesOrder sales = SalesOrder.CreateNew(visma._context, 0); // Create with type 0 and update it later in the code, otherwise we might get exception from VismaSDK
+                    sales.YourOrderNumber = order.name;
+                    sales.OrderDate = order.created_at;
+                    sales.OrderType = salesOrderType;
+
                     
+                    // Terms of Payment
+                    int? termsOfPayment = shop.GetValueIDFromShopData(shop.termsOfPayment, order.gateway);
+                    if (termsOfPayment.HasValue)
+                        sales.TermsOfPaymentId = termsOfPayment.Value;
+
+                    // Delivery Method
+                    int? deliveryMethod = order.shipping_lines.Count() > 0 ? shop.GetValueIDFromShopData(shop.deliveryMethods, order.shipping_lines[0].code) : null;
+                    if (deliveryMethod.HasValue)
+                        sales.DeliveryMethodId = deliveryMethod.Value;
+                     
+
+                    //Log(string.Format("  {0} > {1}", order.gateway, termsOfPayment.ToString()));
+                    //Log(string.Format("  {0} > {1}", order.shipping_lines.Count() > 0 ? order.shipping_lines[0].code : "", deliveryMethod.ToString()));
+
+                    // Customer
+                    Customer orderCustomer = null;
+                    if (order.customer != null)
+                    {
+                        string customerTags = order.customer.tags;
+                        //Log(customerTags);
+                        if (!string.IsNullOrEmpty(customerTags))
+                        {
+                            string customerTag = customerTags.Split(',').Where(x => x.Trim().StartsWith("+C")).First();
+                            customerTag = (!string.IsNullOrEmpty(customerTag)) ? customerTag.Replace("+C", "") : customerTag;
+                            int customerID = -1;
+                            if (int.TryParse(customerTag, out customerID)) {
+                                orderCustomer = visma.GetCustomerByNumber(customerID);
+                                sales.CustomerNumber = customerID;
+                            }
+                            
+                        }
+                    }
+
+                    sales.TermsOfDeliveryId = shop.data.TermsOfDelivery;
+                    sales.SellerId = orderCustomer != null ? orderCustomer.SellerID : shop.data.Seller;
+
+                    // Order delivery date
+                    DateTime orderDeliveryDate = order.created_at.AddYears(1);
+                    sales.DeliveryDate = orderDeliveryDate;
+
+                    // Unifaun
+                    string locationIDText = order.GetNoteAttribute("Unifaun Location ID");
+                    int locationID;
+                    if (int.TryParse(locationIDText, out locationID)) {
+                        sales.DriverId = locationID;
+                    }
+
+                    string locationStreetAddress = order.GetNoteAttribute("Unifaun Location Name");
+                    string locationCity = order.GetNoteAttribute("Unifaun Location City");
+
+
+                    // Billing address
+                    if (order.billing_address != null)
+                    {
+                        ShopifyAddress address = order.billing_address;
+                        sales.OrdererName = string.Format("{0} {1}", address.first_name, address.last_name).Trim();
+                        sales.OrdererStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
+                        sales.OrdererCity = string.Format("{0} {1}", address.zip, address.city).Trim();
+
+                    }
+
+           
+
+                    // Shipping address
+                    if (order.shipping_address != null)
+                    {
+                        ShopifyAddress address = order.shipping_address;
+                        sales.DeliveryName = string.Format("{0} {1}", address.first_name, address.last_name).Trim();
+                        sales.DeliveryStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
+                        sales.DeliveryCity = string.Format("{0} {1}", address.zip, address.city).Trim();
+
+                        // Unifaun shipping address
+                        if (!string.IsNullOrEmpty(locationStreetAddress) && !string.IsNullOrEmpty(locationCity))
+                        {
+                            sales.DeliveryName2 = "c/o R-Kioski";
+                            sales.DeliveryStreetAddress = locationStreetAddress;
+                            sales.DeliveryCity = locationCity;
+                        }
+
+                    }
+                 
+
+                    // Order items
+                    foreach (var lineItem in order.line_items)
+                    {
+                        SalesOrderRow salesRow = sales.SalesorderRows.AddNew();
+                        salesRow.ArticleCode = lineItem.sku;
+                        salesRow.ArticleName = lineItem.title;
+                        salesRow.Amount = lineItem.quantity;
+                        salesRow.DeliveryStart = orderDeliveryDate;
+                        //salesRow.VatPercent = 0;
+                        if (lineItem.price.HasValue)
+                            salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
+                    }
+                     
+
+
+                    if (orderCustomer == null)
+                    {
+                    }
+
+
+                    sales.Save();
+                    Log(string.Format(" - Sales Order {0} created from order {1}. ", sales.Number, order.name));
+
+                    orderTA.InsertOrder(shop.ID, order.id, sales.Number);
+
+
                 }
-
-                // Billing address
-                if (order.shipping_address != null)
-                {
-                    ShopifyAddress address = order.shipping_address;
-                    sales.DeliveryCity = string.Format("{0} {1}", address.first_name, address.last_name).Trim();
-                    sales.DeliveryStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
-                    sales.DeliveryCity = string.Format("{0} {1}", address.zip, address.city).Trim();
-
-                }
-
-                // Order items
-                foreach (var lineItem in order.line_items)
-                {
-                    SalesOrderRow salesRow = sales.SalesorderRows.AddNew();
-                    salesRow.ArticleCode = lineItem.sku;
-                    salesRow.Amount = lineItem.quantity;
-                    if (lineItem.price.HasValue)
-                        salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
-                }
-
-
-                sales.Save();
-                Log(string.Format(" - Sales Order {0} created. ", sales.YourOrderNumber));
-
             }
 
             return true;
@@ -622,19 +756,51 @@ namespace ShopifyVismaApp
         }
 
         /// <summary>
+        /// Update shop update times.
+        /// </summary>
+        /// <param name="shopifyUpdatedDate">Shopify update time</param>
+        /// <param name="vismaUpdatedDate">Visma update time</param>
+        public void UpdateShop(DateTime? shopifyUpdatedDate, DateTime? vismaUpdatedDate)
+        {
+            if (shopifyUpdatedDate.HasValue)
+                shopTA.UpdateShopifyUpdatedDate(shopifyUpdatedDate.Value, shop.ID);
+
+            if (vismaUpdatedDate.HasValue)
+                shopTA.UpdateVismaUpdatedDate(vismaUpdatedDate.Value, shop.ID);
+        }
+
+        /// <summary>
         /// Log string.
         /// </summary>
         /// <param name="text"></param>
         public void Log(string text)
         {
-
             Logged(this, new LoggedEventArgs(text));
+            LogMessageToFile(text);
         }
 
-        public void LogError(string text) {
+        public void LogError(string text, Exception ex) {
             Log("*** ERROR ****");
             Log(text);
+            if (ex != null)
+                Log(ex.ToString());
             Log("**************");
+        }
+
+        public void LogMessageToFile(string text)
+        {
+            System.IO.StreamWriter sw = System.IO.File.AppendText(
+                "log.txt");
+            try
+            {
+                string logLine = System.String.Format(
+                    "{0:G}: {1}", System.DateTime.Now, text);
+                sw.WriteLine(logLine);
+            }
+            finally
+            {
+                sw.Close();
+            }
         }
     
     }
