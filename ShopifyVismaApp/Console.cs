@@ -25,12 +25,14 @@ namespace ShopifyVismaApp
         private void RunButton_Click(object sender, EventArgs e)
         {
 
-            int shopID = 1;
+            int shopID = int.Parse(accountBox.SelectedValue.ToString());
             BackgroundWorker bw = new BackgroundWorker();
 
             Adapter adapter = new Adapter();
             adapter.Logged += delegate(object adapterSender, Adapter.LoggedEventArgs adaptere)
             { UpdateTextBox(adaptere.text); };
+            adapter.StatusUpdated += delegate(object adapterSender, Adapter.StatusUpdatedEventArgs adaptere)
+            { UpdateStatus(adaptere.text); };
 
 
 
@@ -68,8 +70,37 @@ namespace ShopifyVismaApp
             OutputTextBox.AppendText(text + Environment.NewLine);
         }
 
+        /// <summary>
+        /// Log to textarea.
+        /// </summary>
+        /// <param name="text"></param>
+        public void UpdateStatus(string text)
+        {
+            // Handle multiple threads
+            if (StatusLabel.InvokeRequired)
+            {
+                //This techniques is from answer by @sinperX1
+                BeginInvoke((MethodInvoker)(() => { UpdateStatus(text); }));
+                return;
+            }
+
+            StatusLabel.Text = text;
+        }
+
         private void StopButton_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Console_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSet.Shop' table. You can move, or remove it, as needed.
+            this.shopTableAdapter.Fill(this.dataSet.Shop);
 
         }
 

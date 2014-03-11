@@ -1,0 +1,1462 @@
+11.3.2014 12:37:55: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 12:37:55. ==
+11.3.2014 12:37:55: Last Shopify update: , Last Visma update: 
+
+11.3.2014 12:37:55: 
+Loading Pricelist specific prices
+11.3.2014 12:37:56: Pricelist 0 has 50 specific prices.
+11.3.2014 12:37:57: Pricelist 1 has 138 specific prices.
+11.3.2014 12:37:59:  - Shopify Product Variant [605485361] updated for specific price P1 Q5.
+11.3.2014 12:38:00:  - Shopify Product Variant [605485345] updated for specific price P1 Q6.
+11.3.2014 12:38:01:  - Shopify Product Variant [605485289] updated for specific price P1 Q6.
+11.3.2014 12:38:02:  - Shopify Product Variant [605485265] updated for specific price P1 Q9.
+11.3.2014 12:38:03:  - Shopify Product Variant [605485225] updated for specific price P1 Q6.
+11.3.2014 12:38:03:  - Shopify Product Variant [605485161] updated for specific price P1 Q3.
+11.3.2014 12:38:04:  - Shopify Product Variant [605485125] updated for specific price P1.
+11.3.2014 12:38:05:  - Shopify Product Variant [605485105] updated for specific price P1 Q6.
+11.3.2014 12:38:06:  - Shopify Product Variant [605482273] updated for specific price P1 Q10.
+11.3.2014 12:38:07:  - Shopify Product Variant [605482369] updated for specific price P1.
+11.3.2014 12:38:08:  - Shopify Product Variant [605482405] updated for specific price P1.
+11.3.2014 12:38:09:  - Shopify Product Variant [605482445] updated for specific price P1 Q15.
+11.3.2014 12:38:10:  - Shopify Product Variant [605482485] updated for specific price P1 Q15.
+11.3.2014 12:38:11:  - Shopify Product Variant [605482549] updated for specific price P1 Q15.
+11.3.2014 12:38:11:  - Shopify Product Variant [605482581] updated for specific price P1 Q5.
+11.3.2014 12:38:12:  - Shopify Product Variant [605482629] updated for specific price P1 Q5.
+11.3.2014 12:38:13:  - Shopify Product Variant [605482665] updated for specific price P1 Q5.
+11.3.2014 12:38:14:  - Shopify Product Variant [605482717] updated for specific price P1 Q5.
+11.3.2014 12:38:15:  - Shopify Product Variant [605484941] updated for specific price P1 Q3.
+11.3.2014 12:38:16:  - Shopify Product Variant [605484881] updated for specific price P1 Q10.
+11.3.2014 12:38:16:  - Shopify Product Variant [605482749] updated for specific price P1 Q5.
+11.3.2014 12:38:17:  - Shopify Product Variant [605482813] updated for specific price P1 Q3.
+11.3.2014 12:38:18:  - Shopify Product Variant [605484865] updated for specific price P1 Q5.
+11.3.2014 12:38:19:  - Shopify Product Variant [605484841] updated for specific price P1 Q5.
+11.3.2014 12:38:20:  - Shopify Product Variant [605484777] updated for specific price P1 Q5.
+11.3.2014 12:38:21:  - Shopify Product Variant [605484761] updated for specific price P1 Q5.
+11.3.2014 12:38:22:  - Shopify Product Variant [605484721] updated for specific price P1 Q5.
+11.3.2014 12:38:23:  - Shopify Product Variant [605484705] updated for specific price P1 Q5.
+11.3.2014 12:38:23:  - Shopify Product Variant [605484673] updated for specific price P1 Q20.
+11.3.2014 12:38:24:  - Shopify Product Variant [605482845] updated for specific price P1 Q20.
+11.3.2014 12:40:23: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 12:40:23. ==
+11.3.2014 12:40:23: Last Shopify update: , Last Visma update: 
+
+11.3.2014 12:40:23: 
+Loading Pricelist specific prices
+11.3.2014 12:40:23: Pricelist 0 has 50 specific prices.
+11.3.2014 12:40:24: Pricelist 1 has 138 specific prices.
+11.3.2014 12:40:26:  - Shopify Product Variant [605485361] updated for specific price 10154 P1 Q5.
+11.3.2014 12:40:27:  - Shopify Product Variant [605485345] updated for specific price 103_001 P1 Q6.
+11.3.2014 12:40:28:  - Shopify Product Variant [605485289] updated for specific price 106_001 P1 Q6.
+11.3.2014 12:40:29:  - Shopify Product Variant [605485265] updated for specific price 10610 P1 Q9.
+11.3.2014 12:40:30:  - Shopify Product Variant [605485225] updated for specific price 107_001 P1 Q6.
+11.3.2014 12:40:31:  - Shopify Product Variant [605485161] updated for specific price 10701 P1 Q3.
+11.3.2014 12:40:32:  - Shopify Product Variant [605485125] updated for specific price 10721 P1.
+11.3.2014 12:40:33:  - Shopify Product Variant [605485105] updated for specific price 108_001 P1 Q6.
+11.3.2014 12:40:34:  - Shopify Product Variant [605482273] updated for specific price 10903 P1 Q10.
+11.3.2014 12:40:34:  - Shopify Product Variant [605482369] updated for specific price 11162 P1.
+11.3.2014 12:40:35:  - Shopify Product Variant [605482405] updated for specific price 11163 P1.
+11.3.2014 12:40:36:  - Shopify Product Variant [605482445] updated for specific price 11333 P1 Q15.
+11.3.2014 12:40:37:  - Shopify Product Variant [605482485] updated for specific price 11334 P1 Q15.
+11.3.2014 12:40:38:  - Shopify Product Variant [605482549] updated for specific price 11335 P1 Q15.
+11.3.2014 12:40:39:  - Shopify Product Variant [605482581] updated for specific price 11339 P1 Q5.
+11.3.2014 12:40:40:  - Shopify Product Variant [605482629] updated for specific price 11340 P1 Q5.
+11.3.2014 12:40:41:  - Shopify Product Variant [605482665] updated for specific price 11341 P1 Q5.
+11.3.2014 12:40:42:  - Shopify Product Variant [605482717] updated for specific price 11342 P1 Q5.
+11.3.2014 12:40:42:  - Shopify Product Variant [605484941] updated for specific price 11362B P1 Q3.
+11.3.2014 12:40:43:  - Shopify Product Variant [605484881] updated for specific price 11362B P1 Q10.
+11.3.2014 12:40:44:  - Shopify Product Variant [605482749] updated for specific price 11394 P1 Q5.
+11.3.2014 12:40:45:  - Shopify Product Variant [605482813] updated for specific price 11404A P1 Q3.
+11.3.2014 12:40:46:  - Shopify Product Variant [605484865] updated for specific price 11435 P1 Q5.
+11.3.2014 12:40:47:  - Shopify Product Variant [605484841] updated for specific price 11436 P1 Q5.
+11.3.2014 12:40:48:  - Shopify Product Variant [605484777] updated for specific price 12709 P1 Q5.
+11.3.2014 12:40:49:  - Shopify Product Variant [605484761] updated for specific price 12710 P1 Q5.
+11.3.2014 12:40:50:  - Shopify Product Variant [605484721] updated for specific price 12713 P1 Q5.
+11.3.2014 12:40:51:  - Shopify Product Variant [605484705] updated for specific price 12718 P1 Q5.
+11.3.2014 12:40:51:  - Shopify Product Variant [605484673] updated for specific price 145_075 P1 Q20.
+11.3.2014 12:40:52:  - Shopify Product Variant [605482845] updated for specific price 145_085 P1 Q20.
+11.3.2014 12:40:53:  - Shopify Product Variant [605482885] updated for specific price 150_150 P1 Q20.
+11.3.2014 12:40:54:  - Shopify Product Variant [605484645] updated for specific price 150_200 P1 Q6.
+11.3.2014 12:40:55:  - Shopify Product Variant [605484597] updated for specific price 1542 P1 Q5.
+11.3.2014 12:40:56:  - Shopify Product Variant [605484573] updated for specific price 155_400 P1 Q8.
+11.3.2014 12:40:57:  - Shopify Product Variant [605482925] updated for specific price 160_075 P1 Q20.
+11.3.2014 12:40:58:  - Shopify Product Variant [605484537] updated for specific price 165_350 P1 Q12.
+11.3.2014 12:40:59:  - Shopify Product Variant [605484497] updated for specific price 166_350 P1 Q15.
+11.3.2014 12:41:00:  - Shopify Product Variant [605484433] updated for specific price 167_125 P1 Q6.
+11.3.2014 12:41:01:  - Shopify Product Variant [605484353] updated for specific price 167_200 P1 Q12.
+11.3.2014 12:41:01:  - Shopify Product Variant [605484309] updated for specific price 19001 P1 Q3.
+11.3.2014 12:41:02:  - Shopify Product Variant [605484241] updated for specific price 21232 P1 Q5.
+11.3.2014 12:41:03:  - Shopify Product Variant [605484173] updated for specific price 21242 P1 Q5.
+11.3.2014 12:41:04:  - Shopify Product Variant [605484121] updated for specific price 21252 P1 Q5.
+11.3.2014 12:41:05:  - Shopify Product Variant [605484029] updated for specific price 21262 P1 Q5.
+11.3.2014 12:41:06:  - Shopify Product Variant [605483913] updated for specific price 26902 P1 Q4.
+11.3.2014 12:41:07:  - Shopify Product Variant [605483729] updated for specific price 26903 P1 Q4.
+11.3.2014 12:41:08:  - Shopify Product Variant [605483585] updated for specific price 464001 P1 Q4.
+11.3.2014 12:41:09:  - Shopify Product Variant [605483529] updated for specific price 491000 P1 Q5.
+11.3.2014 12:41:10:  - Shopify Product Variant [605483029] updated for specific price 600_010 P1.
+11.3.2014 12:41:10:  - Shopify Product Variant [605483061] updated for specific price 601_010 P1.
+11.3.2014 12:41:11:  - Shopify Product Variant [605483481] updated for specific price 602_0001 P1.
+11.3.2014 12:41:12:  - Shopify Product Variant [605483481] updated for specific price 602_0001 P1 Q12.
+11.3.2014 12:41:13:  - Shopify Product Variant [605483441] updated for specific price 602_0005 P1.
+11.3.2014 12:41:14:  - Shopify Product Variant [605483441] updated for specific price 602_0005 P1 Q6.
+11.3.2014 12:41:15:  - Shopify Product Variant [605483125] updated for specific price 603_005 P1.
+11.3.2014 12:41:16:  - Shopify Product Variant [605483409] updated for specific price 68705 P1 Q4.
+11.3.2014 12:41:17:  - Shopify Product Variant [605483381] updated for specific price 68710 P1 Q4.
+11.3.2014 12:41:17:  - Shopify Product Variant [605483373] updated for specific price 68715 P1 Q4.
+11.3.2014 12:41:18:  - Shopify Product Variant [605483169] updated for specific price 68720 P1 Q4.
+11.3.2014 12:41:19:  - Shopify Product Variant [605483337] updated for specific price A011 P1.
+11.3.2014 12:41:20:  - Shopify Product Variant [605483329] updated for specific price A0112 P1.
+11.3.2014 12:41:21:  - Shopify Product Variant [605483261] updated for specific price A0113 P1.
+11.3.2014 12:41:21:  - Shopify Product Variant [605483233] updated for specific price A012 P1.
+11.3.2014 12:41:22:  - Shopify Product Variant [605483197] updated for specific price A013 P1.
+11.3.2014 12:41:24:  - Shopify Product Variant [605485429] updated for specific price GSTH P1 Q5.
+11.3.2014 12:41:25:  - Shopify Product Variant [605485469] updated for specific price GSTM P1 Q5.
+11.3.2014 12:41:26:  - Shopify Product Variant [605485497] updated for specific price GSTS P1 Q5.
+11.3.2014 12:41:26:  - Shopify Product Variant [605485521] updated for specific price GSTV P1 Q5.
+11.3.2014 12:41:27: Pricelist 2 has 162 specific prices.
+11.3.2014 12:41:28:  - Shopify Product Variant [605485581] updated for specific price 10154 P2.
+11.3.2014 12:41:29:  - Shopify Product Variant [605485625] updated for specific price 10154 P2 Q5.
+11.3.2014 12:41:30:  - Shopify Product Variant [605485649] updated for specific price 103_001 P2.
+11.3.2014 12:41:31:  - Shopify Product Variant [605485693] updated for specific price 103_001 P2 Q6.
+11.3.2014 12:41:32:  - Shopify Product Variant [605485721] updated for specific price 106_001 P2.
+11.3.2014 12:41:32:  - Shopify Product Variant [605485745] updated for specific price 106_001 P2 Q6.
+11.3.2014 12:41:33:  - Shopify Product Variant [605485773] updated for specific price 10610 P2 Q3.
+11.3.2014 12:41:34:  - Shopify Product Variant [605485789] updated for specific price 10610 P2 Q6.
+11.3.2014 12:41:35:  - Shopify Product Variant [605485813] updated for specific price 10610 P2 Q12.
+11.3.2014 12:41:36:  - Shopify Product Variant [605485837] updated for specific price 10610 P2 Q60.
+11.3.2014 12:41:37:  - Shopify Product Variant [605485889] updated for specific price 107_001 P2.
+11.3.2014 12:41:38:  - Shopify Product Variant [605485905] updated for specific price 107_001 P2 Q6.
+11.3.2014 12:41:39:  - Shopify Product Variant [605486005] updated for specific price 108_001 P2.
+11.3.2014 12:41:40:  - Shopify Product Variant [605486025] updated for specific price 108_001 P2 Q6.
+11.3.2014 12:41:40:  - Shopify Product Variant [605486053] updated for specific price 10903 P2.
+11.3.2014 12:41:41:  - Shopify Product Variant [605486085] updated for specific price 10903 P2 Q10.
+11.3.2014 12:41:42:  - Shopify Product Variant [605486117] updated for specific price 10920 P2.
+11.3.2014 12:41:43:  - Shopify Product Variant [605486173] updated for specific price 10920 P2 Q10.
+11.3.2014 12:41:44:  - Shopify Product Variant [605486201] updated for specific price 10921 P2.
+11.3.2014 12:41:45:  - Shopify Product Variant [605486241] updated for specific price 10921 P2 Q10.
+11.3.2014 12:41:46:  - Shopify Product Variant [605486281] updated for specific price 10922 P2.
+11.3.2014 12:41:47:  - Shopify Product Variant [605486317] updated for specific price 10922 P2 Q10.
+11.3.2014 12:41:48:  - Shopify Product Variant [605486349] updated for specific price 112_001 P2.
+11.3.2014 12:41:48:  - Shopify Product Variant [605486365] updated for specific price 112_001 P2 Q6.
+11.3.2014 12:41:49:  - Shopify Product Variant [605486397] updated for specific price 11333 P2.
+11.3.2014 12:41:50:  - Shopify Product Variant [605486421] updated for specific price 11333 P2 Q12.
+11.3.2014 12:41:51:  - Shopify Product Variant [605486457] updated for specific price 11334 P2.
+11.3.2014 12:41:52:  - Shopify Product Variant [605486477] updated for specific price 11334 P2 Q12.
+11.3.2014 12:41:53:  - Shopify Product Variant [605486509] updated for specific price 11335 P2.
+11.3.2014 12:41:54:  - Shopify Product Variant [605486689] updated for specific price 11335 P2 Q12.
+11.3.2014 12:41:55:  - Shopify Product Variant [605486905] updated for specific price 11339 P2.
+11.3.2014 12:41:55:  - Create specific price
+11.3.2014 13:04:36: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:04:36. ==
+11.3.2014 13:04:36: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:04:36: 
+Loading Pricelist specific prices
+11.3.2014 13:04:37: Pricelist 0 has 50 specific prices.
+11.3.2014 13:04:38: Pricelist 1 has 138 specific prices.
+11.3.2014 13:04:40:  - Shopify Product Variant [605485361] updated for specific price 10154 P1 Q5.
+11.3.2014 13:04:41:  - Shopify Product Variant [605485345] updated for specific price 103_001 P1 Q6.
+11.3.2014 13:04:42:  - Shopify Product Variant [605485289] updated for specific price 106_001 P1 Q6.
+11.3.2014 13:04:43:  - Shopify Product Variant [605485265] updated for specific price 10610 P1 Q9.
+11.3.2014 13:04:43:  - Shopify Product Variant [605485225] updated for specific price 107_001 P1 Q6.
+11.3.2014 13:04:44:  - Shopify Product Variant [605485161] updated for specific price 10701 P1 Q3.
+11.3.2014 13:08:43: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:08:43. ==
+11.3.2014 13:08:43: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:08:52: 
+72162 customers found in Visma database.
+11.3.2014 13:08:55: - Customer KOEASIAKAS - 1 [1]
+11.3.2014 13:08:55:  - Unable to create customer - No email value
+11.3.2014 13:08:55: - Customer KOEASIAKAS - 2 [1]
+11.3.2014 13:08:55:  - Unable to create customer - No email value
+11.3.2014 13:08:55: - Customer KOEASIAKAS - 3 [1]
+11.3.2014 13:08:55:  - Unable to create customer - No email value
+11.3.2014 13:08:55: - Customer LEOKO - 1 [2]
+11.3.2014 13:08:55:  - Unable to create customer - No email value
+11.3.2014 13:08:55: - Customer KEMINMAAN FYSIOTERAPIA OY PAJUJÄRVI MARKKU - 1 [3]
+11.3.2014 13:08:55:  - Unable to create customer - No email value
+11.3.2014 13:08:55: - Customer SÄPPI ARI - 1 [4]
+11.3.2014 13:08:55:  - Unable to create customer - No email value
+11.3.2014 13:08:55: - Customer LAPPEENRANNAN FYSIKAALINEN HOITOPALVELU OY/FS - 1 [5]
+11.3.2014 13:08:57:  - Shopify Customer [216595221] updated.
+11.3.2014 13:08:57: - Customer HIERONTAPALVELU ELVIIRA SAMSONOV - 1 [10]
+11.3.2014 13:08:57:  - Unable to create customer - No email value
+11.3.2014 13:08:57: - Customer NYMAN SIRPA - 1 [11]
+11.3.2014 13:08:57:  - Unable to create customer - No email value
+11.3.2014 13:08:57: - Customer EKLUND GÖRAN - 1 [12]
+11.3.2014 13:08:57:  - Unable to create customer - No email value
+11.3.2014 13:08:57: - Customer PELTOKORPI JARMO - 1 [13]
+11.3.2014 13:08:57:  - Unable to create customer - No email value
+11.3.2014 13:08:57: - Customer LAMPIMÄKI PASI - 1 [15]
+11.3.2014 13:08:57:  - Unable to create customer - No email value
+11.3.2014 13:08:57: - Customer NAPRAPATKESKUS OY VEHVILÄINEN SEPPO - 1 [16]
+11.3.2014 13:08:58:  - Shopify Customer [216595229] updated.
+11.3.2014 13:08:58: - Customer BOREALIS POLYMERS OY - 1 [18]
+11.3.2014 13:08:58:  - Unable to create customer - No email value
+11.3.2014 13:08:58: - Customer URHEILU PAJALA OY - 1 [20]
+11.3.2014 13:08:58:  - Unable to create customer - No email value
+11.3.2014 13:08:58: - Customer HIERONTAPISTE KAIHOVAARA OSSI - 1 [22]
+11.3.2014 13:08:59:  - Shopify Customer [216595237] updated.
+11.3.2014 13:08:59: - Customer KAUNEUSKEIDAS MIRVA OY - 1 [23]
+11.3.2014 13:08:59:  - Shopify Customer [216595241] updated.
+11.3.2014 13:08:59: - Customer MEHILÄINEN OY LIIKUNTALÄÄKETIETEEN KLINIKKA - 1 [24]
+11.3.2014 13:09:00:  - Shopify Customer [216595245] updated.
+11.3.2014 13:09:00: - Customer MEHILÄINEN OY LIIKUNTALÄÄKETIETEEN KLINIKKA - 2 [24]
+11.3.2014 13:09:00:  - Unable to create customer - No email value
+11.3.2014 13:09:00: - Customer MAGGIEN TERAPIA T:MI - 1 [25]
+11.3.2014 13:09:00:  - Unable to create customer - No email value
+11.3.2014 13:09:00: - Customer INTERSPORT JÄMSÄ - 1 [27]
+11.3.2014 13:09:00:  - Unable to create customer - No email value
+11.3.2014 13:09:00: - Customer KUOPION ORTOFYSIO OY - 1 [28]
+11.3.2014 13:09:00: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "PL 92",
+    "address2": null,
+    "city": "KUOPIO",
+    "company": "KUOPION ORTOFYSIO OY",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "PAAVO",
+    "id": null,
+    "last_name": "PARVIAINEN",
+    "phone": "017-2822122",
+    "province_code": null,
+    "zip": "70101"
+  },
+  "first_name": "PAAVO",
+  "last_name": "PARVIAINEN",
+  "email": "ortofysio@fysiowellness.fi",
+  "tags": "+C28, +P2",
+  "addresses": [
+    {
+      "address1": "PL 92",
+      "address2": null,
+      "city": "KUOPIO",
+      "company": "KUOPION ORTOFYSIO OY",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "PAAVO",
+      "id": null,
+      "last_name": "PARVIAINEN",
+      "phone": "017-2822122",
+      "province_code": null,
+      "zip": "70101"
+    }
+  ]
+}}
+11.3.2014 13:09:00: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 151**************
+11.3.2014 13:09:00: - Customer HOLIDAY CLUB VESILEPPIS - 1 [29]
+11.3.2014 13:09:01:  - Shopify Customer [216595265] updated.
+11.3.2014 13:09:01: - Customer M-FYSIO FS - 1 [31]
+11.3.2014 13:09:01:  - Shopify Customer [216595273] updated.
+11.3.2014 13:09:01: - Customer ALAVIESKAN SPORT KY - 1 [35]
+11.3.2014 13:09:01:  - Unable to create customer - No email value
+11.3.2014 13:09:01: - Customer LOISA SINIKKA - 1 [36]
+11.3.2014 13:09:01:  - Unable to create customer - No email value
+11.3.2014 13:09:01: - Customer LUKKARINKOULU - 1 [39]
+11.3.2014 13:09:01:  - Unable to create customer - No email value
+11.3.2014 13:09:01: - Customer JOKELA ARJA - 1 [40]
+11.3.2014 13:09:01:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer JRC-MARKKINOINTI OY - 1 [42]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer KAUPPINEN ARTO - 1 [44]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer KARJAAN LÄÄKÄRIKESKUS - 1 [45]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer SKOG MIMI KY KB - 1 [46]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer ERIKSSON RITVA - 1 [47]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer KANGASALAN LÄÄKINTÄVOIMISTELU - 1 [230]
+11.3.2014 13:09:02:  - Shopify Customer [216595281] updated.
+11.3.2014 13:09:02: - Customer LAIHO KIMMO - 1 [396]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer VUOKSEN HIERONTAPISTE - 1 [542]
+11.3.2014 13:09:02:  - Unable to create customer - No email value
+11.3.2014 13:09:02: - Customer VILPPULAN FYSIO OY - 1 [1153]
+11.3.2014 13:09:03:  - Shopify Customer [216595285] updated.
+11.3.2014 13:09:03: - Customer URHEILUFYSIO ELJAS  HIETANEN FS - 1 [708]
+11.3.2014 13:09:03:  - Shopify Customer [216595289] updated.
+11.3.2014 13:09:04: - Customer PALVELUKESKUS HENRIKINHOVI - 1 [1001]
+11.3.2014 13:09:04:  - Unable to create customer - No email value
+11.3.2014 13:09:04: - Customer KAAKON KUNTOHOITO - 1 [1247]
+11.3.2014 13:09:04:  - Shopify Customer [216595293] updated.
+11.3.2014 13:09:04: - Customer KEMIJÄRVEN LÄÄKINTÄVOIMISTELU - 1 [1644]
+11.3.2014 13:09:05:  - Shopify Customer [216595297] updated.
+11.3.2014 13:09:05: - Customer LAUKAAN FYSIKAALINEN HOITO JA TUTKIMUSLAITOS - 1 [1400]
+11.3.2014 13:09:28: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:09:28. ==
+11.3.2014 13:09:28: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:09:29: 
+72162 customers found in Visma database.
+11.3.2014 13:09:29: - Customer KOEASIAKAS - 1 [1]
+11.3.2014 13:09:29:  - Unable to create customer - No email value
+11.3.2014 13:09:29: - Customer KOEASIAKAS - 2 [1]
+11.3.2014 13:09:29:  - Unable to create customer - No email value
+11.3.2014 13:09:29: - Customer KOEASIAKAS - 3 [1]
+11.3.2014 13:09:29:  - Unable to create customer - No email value
+11.3.2014 13:09:29: - Customer LEOKO - 1 [2]
+11.3.2014 13:09:29:  - Unable to create customer - No email value
+11.3.2014 13:09:29: - Customer KEMINMAAN FYSIOTERAPIA OY PAJUJÄRVI MARKKU - 1 [3]
+11.3.2014 13:09:29:  - Unable to create customer - No email value
+11.3.2014 13:09:29: - Customer SÄPPI ARI - 1 [4]
+11.3.2014 13:09:29:  - Unable to create customer - No email value
+11.3.2014 13:09:30: - Customer LAPPEENRANNAN FYSIKAALINEN HOITOPALVELU OY/FS - 1 [5]
+11.3.2014 13:09:31:  - Shopify Customer [216595221] updated.
+11.3.2014 13:09:31: - Customer HIERONTAPALVELU ELVIIRA SAMSONOV - 1 [10]
+11.3.2014 13:09:31:  - Unable to create customer - No email value
+11.3.2014 13:09:31: - Customer NYMAN SIRPA - 1 [11]
+11.3.2014 13:09:31:  - Unable to create customer - No email value
+11.3.2014 13:09:31: - Customer EKLUND GÖRAN - 1 [12]
+11.3.2014 13:09:31:  - Unable to create customer - No email value
+11.3.2014 13:09:31: - Customer PELTOKORPI JARMO - 1 [13]
+11.3.2014 13:09:31:  - Unable to create customer - No email value
+11.3.2014 13:09:31: - Customer LAMPIMÄKI PASI - 1 [15]
+11.3.2014 13:09:31:  - Unable to create customer - No email value
+11.3.2014 13:09:31: - Customer NAPRAPATKESKUS OY VEHVILÄINEN SEPPO - 1 [16]
+11.3.2014 13:09:32:  - Shopify Customer [216595229] updated.
+11.3.2014 13:09:32: - Customer BOREALIS POLYMERS OY - 1 [18]
+11.3.2014 13:09:32:  - Unable to create customer - No email value
+11.3.2014 13:09:32: - Customer URHEILU PAJALA OY - 1 [20]
+11.3.2014 13:09:32:  - Unable to create customer - No email value
+11.3.2014 13:09:32: - Customer HIERONTAPISTE KAIHOVAARA OSSI - 1 [22]
+11.3.2014 13:09:32:  - Shopify Customer [216595237] updated.
+11.3.2014 13:09:32: - Customer KAUNEUSKEIDAS MIRVA OY - 1 [23]
+11.3.2014 13:09:33:  - Shopify Customer [216595241] updated.
+11.3.2014 13:09:33: - Customer MEHILÄINEN OY LIIKUNTALÄÄKETIETEEN KLINIKKA - 1 [24]
+11.3.2014 13:09:33:  - Shopify Customer [216595245] updated.
+11.3.2014 13:09:33: - Customer MEHILÄINEN OY LIIKUNTALÄÄKETIETEEN KLINIKKA - 2 [24]
+11.3.2014 13:09:33:  - Unable to create customer - No email value
+11.3.2014 13:09:33: - Customer MAGGIEN TERAPIA T:MI - 1 [25]
+11.3.2014 13:09:33:  - Unable to create customer - No email value
+11.3.2014 13:09:33: - Customer INTERSPORT JÄMSÄ - 1 [27]
+11.3.2014 13:09:33:  - Unable to create customer - No email value
+11.3.2014 13:09:33: - Customer KUOPION ORTOFYSIO OY - 1 [28]
+11.3.2014 13:09:33: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "PL 92",
+    "address2": null,
+    "city": "KUOPIO",
+    "company": "KUOPION ORTOFYSIO OY",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "PAAVO",
+    "id": null,
+    "last_name": "PARVIAINEN",
+    "phone": "017-2822122",
+    "province_code": null,
+    "zip": "70101"
+  },
+  "first_name": "PAAVO",
+  "last_name": "PARVIAINEN",
+  "email": "ortofysio@fysiowellness.fi",
+  "tags": "+C28, +P2",
+  "addresses": [
+    {
+      "address1": "PL 92",
+      "address2": null,
+      "city": "KUOPIO",
+      "company": "KUOPION ORTOFYSIO OY",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "PAAVO",
+      "id": null,
+      "last_name": "PARVIAINEN",
+      "phone": "017-2822122",
+      "province_code": null,
+      "zip": "70101"
+    }
+  ]
+}}
+11.3.2014 13:09:34: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 151**************
+11.3.2014 13:09:34: - Customer HOLIDAY CLUB VESILEPPIS - 1 [29]
+11.3.2014 13:09:34:  - Shopify Customer [216595265] updated.
+11.3.2014 13:09:34: - Customer M-FYSIO FS - 1 [31]
+11.3.2014 13:09:35:  - Shopify Customer [216595273] updated.
+11.3.2014 13:09:35: - Customer ALAVIESKAN SPORT KY - 1 [35]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer LOISA SINIKKA - 1 [36]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer LUKKARINKOULU - 1 [39]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer JOKELA ARJA - 1 [40]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer JRC-MARKKINOINTI OY - 1 [42]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer KAUPPINEN ARTO - 1 [44]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer KARJAAN LÄÄKÄRIKESKUS - 1 [45]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer SKOG MIMI KY KB - 1 [46]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer ERIKSSON RITVA - 1 [47]
+11.3.2014 13:09:35:  - Unable to create customer - No email value
+11.3.2014 13:09:35: - Customer KANGASALAN LÄÄKINTÄVOIMISTELU - 1 [230]
+11.3.2014 13:09:36:  - Shopify Customer [216595281] updated.
+11.3.2014 13:09:36: - Customer LAIHO KIMMO - 1 [396]
+11.3.2014 13:09:36:  - Unable to create customer - No email value
+11.3.2014 13:09:36: - Customer VUOKSEN HIERONTAPISTE - 1 [542]
+11.3.2014 13:09:36:  - Unable to create customer - No email value
+11.3.2014 13:09:36: - Customer VILPPULAN FYSIO OY - 1 [1153]
+11.3.2014 13:09:36:  - Shopify Customer [216595285] updated.
+11.3.2014 13:09:36: - Customer URHEILUFYSIO ELJAS  HIETANEN FS - 1 [708]
+11.3.2014 13:09:37:  - Shopify Customer [216595289] updated.
+11.3.2014 13:09:37: - Customer PALVELUKESKUS HENRIKINHOVI - 1 [1001]
+11.3.2014 13:09:37:  - Unable to create customer - No email value
+11.3.2014 13:09:37: - Customer KAAKON KUNTOHOITO - 1 [1247]
+11.3.2014 13:09:37:  - Shopify Customer [216595293] updated.
+11.3.2014 13:09:37: - Customer KEMIJÄRVEN LÄÄKINTÄVOIMISTELU - 1 [1644]
+11.3.2014 13:09:38:  - Shopify Customer [216595297] updated.
+11.3.2014 13:09:38: - Customer LAUKAAN FYSIKAALINEN HOITO JA TUTKIMUSLAITOS - 1 [1400]
+11.3.2014 13:09:38:  - Shopify Customer [216595301] updated.
+11.3.2014 13:09:38: - Customer KUANKOSKEN TK - 1 [1508]
+11.3.2014 13:09:38:  - Unable to create customer - No email value
+11.3.2014 13:09:38: - Customer VARALAN URHEILUOPISTO - 1 [1666]
+11.3.2014 13:09:39:  - Shopify Customer [216595309] updated.
+11.3.2014 13:09:39: - Customer VARALAN URHEILUOPISTO - 2 [1666]
+11.3.2014 13:09:39:  - Shopify Customer [216595313] updated.
+11.3.2014 13:09:39: - Customer VARALAN URHEILUOPISTO - 3 [1666]
+11.3.2014 13:09:39:  - Shopify Customer [216595317] updated.
+11.3.2014 13:09:39: - Customer VARALAN URHEILUOPISTO - 4 [1666]
+11.3.2014 13:09:40:  - Shopify Customer [216595321] updated.
+11.3.2014 13:09:40: - Customer KULOSAAREN FYS.HL. - 1 [1908]
+11.3.2014 13:09:40:  - Unable to create customer - No email value
+11.3.2014 13:09:40: - Customer HELSINGIN KAUPUNKI SAIRAALA-APTEEKKI - 1 [69357]
+11.3.2014 13:09:40:  - Unable to create customer - No email value
+11.3.2014 13:09:40: - Customer SAIMAAN FYSIOTERAPIA - 1 [2203]
+11.3.2014 13:09:40:  - Unable to create customer - No email value
+11.3.2014 13:09:40: - Customer JOKILAAKSON SAIRAALA KESKUSVARASTO - 1 [2547]
+11.3.2014 13:09:40:  - Unable to create customer - No email value
+11.3.2014 13:09:40: - Customer JURVANEN RAILI - 1 [2736]
+11.3.2014 13:09:40:  - Unable to create customer - No email value
+11.3.2014 13:09:40: - Customer KESTILÄN FYS.HL. - 1 [2935]
+11.3.2014 13:09:40: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "HALLINTOKATU 3",
+    "address2": null,
+    "city": "KESTILÄ",
+    "company": "KESTILÄN FYS.HL.",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "08-8122665",
+    "province_code": null,
+    "zip": "92700"
+  },
+  "first_name": "KESTILÄN",
+  "last_name": "FYS.HL.",
+  "email": "muhos@muhoksenfysioterapia.fi",
+  "tags": "+C2935, +P2",
+  "addresses": [
+    {
+      "address1": "HALLINTOKATU 3",
+      "address2": null,
+      "city": "KESTILÄ",
+      "company": "KESTILÄN FYS.HL.",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "08-8122665",
+      "province_code": null,
+      "zip": "92700"
+    }
+  ]
+}}
+11.3.2014 13:09:41: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 151**************
+11.3.2014 13:09:41: - Customer VÄHÄMÄKI IRMA - 1 [3206]
+11.3.2014 13:09:41:  - Unable to create customer - No email value
+11.3.2014 13:09:41: - Customer NIKULA RISTO - 1 [3477]
+11.3.2014 13:09:41:  - Unable to create customer - No email value
+11.3.2014 13:09:41: - Customer MYLLYKOTI OY - 1 [3551]
+11.3.2014 13:09:42:  - Shopify Customer [216595329] updated.
+11.3.2014 13:12:23: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:12:23. ==
+11.3.2014 13:12:23: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:12:24: 
+72162 customers found in Visma database.
+11.3.2014 13:12:24: - Customer KOEASIAKAS - 1 [1]
+11.3.2014 13:12:24:  - Unable to create customer - No email value
+11.3.2014 13:12:24: - Customer KOEASIAKAS - 2 [1]
+11.3.2014 13:12:24:  - Unable to create customer - No email value
+11.3.2014 13:12:24: - Customer KOEASIAKAS - 3 [1]
+11.3.2014 13:12:24:  - Unable to create customer - No email value
+11.3.2014 13:12:24: - Customer LEOKO - 1 [2]
+11.3.2014 13:12:24:  - Unable to create customer - No email value
+11.3.2014 13:12:24: - Customer KEMINMAAN FYSIOTERAPIA OY PAJUJÄRVI MARKKU - 1 [3]
+11.3.2014 13:12:24:  - Unable to create customer - No email value
+11.3.2014 13:12:25: - Customer SÄPPI ARI - 1 [4]
+11.3.2014 13:12:25:  - Unable to create customer - No email value
+11.3.2014 13:12:25: - Customer LAPPEENRANNAN FYSIKAALINEN HOITOPALVELU OY/FS - 1 [5]
+11.3.2014 13:12:26:  - Shopify Customer [216595221] updated.
+11.3.2014 13:12:26: - Customer HIERONTAPALVELU ELVIIRA SAMSONOV - 1 [10]
+11.3.2014 13:12:26:  - Unable to create customer - No email value
+11.3.2014 13:12:26: - Customer NYMAN SIRPA - 1 [11]
+11.3.2014 13:12:26:  - Unable to create customer - No email value
+11.3.2014 13:12:26: - Customer EKLUND GÖRAN - 1 [12]
+11.3.2014 13:12:26:  - Unable to create customer - No email value
+11.3.2014 13:12:26: - Customer PELTOKORPI JARMO - 1 [13]
+11.3.2014 13:12:26:  - Unable to create customer - No email value
+11.3.2014 13:12:26: - Customer LAMPIMÄKI PASI - 1 [15]
+11.3.2014 13:12:26:  - Unable to create customer - No email value
+11.3.2014 13:12:26: - Customer NAPRAPATKESKUS OY VEHVILÄINEN SEPPO - 1 [16]
+11.3.2014 13:12:27:  - Shopify Customer [216595229] updated.
+11.3.2014 13:12:27: - Customer BOREALIS POLYMERS OY - 1 [18]
+11.3.2014 13:12:27:  - Unable to create customer - No email value
+11.3.2014 13:12:27: - Customer URHEILU PAJALA OY - 1 [20]
+11.3.2014 13:12:27:  - Unable to create customer - No email value
+11.3.2014 13:12:27: - Customer HIERONTAPISTE KAIHOVAARA OSSI - 1 [22]
+11.3.2014 13:12:27:  - Shopify Customer [216595237] updated.
+11.3.2014 13:12:28: - Customer KAUNEUSKEIDAS MIRVA OY - 1 [23]
+11.3.2014 13:12:28:  - Shopify Customer [216595241] updated.
+11.3.2014 13:12:28: - Customer MEHILÄINEN OY LIIKUNTALÄÄKETIETEEN KLINIKKA - 1 [24]
+11.3.2014 13:12:28:  - Shopify Customer [216595245] updated.
+11.3.2014 13:12:28: - Customer MEHILÄINEN OY LIIKUNTALÄÄKETIETEEN KLINIKKA - 2 [24]
+11.3.2014 13:12:28:  - Unable to create customer - No email value
+11.3.2014 13:12:28: - Customer MAGGIEN TERAPIA T:MI - 1 [25]
+11.3.2014 13:12:28:  - Unable to create customer - No email value
+11.3.2014 13:12:29: - Customer INTERSPORT JÄMSÄ - 1 [27]
+11.3.2014 13:12:29:  - Unable to create customer - No email value
+11.3.2014 13:12:29: - Customer KUOPION ORTOFYSIO OY - 1 [28]
+11.3.2014 13:12:29: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "PL 92",
+    "address2": null,
+    "city": "KUOPIO",
+    "company": "KUOPION ORTOFYSIO OY",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "PAAVO",
+    "id": null,
+    "last_name": "PARVIAINEN",
+    "phone": "017-2822122",
+    "province_code": null,
+    "zip": "70101"
+  },
+  "first_name": "PAAVO",
+  "last_name": "PARVIAINEN",
+  "email": "ortofysio@fysiowellness.fi",
+  "tags": "+C28, +P2",
+  "addresses": [
+    {
+      "address1": "PL 92",
+      "address2": null,
+      "city": "KUOPIO",
+      "company": "KUOPION ORTOFYSIO OY",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "PAAVO",
+      "id": null,
+      "last_name": "PARVIAINEN",
+      "phone": "017-2822122",
+      "province_code": null,
+      "zip": "70101"
+    }
+  ]
+}}
+11.3.2014 13:12:29: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 161**************
+11.3.2014 13:12:29: - Customer HOLIDAY CLUB VESILEPPIS - 1 [29]
+11.3.2014 13:12:29:  - Shopify Customer [216595265] updated.
+11.3.2014 13:12:30: - Customer M-FYSIO FS - 1 [31]
+11.3.2014 13:12:30:  - Shopify Customer [216595273] updated.
+11.3.2014 13:12:30: - Customer ALAVIESKAN SPORT KY - 1 [35]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer LOISA SINIKKA - 1 [36]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer LUKKARINKOULU - 1 [39]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer JOKELA ARJA - 1 [40]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer JRC-MARKKINOINTI OY - 1 [42]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer KAUPPINEN ARTO - 1 [44]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer KARJAAN LÄÄKÄRIKESKUS - 1 [45]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer SKOG MIMI KY KB - 1 [46]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer ERIKSSON RITVA - 1 [47]
+11.3.2014 13:12:30:  - Unable to create customer - No email value
+11.3.2014 13:12:30: - Customer KANGASALAN LÄÄKINTÄVOIMISTELU - 1 [230]
+11.3.2014 13:12:31:  - Shopify Customer [216595281] updated.
+11.3.2014 13:12:31: - Customer LAIHO KIMMO - 1 [396]
+11.3.2014 13:12:31:  - Unable to create customer - No email value
+11.3.2014 13:12:31: - Customer VUOKSEN HIERONTAPISTE - 1 [542]
+11.3.2014 13:12:31:  - Unable to create customer - No email value
+11.3.2014 13:12:31: - Customer VILPPULAN FYSIO OY - 1 [1153]
+11.3.2014 13:12:31:  - Shopify Customer [216595285] updated.
+11.3.2014 13:12:31: - Customer URHEILUFYSIO ELJAS  HIETANEN FS - 1 [708]
+11.3.2014 13:12:32:  - Shopify Customer [216595289] updated.
+11.3.2014 13:12:32: - Customer PALVELUKESKUS HENRIKINHOVI - 1 [1001]
+11.3.2014 13:12:32:  - Unable to create customer - No email value
+11.3.2014 13:12:32: - Customer KAAKON KUNTOHOITO - 1 [1247]
+11.3.2014 13:12:32:  - Shopify Customer [216595293] updated.
+11.3.2014 13:12:32: - Customer KEMIJÄRVEN LÄÄKINTÄVOIMISTELU - 1 [1644]
+11.3.2014 13:12:33:  - Shopify Customer [216595297] updated.
+11.3.2014 13:12:33: - Customer LAUKAAN FYSIKAALINEN HOITO JA TUTKIMUSLAITOS - 1 [1400]
+11.3.2014 13:12:33:  - Shopify Customer [216595301] updated.
+11.3.2014 13:12:33: - Customer KUANKOSKEN TK - 1 [1508]
+11.3.2014 13:12:33:  - Unable to create customer - No email value
+11.3.2014 13:12:33: - Customer VARALAN URHEILUOPISTO - 1 [1666]
+11.3.2014 13:12:34:  - Shopify Customer [216595309] updated.
+11.3.2014 13:12:34: - Customer VARALAN URHEILUOPISTO - 2 [1666]
+11.3.2014 13:12:34:  - Shopify Customer [216595313] updated.
+11.3.2014 13:12:34: - Customer VARALAN URHEILUOPISTO - 3 [1666]
+11.3.2014 13:12:34:  - Shopify Customer [216595317] updated.
+11.3.2014 13:12:34: - Customer VARALAN URHEILUOPISTO - 4 [1666]
+11.3.2014 13:12:35:  - Shopify Customer [216595321] updated.
+11.3.2014 13:12:35: - Customer KULOSAAREN FYS.HL. - 1 [1908]
+11.3.2014 13:12:35:  - Unable to create customer - No email value
+11.3.2014 13:12:35: - Customer HELSINGIN KAUPUNKI SAIRAALA-APTEEKKI - 1 [69357]
+11.3.2014 13:12:35:  - Unable to create customer - No email value
+11.3.2014 13:12:35: - Customer SAIMAAN FYSIOTERAPIA - 1 [2203]
+11.3.2014 13:12:35:  - Unable to create customer - No email value
+11.3.2014 13:12:35: - Customer JOKILAAKSON SAIRAALA KESKUSVARASTO - 1 [2547]
+11.3.2014 13:12:35:  - Unable to create customer - No email value
+11.3.2014 13:12:35: - Customer JURVANEN RAILI - 1 [2736]
+11.3.2014 13:12:35:  - Unable to create customer - No email value
+11.3.2014 13:12:35: - Customer KESTILÄN FYS.HL. - 1 [2935]
+11.3.2014 13:12:35: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "HALLINTOKATU 3",
+    "address2": null,
+    "city": "KESTILÄ",
+    "company": "KESTILÄN FYS.HL.",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "08-8122665",
+    "province_code": null,
+    "zip": "92700"
+  },
+  "first_name": "KESTILÄN",
+  "last_name": "FYS.HL.",
+  "email": "muhos@muhoksenfysioterapia.fi",
+  "tags": "+C2935, +P2",
+  "addresses": [
+    {
+      "address1": "HALLINTOKATU 3",
+      "address2": null,
+      "city": "KESTILÄ",
+      "company": "KESTILÄN FYS.HL.",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "08-8122665",
+      "province_code": null,
+      "zip": "92700"
+    }
+  ]
+}}
+11.3.2014 13:12:35: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 161**************
+11.3.2014 13:12:35: - Customer VÄHÄMÄKI IRMA - 1 [3206]
+11.3.2014 13:12:35:  - Unable to create customer - No email value
+11.3.2014 13:12:36: - Customer NIKULA RISTO - 1 [3477]
+11.3.2014 13:12:36:  - Unable to create customer - No email value
+11.3.2014 13:12:36: - Customer MYLLYKOTI OY - 1 [3551]
+11.3.2014 13:12:36:  - Shopify Customer [216595329] updated.
+11.3.2014 13:12:36: - Customer KOTKANSAAREN TYÖTERV.AS. - 1 [3638]
+11.3.2014 13:12:36:  - Unable to create customer - No email value
+11.3.2014 13:12:36: - Customer VIRTAIN TERVEYSKESKUS TYÖTERVEYSHUOLTO - 1 [3737]
+11.3.2014 13:12:37:  - Shopify Customer [216595333] updated.
+11.3.2014 13:12:37: - Customer RUUKIN TERVEYSASEMA - 1 [3820]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer PAHKALA ERKKI - 1 [3940]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer NURMEKSEN LÄÄKÄRIKESKUS FYSIOTERAPIA - 1 [4039]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer IITTALAN PALLO - 1 [4135]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer VENÄLÄINEN RISTO - 1 [4358]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer SALMI TARJA - 1 [4586]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer NIEMINEN LEEA - 1 [4891]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer COHERENT TUTCORE - 1 [14406]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer SULONEN TAINA - 1 [14407]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer BC-FYSIOPALVELU - 1 [14408]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer VANTAAN KAUPUNKI SOS.- JA TK - 1 [14409]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer JOKINEN KARI - 1 [69121]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer VANTAAN KAUPUNKI/KOIVUKYLÄN SOSTER. ASEMA LÄÄKINNÄL. KUNT. - 1 [14411]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer TAMMELAN PALVELUKESKUS - 1 [14413]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer DESIGNER OY AB IITTALANLASI - 1 [14415]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer K-SUPERMARKET FORUM OY - 1 [14417]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:37: - Customer VIHNUSKOTI - 1 [14418]
+11.3.2014 13:12:37:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer LONKA VELI-MARTTI - 1 [14420]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer NERVANDER BRITT - 1 [14422]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer WALHROOS KIRSI - 1 [14423]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer HAANPÄÄ JARNO - 1 [14424]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer ERKKILÄ AILA - 1 [14426]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer RAVELIN AIMO - 1 [14427]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer HOITOLA HYVÄOLO - 1 [14430]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer MÄHÖNEN MIKKO - 1 [14433]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer JYRKÄS SOILE - 1 [14434]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer AROLA SAMI - 1 [14436]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer OK SALONKI - 1 [14438]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer JÄMSÄNKOSKEN VANHUSTEN PALVELUKESKUS LINNAKOSKEN VANHAINKOTI - 1 [14440]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer SATAKUNNAN VANKILA HUITTISTEN OSASTO - 1 [70354]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer SATAKUNNAN VANKILA HUITTISTEN OSASTO - 2 [70354]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer KANGASALAN KUNTA PÄIVÄKOTI KONTTI - 1 [14445]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer ESTABROOK TEIJA - 1 [14446]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer BRITTA SOINI - 1 [68276]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer PALVELUKESKUS HARJUKOTI - 1 [14448]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer LIETO/VAPAAN SIVISTYSTOIMENLTK - 1 [14451]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer KÄRKKÄINEN SEIJA - 1 [14453]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer TASOKALUSTE / UNITASO - 1 [14454]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer VUORINEN ERJA - 1 [14455]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer FYSIOFORUM - 1 [14456]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:38: - Customer VUORIJÄRVI MARINA / MÄKELÄN- - 1 [14457]
+11.3.2014 13:12:38:  - Unable to create customer - No email value
+11.3.2014 13:12:39: - Customer VETREA TERVEYS OY - 1 [70487]
+11.3.2014 13:12:39:  - Unable to create customer - No email value
+11.3.2014 13:12:39: - Customer Bäck Tom - 1 [85461]
+11.3.2014 13:12:39:  - Shopify Customer [216595349] updated.
+11.3.2014 13:12:39: - Customer PALVELUTALO RUDOLF - 1 [14460]
+11.3.2014 13:12:39:  - Unable to create customer - No email value
+11.3.2014 13:12:39: - Customer PALVELUTALO RUDOLF - 2 [14460]
+11.3.2014 13:12:39:  - Unable to create customer - No email value
+11.3.2014 13:12:39: - Customer SJÖBERG STEN-OLOF - 1 [14461]
+11.3.2014 13:12:39:  - Unable to create customer - No email value
+11.3.2014 13:12:39: - Customer PALVELUKESKUS RANTALA - 1 [14462]
+11.3.2014 13:12:39:  - Unable to create customer - No email value
+11.3.2014 13:12:39: - Customer VANHAINKOTI KÄSKYNKKÄ - 1 [14463]
+11.3.2014 13:12:40:  - Shopify Customer [216595353] updated.
+11.3.2014 13:12:40: - Customer KYRÖSKOSKEN LUONTAISTUOTE - 1 [14464]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer OPUSCAPITA OY - 1 [601030]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer VESA JANNE - 1 [70363]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer RESONIA LEASING - 1 [14467]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer KUMMU PAULA - 1 [14468]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer KORVA SUSANNA - 1 [14469]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer GOALAS - 1 [70380]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer LINDQVIST RAIMO - 1 [14473]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer KESKI-UUDENMAAN VEROTOIMISTO TAPIO HALMETOJA - 1 [14475]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:40: - Customer VELLAMONTUPA - 1 [14476]
+11.3.2014 13:12:40:  - Unable to create customer - No email value
+11.3.2014 13:12:41: - Customer SOLVALLAN URHEILUOPISTO FOLKHÄLSAN UTBILDNING AB - 1 [14478]
+11.3.2014 13:12:41:  - Shopify Customer [216595357] updated.
+11.3.2014 13:12:41: - Customer SOLVALLAN URHEILUOPISTO FOLKHÄLSAN UTBILDNING AB - 2 [14478]
+11.3.2014 13:12:41:  - Shopify Customer [216595361] updated.
+11.3.2014 13:12:41: - Customer SOLVALLAN URHEILUOPISTO FOLKHÄLSAN UTBILDNING AB - 3 [14478]
+11.3.2014 13:12:42:  - Shopify Customer [216595369] updated.
+11.3.2014 13:12:42: - Customer SOLVALLAN URHEILUOPISTO FOLKHÄLSAN UTBILDNING AB - 4 [14478]
+11.3.2014 13:12:42:  - Shopify Customer [216595377] updated.
+11.3.2014 13:12:42: - Customer SOLVALLAN URHEILUOPISTO FOLKHÄLSAN UTBILDNING AB - 5 [14478]
+11.3.2014 13:12:43:  - Shopify Customer [216595381] updated.
+11.3.2014 13:12:43: - Customer SOLVALLAN URHEILUOPISTO FOLKHÄLSAN UTBILDNING AB - 6 [14478]
+11.3.2014 13:13:21: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:13:21. ==
+11.3.2014 13:13:21: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:13:23: 
+17205 products found in Visma database.
+11.3.2014 13:13:25:  - Article S3000 EVOLO LUKKOMEKANISMI RIIPPULUKOLLE [0002_02]
+11.3.2014 13:13:26:  - Delivery date: 
+11.3.2014 13:13:28:  - Shopify Product [261309361] updated.
+11.3.2014 13:13:28:  - Article S3000 EVOLO RIIPPULUKKO [0002_10]
+11.3.2014 13:13:28:  - Delivery date: 
+11.3.2014 13:13:29:  - Shopify Product [261309373] updated.
+11.3.2014 13:13:30:  - Article AQUAJOGGER CLASSIC VESIJUOKSUVYÖ [00101]
+11.3.2014 13:13:30:  - Delivery date: 
+11.3.2014 13:13:31:  - Shopify Product [261309393] updated.
+11.3.2014 13:13:31:  - Article AQUAJOGGER VARAOSAVYÖ [00101belt]
+11.3.2014 13:13:31:  - Delivery date: 
+11.3.2014 13:13:32:  - Shopify Product [261309429] updated.
+11.3.2014 13:13:34:  - Article Cortex Personal-Use Mask incl Harness [010_00_041]
+11.3.2014 13:13:34:  - Delivery date: 
+11.3.2014 13:16:35: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:16:35. ==
+11.3.2014 13:16:35: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:16:36: 
+17205 products found in Visma database.
+11.3.2014 13:16:38:  - Article S3000 EVOLO LUKKOMEKANISMI RIIPPULUKOLLE [0002_02]
+11.3.2014 13:16:38:  - Delivery date: 
+11.3.2014 13:16:42:  - Shopify Product [261309361] updated.
+11.3.2014 13:16:42:  - Article S3000 EVOLO RIIPPULUKKO [0002_10]
+11.3.2014 13:16:42:  - Delivery date: 
+11.3.2014 13:16:43:  - Shopify Product [261309373] updated.
+11.3.2014 13:16:44:  - Article AQUAJOGGER CLASSIC VESIJUOKSUVYÖ [00101]
+11.3.2014 13:16:44:  - Delivery date: 
+11.3.2014 13:16:45:  - Shopify Product [261309393] updated.
+11.3.2014 13:16:45:  - Article AQUAJOGGER VARAOSAVYÖ [00101belt]
+11.3.2014 13:16:45:  - Delivery date: 
+11.3.2014 13:16:46:  - Shopify Product [261309429] updated.
+11.3.2014 13:16:48:  - Article Cortex Personal-Use Mask incl Harness [010_00_041]
+11.3.2014 13:16:48:  - Delivery date: 
+11.3.2014 13:17:22: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:17:21. ==
+11.3.2014 13:17:22: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:17:22: 
+17205 products found in Visma database.
+11.3.2014 13:17:24:  - Article S3000 EVOLO LUKKOMEKANISMI RIIPPULUKOLLE [0002_02]
+11.3.2014 13:17:26:  - Shopify Product [261309361] updated.
+11.3.2014 13:17:26:  - Article S3000 EVOLO RIIPPULUKKO [0002_10]
+11.3.2014 13:17:27:  - Shopify Product [261309373] updated.
+11.3.2014 13:17:27:  - Article AQUAJOGGER CLASSIC VESIJUOKSUVYÖ [00101]
+11.3.2014 13:17:28:  - Shopify Product [261309393] updated.
+11.3.2014 13:17:28:  - Article AQUAJOGGER VARAOSAVYÖ [00101belt]
+11.3.2014 13:17:30:  - Shopify Product [261309429] updated.
+11.3.2014 13:17:31:  - Article Cortex Personal-Use Mask incl Harness [010_00_041]
+11.3.2014 13:17:32:  - Shopify Product [261309465] updated.
+11.3.2014 13:17:32:  - Article WRANGE LEVYPAINO 1,25KG MUSTA [0125]
+11.3.2014 13:17:34:  - Shopify Product [261309485] updated.
+11.3.2014 13:17:35:  - Article Ergolet Luna basic horizontal [015-01910]
+11.3.2014 13:18:07: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:18:07. ==
+11.3.2014 13:18:07: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:18:07: 
+Loading Pricelist specific prices.
+11.3.2014 13:18:08: Pricelist 0 has 50 specific prices.
+11.3.2014 13:18:09: Pricelist 1 has 138 specific prices.
+11.3.2014 13:18:11:  - Shopify Product Variant [605485361] updated for specific price 10154 P1 Q5.
+11.3.2014 13:18:12:  - Shopify Product Variant [605485345] updated for specific price 103_001 P1 Q6.
+11.3.2014 13:18:13:  - Shopify Product Variant [605485289] updated for specific price 106_001 P1 Q6.
+11.3.2014 13:18:13:  - Shopify Product Variant [605485265] updated for specific price 10610 P1 Q9.
+11.3.2014 13:18:14:  - Shopify Product Variant [605485225] updated for specific price 107_001 P1 Q6.
+11.3.2014 13:18:15:  - Shopify Product Variant [605485161] updated for specific price 10701 P1 Q3.
+11.3.2014 13:18:16:  - Shopify Product Variant [605485125] updated for specific price 10721 P1.
+11.3.2014 13:18:17:  - Shopify Product Variant [605485105] updated for specific price 108_001 P1 Q6.
+11.3.2014 13:18:18:  - Shopify Product Variant [605482273] updated for specific price 10903 P1 Q10.
+11.3.2014 13:18:33: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:18:33. ==
+11.3.2014 13:18:33: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:18:33: 
+Loading Orders from Shopify
+11.3.2014 13:18:34: 10 orders loaded.
+11.3.2014 13:18:34: 
+=== Finished update at 11.3.2014 13:18:34.===
+
+
+11.3.2014 13:19:33: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:19:33. ==
+11.3.2014 13:19:33: Last Shopify update: 11.3.2014 13:18:33, Last Visma update: 11.3.2014 13:18:33
+
+11.3.2014 13:19:33: 
+=== Finished update at 11.3.2014 13:19:33.===
+
+
+11.3.2014 13:19:37: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:19:37. ==
+11.3.2014 13:19:37: Last Shopify update: 11.3.2014 13:19:33, Last Visma update: 11.3.2014 13:19:33
+
+11.3.2014 13:19:37: 
+=== Finished update at 11.3.2014 13:19:37.===
+
+
+11.3.2014 13:19:57: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:19:57. ==
+11.3.2014 13:19:57: Last Shopify update: 11.3.2014 13:19:37, Last Visma update: 11.3.2014 13:19:37
+
+11.3.2014 13:19:57: 
+29 customers found in Visma database.
+11.3.2014 13:19:57: - Customer  - 1 [926548]
+11.3.2014 13:19:57:  - Unable to create customer - No email value
+11.3.2014 13:19:57: - Customer  - 1 [926584]
+11.3.2014 13:19:57:  - Unable to create customer - No email value
+11.3.2014 13:19:57: - Customer  - 1 [926071]
+11.3.2014 13:19:57:  - Unable to create customer - No email value
+11.3.2014 13:19:57: - Customer SALLAN KUNTA - 1 [82967]
+11.3.2014 13:19:57:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [925707]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [922073]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [925523]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [926062]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [926045]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [26727]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [923150]
+11.3.2014 13:19:58:  - Unable to create customer - No email value
+11.3.2014 13:19:58: - Customer  - 1 [923246]
+11.3.2014 13:19:59:  - Shopify Customer [216851273] updated.
+11.3.2014 13:19:59: - Customer PELLON KUNTA - 1 [382318]
+11.3.2014 13:19:59:  - Unable to create customer - No email value
+11.3.2014 13:19:59: - Customer  - 1 [923759]
+11.3.2014 13:19:59:  - Unable to create customer - No email value
+11.3.2014 13:19:59: - Customer  - 1 [923751]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [925105]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [924763]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [921646]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [923320]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [922949]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [925887]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [923025]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [90075]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [921137]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [920317]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [924981]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: - Customer  - 1 [920811]
+11.3.2014 13:20:00:  - Unable to create customer - No email value
+11.3.2014 13:20:00: 
+140 products found in Visma database.
+11.3.2014 13:20:01:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+11.3.2014 13:20:02:  - Shopify Product [261377857] updated.
+11.3.2014 13:20:02:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+11.3.2014 13:20:03:  - Shopify Product [261383825] updated.
+11.3.2014 13:20:03:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+11.3.2014 13:20:05:  - Shopify Product [261383833] updated.
+11.3.2014 13:20:05:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+11.3.2014 13:20:06:  - Shopify Product [261383845] updated.
+11.3.2014 13:20:06:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+11.3.2014 13:20:07:  - Shopify Product [261383861] updated.
+11.3.2014 13:20:07:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+11.3.2014 13:20:08:  - Shopify Product [261383873] updated.
+11.3.2014 13:20:08:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+11.3.2014 13:20:09:  - Shopify Product [261383889] updated.
+11.3.2014 13:20:09:  - Article COMMERCIAL SELF GENERATING ELLIPTICAL [WR37007]
+11.3.2014 13:20:11:  - Shopify Product [261383893] updated.
+11.3.2014 13:20:11:  - Article HOME USE ADJUSTABLE STRIDE [WR37008]
+11.3.2014 13:20:12:  - Shopify Product [261383909] updated.
+11.3.2014 13:20:12:  - Article HOME USE FIXED STRIDE [WR37009]
+11.3.2014 13:20:13:  - Shopify Product [261383925] updated.
+11.3.2014 13:20:13:  - Article BEST FITNESS FIXED STRID [WR37010]
+11.3.2014 13:20:14:  - Shopify Product [261383941] updated.
+11.3.2014 13:20:14:  - Article ENDURANCE COMMERCIAL SPIN STYLE BIKE [WR37011]
+11.3.2014 13:20:15:  - Shopify Product [261383949] updated.
+11.3.2014 13:20:15:  - Article COMMERCIAL TREADMILL [WR37012]
+11.3.2014 13:20:17:  - Shopify Product [261383961] updated.
+11.3.2014 13:20:17:  - Article BEST FITNESS SPINNER [WR37013]
+11.3.2014 13:20:18:  - Shopify Product [261383969] updated.
+11.3.2014 13:20:18:  - Article BEST FITNESS CROSS TRAINER [WR37014]
+11.3.2014 13:20:19:  - Shopify Product [261383989] updated.
+11.3.2014 13:20:19:  - Article BEST FITNESS UPRIGHT BIKE [WR37015]
+11.3.2014 13:20:20:  - Shopify Product [261383997] updated.
+11.3.2014 13:20:20:  - Article BEST FITNESS CHAIN DRIVE SPIN STYLE BIKE [WR37016]
+11.3.2014 13:20:21:  - Shopify Product [261384013] updated.
+11.3.2014 13:20:21:  - Article FUSION PERSONAL TRAINER W/210LB STACK [WR37020]
+11.3.2014 13:20:23:  - Shopify Product [261384049] updated.
+11.3.2014 13:20:23:  - Article FUSION PERSONAL TRAINER W/ 310LB STACK [WR37021]
+11.3.2014 13:20:24:  - Shopify Product [261384061] updated.
+11.3.2014 13:20:24:  - Article FUSION PERSONAL TRAINER BI-ANGULAR W/210LB [WR37022]
+11.3.2014 13:20:25:  - Shopify Product [261384073] updated.
+11.3.2014 13:20:25:  - Article FUSION PERSONAL TRAINER BIANGULAR W/ 310LB [WR37023]
+11.3.2014 13:20:26:  - Shopify Product [261384081] updated.
+11.3.2014 13:20:26:  - Article LEG PRESS ATTACHMENT [WR37024]
+11.3.2014 13:20:27:  - Shopify Product [261384097] updated.
+11.3.2014 13:20:27:  - Article MULTI HIP ATTACHMENT [WR37025]
+11.3.2014 13:20:28:  - Shopify Product [261384109] updated.
+11.3.2014 13:20:28:  - Article PULLEY AREA SHROUD PLASTIC [WR37027]
+11.3.2014 13:20:30:  - Shopify Product [261384129] updated.
+11.3.2014 13:20:30:  - Article PULLEY AREA SHROUD METAL [WR37028]
+11.3.2014 13:20:31:  - Shopify Product [261384145] updated.
+11.3.2014 13:20:31:  - Article CABLE COLUMN ATTACHENT [WR37031]
+11.3.2014 13:20:32:  - Shopify Product [261384173] updated.
+11.3.2014 13:20:32:  - Article OPTIONAL VKR/DIP STATION [WR37032]
+11.3.2014 13:20:33:  - Shopify Product [261384185] updated.
+11.3.2014 13:20:33:  - Article CABLE COLUMN ATTACHENT [WR37036]
+11.3.2014 13:20:34:  - Shopify Product [261384221] updated.
+11.3.2014 13:20:34:  - Article DOOR FRAME W/ 200LB STACK FOR ATTACHMENTS [WR37037]
+11.3.2014 13:20:36:  - Shopify Product [261384233] updated.
+11.3.2014 13:20:36:  - Article OPTIONAL VKR/DIP FOR EXM3000 [WR37043]
+11.3.2014 13:20:37:  - Shopify Product [261384277] updated.
+11.3.2014 13:20:37:  - Article OPTIONAL LEG PRESS/CALF INCLUDES 210LB [WR37045]
+11.3.2014 13:20:38:  - Shopify Product [261384301] updated.
+11.3.2014 13:20:38:  - Article POWERLINE FREE WEIGHT HOME GYM [WR37047]
+11.3.2014 13:20:39:  - Shopify Product [261384317] updated.
+11.3.2014 13:20:39:  - Article POWERLINE LEG PRESS FOR P1X/P2X [WR37050]
+11.3.2014 13:20:40:  - Shopify Product [261384345] updated.
+11.3.2014 13:20:40:  - Article P2X METAL SHROUD OPTION [WR37051]
+11.3.2014 13:20:41:  - Shopify Product [261384361] updated.
+11.3.2014 13:20:41:  - Article LEG PRESS FOR BSG10X [WR37053]
+11.3.2014 13:20:43:  - Shopify Product [261384385] updated.
+11.3.2014 13:20:43:  - Article LEVERAGE CALF SQUAT ATTACHMENT [WR37058]
+11.3.2014 13:20:44:  - Shopify Product [261384405] updated.
+11.3.2014 13:20:44:  - Article SERIES 7 SMITH SYSTEM ALL OPTIONS PACKAGE [WR37062]
+11.3.2014 13:20:45:  - Shopify Product [261384445] updated.
+11.3.2014 13:20:45:  - Article 150LB STACK [WR37064]
+11.3.2014 13:20:46:  - Shopify Product [261384461] updated.
+11.3.2014 13:20:46:  - Article POWERLINE SMITH MACHINE SYSTEM [WR37065]
+11.3.2014 13:20:47:  - Shopify Product [261384465] updated.
+11.3.2014 13:20:47:  - Article LAT ATTACHMENT FOR GPR378 [WR37067]
+11.3.2014 13:20:49:  - Shopify Product [261384481] updated.
+11.3.2014 13:20:49:  - Article 200LB STACK  FOR GLA378 [WR37068]
+11.3.2014 13:20:50:  - Shopify Product [261384493] updated.
+11.3.2014 13:20:50:  - Article POWERLINE SQUAT RACK [WR37071]
+11.3.2014 13:20:51:  - Shopify Product [261384509] updated.
+11.3.2014 13:20:51:  - Article LEVERAGE FID BENCH W/ LEG DEVELOPER [WR37078]
+11.3.2014 13:20:52:  - Shopify Product [261384541] updated.
+11.3.2014 13:20:52:  - Article LEG DEV/PREACHER CURL FOR BFFID10 [WR37081]
+11.3.2014 13:20:53:  - Shopify Product [261384561] updated.
+11.3.2014 13:20:53:  - Article OPTIONAL PULL-UP/CHIN-UP HANDLES [WR37085]
+11.3.2014 13:20:55:  - Shopify Product [261384593] updated.
+11.3.2014 13:20:55:  - Article 50LB ADD-ON WEIGHT [WR37087]
+11.3.2014 13:20:56:  - Shopify Product [261384601] updated.
+11.3.2014 13:20:56:  - Article ACCESSORY RACK FOR GCC200/210 [WR37089]
+11.3.2014 13:20:57:  - Shopify Product [261384617] updated.
+11.3.2014 13:20:57:  - Article 4´ PADDED BAR FOR GDCC200/210 [WR37090]
+11.3.2014 13:20:58:  - Shopify Product [261384621] updated.
+11.3.2014 13:20:58:  - Article BI/TRI MACHINE WITH 210LB STACK [WR37095]
+11.3.2014 13:20:59:  - Shopify Product [261384649] updated.
+11.3.2014 13:20:59:  - Article POWERLINE AB BOARD [WR37099]
+11.3.2014 13:21:01:  - Shopify Product [261384669] updated.
+11.3.2014 13:21:01:  - Article INVERSION TABLE [WR37105]
+11.3.2014 13:21:02:  - Shopify Product [261384749] updated.
+11.3.2014 13:21:02:  - Article AB BACK MACHINE WITH 210LB STACK [WR37106]
+11.3.2014 13:21:03:  - Shopify Product [261384757] updated.
+11.3.2014 13:21:03:  - Article INNER/OUTER THIGH W/ 210LB STACK [WR37121]
+11.3.2014 13:21:04:  - Shopify Product [261384909] updated.
+11.3.2014 13:21:04:  - Article EZ LOAD WEIGHT TREE STANDARD [WR37138]
+11.3.2014 13:21:05:  - Shopify Product [261385057] updated.
+11.3.2014 13:21:05:  - Article CHEST PRESS MACHINE WITH 210LB STACK [WR37150]
+11.3.2014 13:21:06:  - Shopify Product [261385229] updated.
+11.3.2014 13:21:06:  - Article CHEST PRESS MACHINE WITH 310LB STACK [WR37151]
+11.3.2014 13:21:08:  - Shopify Product [261385249] updated.
+11.3.2014 13:21:08:  - Article DUAL CABLE COLUMN WITH (2) 165LB STACKS [WR37152]
+11.3.2014 13:21:09:  - Shopify Product [261385257] updated.
+11.3.2014 13:21:09:  - Article DUAL CABLE COLUMN WITH (2) 235LB STACKS [WR37153]
+11.3.2014 13:21:10:  - Shopify Product [261385269] updated.
+11.3.2014 13:21:10:  - Article LEG CURL MACHINE WITH 210LB. STACK [WR37154]
+11.3.2014 13:21:11:  - Shopify Product [261385281] updated.
+11.3.2014 13:21:11:  - Article LEG CURL MACHINE WITH 310LB. STACK [WR37155]
+11.3.2014 13:21:12:  - Shopify Product [261385297] updated.
+11.3.2014 13:21:12:  - Article LEG EXTENSION MACHINE WITH 210LB. STACK [WR37156]
+11.3.2014 13:21:14:  - Shopify Product [261385313] updated.
+11.3.2014 13:21:14:  - Article LEG EXTENSION MACHINE WITH 310LB. STACK [WR37157]
+11.3.2014 13:21:15:  - Shopify Product [261385321] updated.
+11.3.2014 13:21:15:  - Article LAT MACHINE WITH MID ROW 210LB STACK [WR37158]
+11.3.2014 13:21:16:  - Shopify Product [261385333] updated.
+11.3.2014 13:21:16:  - Article LAT MACHINE WITH MID ROW 310LB STACK [WR37159]
+11.3.2014 13:21:18:  - Shopify Product [261385341] updated.
+11.3.2014 13:21:18:  - Article LEG PRESS MACHINE 210LB STACK [WR37160]
+11.3.2014 13:21:19:  - Shopify Product [261385349] updated.
+11.3.2014 13:21:19:  - Article LEG PRESS MACHINE 310LB STACK [WR37161]
+11.3.2014 13:21:21:  - Shopify Product [261385361] updated.
+11.3.2014 13:21:21:  - Article CABLE CROSSOVER W/ 2 160LB STACKS [WR37162]
+11.3.2014 13:21:22:  - Shopify Product [261385365] updated.
+11.3.2014 13:21:22:  - Article CABLE CROSSOVER W/ 2 235LB STACKS [WR37163]
+11.3.2014 13:21:22: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 163
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 568
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:22:  - Article COMMERCIAL SHOULDER PRESS BENCH [WR37166]
+11.3.2014 13:21:23:  - Shopify Product [261385445] updated.
+11.3.2014 13:21:24:  - Article COUNTERBALANCED SMITH MACHINE [WR37167]
+11.3.2014 13:21:25: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 576
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:25:  - Article MULTI RACK POWER SYSTEM [WR37168]
+11.3.2014 13:21:26:  - Shopify Product [261385477] updated.
+11.3.2014 13:21:26:  - Article COMMERCIAL FID BENCH [WR37169]
+11.3.2014 13:21:27:  - Shopify Product [261385493] updated.
+11.3.2014 13:21:27:  - Article 4 STACK BASE NO WEIGHTS [WR37174]
+11.3.2014 13:21:28: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 575
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:29:  - Article INNER OUTER  ATTACHMENT W/ WEIGHTS [WR37176]
+11.3.2014 13:21:30:  - Shopify Product [261385517] updated.
+11.3.2014 13:21:30:  - Article MULTI PRESS ATTACHMENT W/WEIGHTS [WR37178]
+11.3.2014 13:21:31:  - Shopify Product [261385541] updated.
+11.3.2014 13:21:31:  - Article LAT/MID ROW ATTACHMENT W/ WEIGHTS [WR37180]
+11.3.2014 13:21:32:  - Shopify Product [261385549] updated.
+11.3.2014 13:21:32:  - Article PEC/ REAR DELT ATTAACHMENT W/ WEIGHTS [WR37182]
+11.3.2014 13:21:33: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 575
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:33:  - Article LEG PRESS/CALF WITH WEIGHTS [WR37184]
+11.3.2014 13:21:35:  - Shopify Product [261385565] updated.
+11.3.2014 13:21:35:  - Article BICEP /TRICEP ATTACHMENT W/ WEIGHTS [WR37186]
+11.3.2014 13:21:36:  - Shopify Product [261385573] updated.
+11.3.2014 13:21:36:  - Article LEG EXT/ LEG CURL ATTACHMENT W/ WEIGHTS [WR37188]
+11.3.2014 13:21:38:  - Shopify Product [261385585] updated.
+11.3.2014 13:21:38:  - Article AB/ BACK ATTACHMENT W/ WEIGHTS [WR37190]
+11.3.2014 13:21:39:  - Shopify Product [261385597] updated.
+11.3.2014 13:21:39:  - Article CABLE COLUMN ATTACHMENT W/ WEIGHTS [WR37192]
+11.3.2014 13:21:40: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 576
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:40:  - Article CHEST/LAT/ROW ATTACHMENT W/ WEIGHTS [WR37194]
+11.3.2014 13:21:42:  - Shopify Product [261385617] updated.
+11.3.2014 13:21:42:  - Article 300LB WEIGHT STACK OPTION [WR37197]
+11.3.2014 13:21:43:  - Shopify Product [261385625] updated.
+11.3.2014 13:21:43:  - Article LEVERAGE CHEST PRESS [WR37200]
+11.3.2014 13:21:44:  - Shopify Product [261385633] updated.
+11.3.2014 13:21:44:  - Article LEVERAGE INCLINE PRESS [WR37201]
+11.3.2014 13:21:46: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 576
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:46:  - Article LEVERAGE SHOULDER PRESS [WR37202]
+11.3.2014 13:21:47:  - Shopify Product [261385653] updated.
+11.3.2014 13:21:47:  - Article LEVERAGE LEG PRESS [WR37203]
+11.3.2014 13:21:49:  - Shopify Product [261385661] updated.
+11.3.2014 13:21:49:  - Article LEVERAGE LEG EXTENSION [WR37204]
+11.3.2014 13:21:50:  - Shopify Product [261385673] updated.
+11.3.2014 13:21:50:  - Article LEVERAGE LEG CURL [WR37205]
+11.3.2014 13:29:57: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:29:57. ==
+11.3.2014 13:29:57: Last Shopify update: 11.3.2014 13:19:37, Last Visma update: 11.3.2014 13:19:37
+
+11.3.2014 13:29:57: 
+29 customers found in Visma database.
+11.3.2014 13:29:58: - Customer  - 1 [926548]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [926584]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [926071]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer SALLAN KUNTA - 1 [82967]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [925707]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [922073]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [925523]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [926062]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [926045]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [26727]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [923150]
+11.3.2014 13:29:58:  - Unable to create customer - No email value
+11.3.2014 13:29:58: - Customer  - 1 [923246]
+11.3.2014 13:29:59:  - Shopify Customer [216851273] updated.
+11.3.2014 13:29:59: - Customer PELLON KUNTA - 1 [382318]
+11.3.2014 13:29:59:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [923759]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [923751]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [925105]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [924763]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [921646]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [923320]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [922949]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [925887]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [923025]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [90075]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [921137]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [920317]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [924981]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: - Customer  - 1 [920811]
+11.3.2014 13:30:00:  - Unable to create customer - No email value
+11.3.2014 13:30:00: 
+140 products found in Visma database.
+11.3.2014 13:30:01:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+11.3.2014 13:30:02:  - Shopify Product [261377857] updated.
+11.3.2014 13:30:02:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+11.3.2014 13:30:03:  - Shopify Product [261383825] updated.
+11.3.2014 13:30:03:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+11.3.2014 13:30:04:  - Shopify Product [261383833] updated.
+11.3.2014 13:30:05:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+11.3.2014 13:30:06:  - Shopify Product [261383845] updated.
+11.3.2014 13:30:06:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+11.3.2014 13:30:07:  - Shopify Product [261383861] updated.
+11.3.2014 13:30:07:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+11.3.2014 13:30:08:  - Shopify Product [261383873] updated.
+11.3.2014 13:30:08:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+11.3.2014 13:33:54: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:33:54. ==
+11.3.2014 13:33:54: Last Shopify update: 11.3.2014 13:19:37, Last Visma update: 11.3.2014 13:19:37
+
+11.3.2014 13:33:54: 
+29 customers found in Visma database.
+11.3.2014 13:33:55: - Customer  - 1 [926548]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [926584]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [926071]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer SALLAN KUNTA - 1 [82967]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [925707]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [922073]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [925523]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [926062]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [926045]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [26727]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [923150]
+11.3.2014 13:33:55:  - Unable to create customer - No email value
+11.3.2014 13:33:55: - Customer  - 1 [923246]
+11.3.2014 13:33:57:  - Shopify Customer [216851273] updated.
+11.3.2014 13:33:57: - Customer PELLON KUNTA - 1 [382318]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [923759]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [923751]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [925105]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [924763]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [921646]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [923320]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [922949]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [925887]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [923025]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [90075]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [921137]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [920317]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [924981]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: - Customer  - 1 [920811]
+11.3.2014 13:33:57:  - Unable to create customer - No email value
+11.3.2014 13:33:57: 
+140 products found in Visma database.
+11.3.2014 13:33:58:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+11.3.2014 13:34:00:  - Shopify Product [261377857] updated.
+11.3.2014 13:34:00:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+11.3.2014 13:34:01:  - Shopify Product [261383825] updated.
+11.3.2014 13:34:01:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+11.3.2014 13:34:03:  - Shopify Product [261383833] updated.
+11.3.2014 13:34:03:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+11.3.2014 13:34:05:  - Shopify Product [261383845] updated.
+11.3.2014 13:34:05:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+11.3.2014 13:34:07:  - Shopify Product [261383861] updated.
+11.3.2014 13:34:07:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+11.3.2014 13:34:09:  - Shopify Product [261383873] updated.
+11.3.2014 13:34:09:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+11.3.2014 13:34:11:  - Shopify Product [261383889] updated.
+11.3.2014 13:34:11:  - Article COMMERCIAL SELF GENERATING ELLIPTICAL [WR37007]
+11.3.2014 13:36:15: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:36:15. ==
+11.3.2014 13:36:15: Last Shopify update: 11.3.2014 13:19:37, Last Visma update: 11.3.2014 13:19:37
+
+11.3.2014 13:36:15: 
+Loading Pricelist specific prices.
+11.3.2014 13:36:18: Pricelist 18 - no pricelist
+11.3.2014 13:36:18: Pricelist 19 - no pricelist
+11.3.2014 13:36:18: Pricelist 20 - no pricelist
+11.3.2014 13:36:18: Pricelist 21 - no pricelist
+11.3.2014 13:36:18: Pricelist 22 - no pricelist
+11.3.2014 13:36:18: Pricelist 23 - no pricelist
+11.3.2014 13:36:18: Pricelist 24 - no pricelist
+11.3.2014 13:36:19: Pricelist 25 - no pricelist
+11.3.2014 13:36:19: Pricelist 26 - no pricelist
+11.3.2014 13:36:19: Pricelist 27 - no pricelist
+11.3.2014 13:36:19: Pricelist 28 - no pricelist
+11.3.2014 13:36:19: Pricelist 29 - no pricelist
+11.3.2014 13:36:19: Pricelist 30 - no pricelist
+11.3.2014 13:36:19: Pricelist 31 - no pricelist
+11.3.2014 13:36:19: Pricelist 32 - no pricelist
+11.3.2014 13:36:19: Pricelist 33 - no pricelist
+11.3.2014 13:36:19: Pricelist 34 - no pricelist
+11.3.2014 13:36:19: Pricelist 36 - no pricelist
+11.3.2014 13:36:19: Pricelist 37 - no pricelist
+11.3.2014 13:36:19: Pricelist 38 - no pricelist
+11.3.2014 13:36:19: Pricelist 39 - no pricelist
+11.3.2014 13:36:19: Pricelist 40 - no pricelist
+11.3.2014 13:36:22: Pricelist 45 - no pricelist
+11.3.2014 13:36:22: Pricelist 46 - no pricelist
+11.3.2014 13:36:22: Pricelist 47 - no pricelist
+11.3.2014 13:36:22: Pricelist 48 - no pricelist
+11.3.2014 13:36:22: Pricelist 49 - no pricelist
+11.3.2014 13:36:22: Pricelist 50 - no pricelist
+11.3.2014 13:36:22: 
+Loading Customer specific prices
+11.3.2014 13:37:24: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:37:24. ==
+11.3.2014 13:37:24: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:37:24: 
+Loading Pricelist specific prices.
+11.3.2014 13:37:24: Pricelist 0 has 50 specific prices.
+11.3.2014 13:37:25: Pricelist 1 has 138 specific prices.
+11.3.2014 13:37:27:  - Shopify Product Variant [605485361] updated for specific price 10154 P1 Q5.
+11.3.2014 13:37:28:  - Shopify Product Variant [605485345] updated for specific price 103_001 P1 Q6.
+11.3.2014 13:37:30:  - Shopify Product Variant [605485289] updated for specific price 106_001 P1 Q6.
+11.3.2014 13:37:31:  - Shopify Product Variant [605485265] updated for specific price 10610 P1 Q9.
+11.3.2014 13:37:32:  - Shopify Product Variant [605485225] updated for specific price 107_001 P1 Q6.
+11.3.2014 13:37:33:  - Shopify Product Variant [605485161] updated for specific price 10701 P1 Q3.
+11.3.2014 13:37:34:  - Shopify Product Variant [605485125] updated for specific price 10721 P1.
+11.3.2014 13:37:36:  - Shopify Product Variant [605485105] updated for specific price 108_001 P1 Q6.
+11.3.2014 13:37:37:  - Shopify Product Variant [605482273] updated for specific price 10903 P1 Q10.
+11.3.2014 13:37:51: 
+== Starting new update for Shop fysioline-fi [1] at 11.3.2014 13:37:51. ==
+11.3.2014 13:37:51: Last Shopify update: , Last Visma update: 
+
+11.3.2014 13:37:51: 
+Loading Orders from Shopify
+11.3.2014 13:37:53: 10 orders loaded.
+11.3.2014 13:37:53: 
+=== Finished update at 11.3.2014 13:37:53.===
+
+

@@ -1,0 +1,99 @@
+11.3.2014 13:09:00: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 151**************
+11.3.2014 13:09:34: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 151**************
+11.3.2014 13:09:41: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 151**************
+11.3.2014 13:12:29: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 161**************
+11.3.2014 13:12:35: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 251
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 212
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 161**************
+11.3.2014 13:21:22: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 163
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 568
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:25: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 576
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:29: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 575
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:33: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 575
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:40: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 576
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************
+11.3.2014 13:21:46: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (429) Too Many Requests.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 260
+   at ShopifyVismaApp.Shopify.UpdateProductVariant(Object data, Int64 variantID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 187
+   at ShopifyVismaApp.Shopify.CreateUpdateProductVariant(Article article, Int64 shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1 pricelistNumber, Nullable`1 customerNumber, Nullable`1 quantity, Nullable`1 price, Boolean taxable, String articleName) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 595
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 576
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 333**************

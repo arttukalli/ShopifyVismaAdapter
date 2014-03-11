@@ -24,11 +24,17 @@ namespace ShopifyVismaApp
         private ShopifyAPIClient _api;
         private string _token;
         public string account;
+        private DateTime lastApiCallTime;
         public int ID;
         public DataSet.ShopRow data = null;
         public List<int> articleTypes = null;
         public Dictionary<int, string> termsOfPayment = null;
         public Dictionary<int, string> deliveryMethods = null;
+
+        // Minimum delay between 2 Shopify API calls (to handle Shopify limits of maximum number of requests per second).
+        private int apiMinDelay = 600;
+
+
 
         public static Shopify GetShopByID(int ID)
         {
@@ -126,7 +132,7 @@ namespace ShopifyVismaApp
         /// <returns></returns>
         public object GetProducts()
         {
-            return this._api.Get("/admin/products.json");
+            return ShopifyGet("/admin/products.json");
         }
 
         /// <summary>
@@ -135,7 +141,7 @@ namespace ShopifyVismaApp
         /// <returns></returns>
         public object GetCustomers()
         {
-            return this._api.Get("/admin/customers.json");
+            return ShopifyGet("/admin/customers.json");
         }
 
         /// <summary>
@@ -144,7 +150,7 @@ namespace ShopifyVismaApp
         /// <returns></returns>
         public object GetOrders()
         {
-            return this._api.Get("/admin/orders.json");
+            return ShopifyGet("/admin/orders.json");
         }
 
         /// <summary>
@@ -154,13 +160,13 @@ namespace ShopifyVismaApp
         /// <returns></returns>
         public object CreateProduct(object data)
         {
-            object response = this._api.Post("/admin/products.json", data);
+            object response = ShopifyPost("/admin/products.json", data);
             return response;
         }
 
         public object UpdateProduct(object data, long id)
         {
-            object response = this._api.Put("/admin/products/" + id.ToString() + ".json", data);
+            object response = ShopifyPut("/admin/products/" + id.ToString() + ".json", data);
             return response;
         }
 
@@ -172,7 +178,7 @@ namespace ShopifyVismaApp
         public object CreateProductVariant(long productID, object data)
         {
             string url = string.Format("/admin/products/{0}/variants.json", productID);
-            object response = this._api.Post(url, data);
+            object response = ShopifyPost(url, data);
             return response;
         }
 
@@ -184,7 +190,7 @@ namespace ShopifyVismaApp
         public object UpdateProductVariant(object data, long variantID)
         {
             string url = string.Format("/admin/variants/{0}.json", variantID);
-            object response = this._api.Put(url, data);
+            object response = ShopifyPut(url, data);
             return response;
         }
 
@@ -196,10 +202,9 @@ namespace ShopifyVismaApp
         public object CreateProductImage(long productID, object data)
         {
             string url = string.Format("/admin/products/{0}/images.json", productID);
-            object response = this._api.Post(url, data);
+            object response = ShopifyPost(url, data);
             return response;
         }
-
 
 
 
@@ -210,13 +215,13 @@ namespace ShopifyVismaApp
         /// <returns></returns>
         public object CreateCustomer(object data)
         {
-            object response = this._api.Post("/admin/customers.json", data);
+            object response = ShopifyPost("/admin/customers.json", data);
             return response;
         }
 
         public object UpdateCustomer(object data, long id)
         {
-            object response = this._api.Put("/admin/customers/" + id.ToString() + ".json", data);
+            object response = ShopifyPut("/admin/customers/" + id.ToString() + ".json", data);
             return response;
         }
 
@@ -234,14 +239,62 @@ namespace ShopifyVismaApp
                 ordersUrl += "&updated_at_min=" + changedDate.Value.ToUniversalTime().ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fff'Z'"); ;
             }
             //var data = { };
-            object response = this._api.Get(ordersUrl);
+            object response = ShopifyGet(ordersUrl);
             return response;
         }
+
+        public object ShopifyGet(string url)
+        {
+            SyncShopifyRequest();
+            LogShopifyToFileRequest("GET", url, null);
+            object response = this._api.Get(url);
+            LogShopifyToFileResponse(response);
+            return response;
+        }
+
+        public object ShopifyPost(string url, object data)
+        {
+            SyncShopifyRequest();
+            LogShopifyToFileRequest("POST", url, data);
+            object response = this._api.Post(url, data);
+            LogShopifyToFileResponse(response);
+            return response;
+        }
+
+
+        public object ShopifyPut(string url, object data)
+        {
+            SyncShopifyRequest();
+            LogShopifyToFileRequest("PUT", url, data);
+            object response = this._api.Put(url, data);
+            LogShopifyToFileResponse(response);
+            return response;
+        }
+
+        /// <summary>
+        /// Add delay between 2 consecutive Shopify calls to avoid hitting Shopify API calls limit.
+        /// </summary>
+        public void SyncShopifyRequest()
+        {
+            int timeFromLastCall = DateTime.Now.Subtract(this.lastApiCallTime).Milliseconds;
+
+            if ((timeFromLastCall > 0) && (timeFromLastCall < this.apiMinDelay))
+            {
+                int delayTime = this.apiMinDelay - timeFromLastCall;
+                //LogShopifyToFileResponse(string.Format("Delay: {0}" ,timeFromLastCall));
+                System.Threading.Thread.Sleep(delayTime);
+            }
+            this.lastApiCallTime = DateTime.Now;
+
+            
+        }
+
+
 
         public double? ToPrice(decimal number)
         {
             double price;
-            string numberString = number.ToString();
+            string numberString = number.ToString("#.##");
             double.TryParse(numberString, out price);
 
             return price;
@@ -578,6 +631,43 @@ namespace ShopifyVismaApp
         {
             CreateUpdateProductVariant(article, shopifyProductID, ref shopifyVariantID, pricelistNumber, customerNumber, quantity, price, true, articleName);
             CreateUpdateProductVariant(article, shopifyProductID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, false, articleName);
+        }
+
+
+        public void LogShopifyToFileRequest(string method, string url, object data)
+        {
+            System.IO.StreamWriter sw = System.IO.File.AppendText(
+                string.Format("log_shopify_{0}.txt", DateTime.Now.ToString("yyyy_MM_dd")));
+            try
+            {
+                string logLine = System.String.Format(
+                    "{0:G}: {1} {2}", System.DateTime.Now, method, url);
+                sw.WriteLine(logLine);
+                if (data != null)
+                    sw.WriteLine(data.ToString());
+
+            }
+            finally
+            {
+                sw.Close();
+            }
+        }
+
+        public void LogShopifyToFileResponse(object response)
+        {
+            System.IO.StreamWriter sw = System.IO.File.AppendText(
+                string.Format("log_shopify_{0}.txt", DateTime.Now.ToString("yyyy_MM_dd")));
+            try
+            {
+                if (response != null)
+                    sw.WriteLine(string.Format(">> {0}", response.ToString()));
+                sw.WriteLine("");
+
+            }
+            finally
+            {
+                sw.Close();
+            }
         }
         
 

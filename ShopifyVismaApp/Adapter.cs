@@ -27,20 +27,6 @@ namespace ShopifyVismaApp
 {
     class Adapter
     {
-        public delegate void LoggedEventHandler(object sender, LoggedEventArgs e);
-        public event LoggedEventHandler Logged = delegate { };
-
-        public class LoggedEventArgs : EventArgs
-        {
-            public string text { get; set; }
-            public LoggedEventArgs(string text)
-                : base()
-            {
-                this.text = text;
-            }
-        }
-
-
 
         DataSetTableAdapters.ShopTableAdapter shopTA;
         DataSetTableAdapters.CustomerTableAdapter customerTA;
@@ -49,7 +35,6 @@ namespace ShopifyVismaApp
 
         Shopify shop;
         Visma visma;
-
 
         public bool UpdateRecords(int shopID) {
 
@@ -91,24 +76,36 @@ namespace ShopifyVismaApp
             Log(string.Format("\n== Starting new update for Shop {0} [{1}] at {2}. ==", shop.account, shopID, currentUpdateDate));
             Log(string.Format("Last Shopify update: {0}, Last Visma update: {1}\n", lastShopifyUpdateDate, lastVismaUpdateDate));
 
+            StatusUpdate(string.Format("Starting new update for shop {0} [{1}].", shop.account, shopID));
 
-            // Update Customers
-            bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 0);
+            try
+            {
 
-            // Update Products
-            bool resultProducts = UpdateProducts(lastVismaUpdateDate, 0, true);
+                // Update Customers
+                bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 0);
 
-            // Update Specific Prices
-            bool resultPrices = UpdateSpecificPrices(lastVismaUpdateDate, 50, 0);
+                // Update Products
+                bool resultProducts = UpdateProducts(lastVismaUpdateDate, 0, true);
 
-            // Update Orders
-            bool resultOrders = UpdateOrders(lastShopifyUpdateDate, 0);
+                // Update Specific Prices
+                bool resultPrices = UpdateSpecificPrices(lastVismaUpdateDate, 50, 0);
 
-            // Update Shop update times
-            UpdateShop(currentUpdateDate, currentUpdateDate);
+                // Update Orders
+                bool resultOrders = UpdateOrders(lastShopifyUpdateDate, 0);
+
+                // Update Shop update times
+                UpdateShop(currentUpdateDate, currentUpdateDate);
+            }
+            catch (Exception ex)
+            {
+                LogError(string.Format("Error updating shop {0}", shop.account), ex);
+                StatusUpdate("Error updating shop.");
+                return false;
+            }
 
 
             Log(string.Format("\n=== Finished update at {0}.===\n\n", DateTime.Now) );
+            StatusUpdate("Update finished.");
 
             return true;
         }
@@ -120,6 +117,8 @@ namespace ShopifyVismaApp
 
             CustomerList customers = visma.GetCustomerList(startDate);
             Log(string.Format("\n{0} customers found in Visma database.", customers.Count));
+
+            StatusUpdate(string.Format("Updating {0} customers.", customers.Count));
             
 
             foreach (CustomerInfo customerInfo in customers)
@@ -145,7 +144,7 @@ namespace ShopifyVismaApp
                     string email = contact.Email;
 
 
-                    if (!string.IsNullOrEmpty(email)) //  && (customerNumber == 600586)
+                    if (!string.IsNullOrEmpty(email)) //   && (customerNumber == 28)
                     {
 
                         DataSet.CustomerDataTable customerDT = customerTA.GetDataByCustomerNumber(shop.ID, customerNumber, contactNumber);
@@ -156,7 +155,7 @@ namespace ShopifyVismaApp
                             if (customerDT.Count == 0)
                             {
                                 string data = shop.GetCustomertDataFromVismaCustomer(customer, contact, invoiceCustomer, null);
-                                //Log(data);
+                                Log(data);
                                 object response = shop.CreateCustomer(data);
 
                                 //Log("Response " + response.ToString());
@@ -217,6 +216,8 @@ namespace ShopifyVismaApp
             // Get a list of Visma Articles
             ArticleList list = visma.GetArticleList(startDate);
             Log(string.Format("\n{0} products found in Visma database.", list.Count));
+
+            StatusUpdate(string.Format("Updating {0} products.", list.Count));
 
             
             foreach (ArticleInfo articleInfo in list)
@@ -279,14 +280,14 @@ namespace ShopifyVismaApp
                                 {
 
                                     DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
-                                    Log(" - Delivery date: " + deliveryDate.ToString());
+                                    //Log(" - Delivery date: " + deliveryDate.ToString());
 
                                     shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate);
                                     Log(string.Format(" - Shopify Product [{0}] created.", shopifyProductID));
 
                                     //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
 
-                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode);
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode, deliveryDate);
                                     articleUpdates += 1;
                                 }
                                 catch (System.Net.WebException ex)
@@ -304,7 +305,7 @@ namespace ShopifyVismaApp
 
                                     Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
 
-                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode);
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode, null);
 
                                 }
                                 catch (System.Net.WebException ex)
@@ -325,7 +326,7 @@ namespace ShopifyVismaApp
                                 shopifyImageID = productDT[0].ShopifyImageID;
 
                                 DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
-                                Log(" - Delivery date: " + deliveryDate.ToString());
+                                //Log(" - Delivery date: " + deliveryDate.ToString());
 
                                 shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate);
 
@@ -431,7 +432,8 @@ namespace ShopifyVismaApp
             // Pricelist specific prices
 
             int pricelistPricesCount = 0;
-            Log("\nLoading Pricelist specific prices");
+            Log("\nLoading Pricelist specific prices.");
+            StatusUpdate("Updating pricelist specific prices.");
 
             for (int pricelistNumber = 0; pricelistNumber <= pricelistrPricesLimit; pricelistNumber++) {
 
@@ -468,6 +470,7 @@ namespace ShopifyVismaApp
 
             int customerPricesCount = 0;
             Log("\nLoading Customer specific prices");
+            StatusUpdate("Updating customer specific prices.");
 
             DataSet.CustomerDataTable customerRows = customerTA.GetDataByShopID(shop.ID);
             foreach (var customerRow in customerRows)
@@ -513,6 +516,7 @@ namespace ShopifyVismaApp
             if (quantity <= 1)
                 quantity = null;
 
+
             Article article = visma.GetArticleByCode(articleCode);
 
             // If pricelist has Discount value, use it to calculate the final price from currect Article price
@@ -527,8 +531,20 @@ namespace ShopifyVismaApp
             DateTime.TryParse(pricelistItem.Valid, out validToDate);
             datesValid = ((validFromDate == DateTime.MinValue) || (validFromDate <= DateTime.Now)) && ((validToDate == DateTime.MinValue) || (validToDate >= DateTime.Now));
 
-            if ((article != null) && (datesValid))  //  && (article.ArticleCode == "A0112")
+            bool currencyMatch = true;
+            if (!string.IsNullOrEmpty(article.Currency) && !string.IsNullOrEmpty(pricelistItem.Currency))
             {
+                if (article.Currency != pricelistItem.Currency)
+                    currencyMatch = false;
+            }
+
+            if ((article != null) && (datesValid) && (currencyMatch)) //  && (article.ArticleCode == "A0112")
+            {
+                string pricelistItemName = article.ArticleCode;
+                pricelistItemName += pricelistNumber.HasValue ? string.Format(" P{0}", pricelistNumber) : string.Format(" C{0}", customerNumber);
+                if (quantity != null)
+                    pricelistItemName += string.Format(" Q{0}", quantity);
+
                 string famiyCode = article.FamilyCode;
                 string articleName = null;
 
@@ -557,14 +573,15 @@ namespace ShopifyVismaApp
                         {
 
                             shop.CreateUpdateProductVariants(article, shopifyProductID.Value, ref shopifyVariantID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, articleName);
-                            Log(string.Format(" - Shopify Product Variant [{0}] created for specific price.", shopifyVariantID));
+                            Log(string.Format(" - Shopify Product Variant [{0}] created for specific price {1}.", shopifyVariantID, pricelistItemName));
 
-                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, pricelistNumber, customerNumber, quantity, price, famiyCode);
+                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, pricelistNumber, customerNumber, quantity, price, famiyCode, null);
+
 
                         }
                         catch (System.Net.WebException ex)
                         {
-                            LogError("Unable to create specific price.", ex);
+                            LogError(string.Format("Unable to create specific price {0}.", pricelistItemName), ex);
                             
                         }
 
@@ -580,12 +597,12 @@ namespace ShopifyVismaApp
                         {
 
                             shop.CreateUpdateProductVariants(article, shopifyProductID.Value, ref shopifyVariantID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, articleName);
-                            Log(string.Format(" - Shopify Product Variant [{0}] updated for specific price.", shopifyVariantID));
+                            Log(string.Format(" - Shopify Product Variant [{0}] updated for specific price {1}.", shopifyVariantID, pricelistItemName));
 
                         }
                         catch (System.Net.WebException ex)
                         {
-                            LogError("Unable to update specific price.", ex);
+                            LogError(string.Format("Unable to update specific price {0}.", pricelistItemName), ex);
                         }
                     }
                 }
@@ -611,6 +628,7 @@ namespace ShopifyVismaApp
             List<ShopifyOrder> orders = JsonConvert.DeserializeObject<List<ShopifyOrder>>(ordersJ["orders"].ToString());
 
             Log(string.Format("{0} orders loaded.", orders.Count));
+            StatusUpdate(string.Format("Updating {0} orders.", orders.Count));
 
 
             for (int i = 0; i < orders.Count; i++)
@@ -780,17 +798,19 @@ namespace ShopifyVismaApp
         }
 
         public void LogError(string text, Exception ex) {
-            Log("*** ERROR ****");
-            Log(text);
+            string errorText = "*** ERROR ****\n" + text;
             if (ex != null)
-                Log(ex.ToString());
-            Log("**************");
+                errorText += ex.ToString();
+            errorText += "**************";
+
+            Log(errorText);
+            LogErrorToFile(errorText);
         }
 
         public void LogMessageToFile(string text)
         {
             System.IO.StreamWriter sw = System.IO.File.AppendText(
-                "log.txt");
+                string.Format("log_{0}.txt", DateTime.Now.ToString("yyyy_MM_dd")));
             try
             {
                 string logLine = System.String.Format(
@@ -800,6 +820,60 @@ namespace ShopifyVismaApp
             finally
             {
                 sw.Close();
+            }
+        }
+
+
+
+        public void LogErrorToFile(string text)
+        {
+            System.IO.StreamWriter sw = System.IO.File.AppendText(
+                string.Format("log_errors_{0}.txt", DateTime.Now.ToString("yyyy_MM_dd")));
+            try
+            {
+                string logLine = System.String.Format(
+                    "{0:G}: {1}", System.DateTime.Now, text);
+                sw.WriteLine(logLine);
+            }
+            finally
+            {
+                sw.Close();
+            }
+        }
+
+        /// <summary>
+        /// Update status.
+        /// </summary>
+        /// <param name="text"></param>
+        public void StatusUpdate(string text)
+        {
+            StatusUpdated(this, new StatusUpdatedEventArgs(text));
+        }
+
+
+        public delegate void LoggedEventHandler(object sender, LoggedEventArgs e);
+        public event LoggedEventHandler Logged = delegate { };
+
+        public class LoggedEventArgs : EventArgs
+        {
+            public string text { get; set; }
+            public LoggedEventArgs(string text)
+                : base()
+            {
+                this.text = text;
+            }
+        }
+
+        public delegate void StatusUpdatedEventHandler(object sender, StatusUpdatedEventArgs e);
+        public event StatusUpdatedEventHandler StatusUpdated = delegate { };
+
+        public class StatusUpdatedEventArgs : EventArgs
+        {
+            public string text { get; set; }
+            public StatusUpdatedEventArgs(string text)
+                : base()
+            {
+                this.text = text;
             }
         }
     
