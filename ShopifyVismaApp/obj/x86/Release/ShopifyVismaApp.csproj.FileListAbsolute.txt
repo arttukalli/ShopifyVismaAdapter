@@ -1,0 +1,17 @@
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\ShopifyVismaApp.exe.config
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\ShopifyVismaApp.exe
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\ShopifyVismaApp.pdb
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\Newtonsoft.Json.dll
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\ShopifyAPIAdapterLibrary.dll
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\Visma.Nova.Sdk.dll
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\bin\Release\ShopifyAPIAdapterLibrary.pdb
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ResolveAssemblyReference.cache
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ShopifyVismaApp.Console.resources
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ShopifyVismaApp.Properties.Resources.resources
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ResGen.read.1.tlog
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ResGen.write.1.tlog
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ShopifyVismaApp.exe
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\obj\x86\Release\ShopifyVismaApp.pdb
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\Application\ShopifyVismaApp.exe.config
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\Application\ShopifyVismaApp.exe
+Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\Application\ShopifyVismaApp.pdb
