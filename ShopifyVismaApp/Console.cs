@@ -24,8 +24,17 @@ namespace ShopifyVismaApp
 
         private void RunButton_Click(object sender, EventArgs e)
         {
+            int shopID;
 
-            int shopID = int.Parse(accountBox.SelectedValue.ToString());
+            try
+            {
+                shopID = int.Parse(accountBox.SelectedValue.ToString());
+            }
+            catch (NullReferenceException ex)
+            {
+                StatusLabel.Text = "Select account to update.";
+                return;
+            }
             BackgroundWorker bw = new BackgroundWorker();
 
             Adapter adapter = new Adapter();
@@ -100,7 +109,18 @@ namespace ShopifyVismaApp
         private void Console_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dataSet.Shop' table. You can move, or remove it, as needed.
-            this.shopTableAdapter.Fill(this.dataSet.Shop);
+            try
+            {
+                this.shopTableAdapter.Fill(this.dataSet.Shop);
+            }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                // Display error if console is unable to connect to the database
+                StatusLabel.Text = "ERROR: Unable to connect to the ShopifyVisma database.";
+                UpdateTextBox(string.Format("Connection String: {0}", this.shopTableAdapter.Connection.ConnectionString));
+                UpdateTextBox("");
+                UpdateTextBox(ex.ToString());
+            }
 
         }
 

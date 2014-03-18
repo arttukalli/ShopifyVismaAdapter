@@ -60,8 +60,16 @@ namespace ShopifyVismaApp
         {
 
             string vismaServer = ConfigurationSettings.AppSettings["Visma.Server"];
+            string vismaUsername = ConfigurationSettings.AppSettings["Visma.Server"];
+            string vismaPassword = ConfigurationSettings.AppSettings["Visma.Password"];
             int vismaCompany = this.company;
-            NovaContext context = new NovaContext(vismaServer, vismaCompany);
+
+            NovaContext context;
+            
+            if (string.IsNullOrEmpty(vismaUsername) || string.IsNullOrEmpty(vismaPassword))
+                context = new NovaContext(vismaServer, vismaCompany);
+            else
+                context = new NovaContext(vismaServer, vismaUsername, vismaPassword, vismaCompany);
 
             Nova.Configuration.Settings.SetDataConnectionString(context.CompanyConnectionString);
             
