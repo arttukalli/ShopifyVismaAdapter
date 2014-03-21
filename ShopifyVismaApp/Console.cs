@@ -44,13 +44,21 @@ namespace ShopifyVismaApp
             { UpdateStatus(adaptere.text); };
 
 
+            this.RunButton.Enabled = false;
 
             bw.DoWork += delegate(object bwSender, DoWorkEventArgs bwe)
             { ((Adapter)bwe.Argument).UpdateRecords(shopID); };
+            bw.RunWorkerCompleted += worker_RunWorkerCompleted;
+            bw.WorkerSupportsCancellation = true;
             bw.RunWorkerAsync(adapter);
             //adapter.UpdateRecords(shopID);
 
             
+        }
+
+        void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            this.RunButton.Enabled = true;
         }
 
         /// <summary>

@@ -115,12 +115,12 @@ namespace ShopifyVismaApp
     public class ShopifyLineItem
     {
         public long id { get; set; }
-        public long product_id { get; set; }
+        public long? product_id { get; set; }
         public double? price { get; set; }
         public int quantity { get; set; }
         public string sku { get; set; }
         public string title { get; set; }
-        public long variant_id { get; set; }
+        public long? variant_id { get; set; }
     }
 
     public class ShopifyShippingLineItem

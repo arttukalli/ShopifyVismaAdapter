@@ -654,7 +654,7 @@ namespace ShopifyVismaApp
                     sales.OrderDate = order.created_at;
                     sales.OrderType = salesOrderType;
 
-                    
+
                     // Terms of Payment
                     int? termsOfPayment = shop.GetValueIDFromShopData(shop.termsOfPayment, order.gateway);
                     if (termsOfPayment.HasValue)
@@ -664,7 +664,7 @@ namespace ShopifyVismaApp
                     int? deliveryMethod = order.shipping_lines.Count() > 0 ? shop.GetValueIDFromShopData(shop.deliveryMethods, order.shipping_lines[0].code) : null;
                     if (deliveryMethod.HasValue)
                         sales.DeliveryMethodId = deliveryMethod.Value;
-                     
+
 
                     //Log(string.Format("  {0} > {1}", order.gateway, termsOfPayment.ToString()));
                     //Log(string.Format("  {0} > {1}", order.shipping_lines.Count() > 0 ? order.shipping_lines[0].code : "", deliveryMethod.ToString()));
@@ -680,11 +680,12 @@ namespace ShopifyVismaApp
                             string customerTag = customerTags.Split(',').Where(x => x.Trim().StartsWith("+C")).First();
                             customerTag = (!string.IsNullOrEmpty(customerTag)) ? customerTag.Replace("+C", "") : customerTag;
                             int customerID = -1;
-                            if (int.TryParse(customerTag, out customerID)) {
+                            if (int.TryParse(customerTag, out customerID))
+                            {
                                 orderCustomer = visma.GetCustomerByNumber(customerID);
                                 sales.CustomerNumber = customerID;
                             }
-                            
+
                         }
                     }
 
@@ -698,7 +699,8 @@ namespace ShopifyVismaApp
                     // Unifaun
                     string locationIDText = order.GetNoteAttribute("Unifaun Location ID");
                     int locationID;
-                    if (int.TryParse(locationIDText, out locationID)) {
+                    if (int.TryParse(locationIDText, out locationID))
+                    {
                         sales.DriverId = locationID;
                     }
 
@@ -716,7 +718,7 @@ namespace ShopifyVismaApp
 
                     }
 
-           
+
 
                     // Shipping address
                     if (order.shipping_address != null)
@@ -735,7 +737,7 @@ namespace ShopifyVismaApp
                         }
 
                     }
-                 
+
 
                     // Order items
                     foreach (var lineItem in order.line_items)
@@ -749,7 +751,7 @@ namespace ShopifyVismaApp
                         if (lineItem.price.HasValue)
                             salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
                     }
-                     
+
 
 
                     if (orderCustomer == null)
@@ -758,11 +760,15 @@ namespace ShopifyVismaApp
 
 
                     sales.Save();
-                    Log(string.Format(" - Sales Order {0} created from order {1}. ", sales.Number, order.name));
+                    Log(string.Format(" - Sales Order {0} created from order {1} ({2}). ", sales.Number, order.id, order.name));
 
                     orderTA.InsertOrder(shop.ID, order.id, sales.Number);
 
 
+                }
+                else
+                {
+                    Log(string.Format(" - Order {0} ({1}) is already in Visma.", order.id, order.name));
                 }
             }
 

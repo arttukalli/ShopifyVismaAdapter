@@ -1,0 +1,249 @@
+21.3.2014 03:45:45: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:45:44. ==
+21.3.2014 03:45:45: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:45:45: 
+Loading Orders from Shopify
+21.3.2014 03:45:48: *** ERROR ****
+Error updating shop fysioline-fiNewtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int64'. Path '[0].line_items[0].product_id', line 62, position 27. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IWrappedCollection wrappedList, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IWrappedCollection wrappedList, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 628
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 94**************
+21.3.2014 03:46:44: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:46:44. ==
+21.3.2014 03:46:44: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:46:44: 
+Loading Orders from Shopify
+21.3.2014 03:46:46: 6 orders loaded.
+21.3.2014 03:46:47: 
+=== Finished update at 21.3.2014 03:46:47.===
+
+
+21.3.2014 03:47:24: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:47:24. ==
+21.3.2014 03:47:24: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:47:24: 
+Loading Orders from Shopify
+21.3.2014 03:47:26: 6 orders loaded.
+21.3.2014 03:47:26: 
+=== Finished update at 21.3.2014 03:47:26.===
+
+
+21.3.2014 03:48:16: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:48:16. ==
+21.3.2014 03:48:16: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:48:16: 
+Loading Orders from Shopify
+21.3.2014 03:48:18: 6 orders loaded.
+21.3.2014 03:50:27: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:50:27. ==
+21.3.2014 03:50:27: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:50:27: 
+Loading Orders from Shopify
+21.3.2014 03:50:29: 6 orders loaded.
+21.3.2014 03:50:29:  - Order 238474209 is already in Visma.
+21.3.2014 03:50:29:  - Order 226098149 is already in Visma.
+21.3.2014 03:50:29:  - Order 225625837 is already in Visma.
+21.3.2014 03:50:50:  - Sales Order 10000014 created from order #1008. 
+21.3.2014 03:50:50:  - Order 221582817 is already in Visma.
+21.3.2014 03:50:50:  - Order 221555113 is already in Visma.
+21.3.2014 03:50:50: 
+=== Finished update at 21.3.2014 03:50:50.===
+
+
+21.3.2014 03:52:00: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:52:00. ==
+21.3.2014 03:52:00: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:52:00: 
+Loading Orders from Shopify
+21.3.2014 03:52:02: 6 orders loaded.
+21.3.2014 03:52:02:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 03:52:02:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 03:52:02:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 03:52:02:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 03:52:02:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 03:52:02:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 03:52:02: 
+=== Finished update at 21.3.2014 03:52:02.===
+
+
+21.3.2014 03:52:33: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:52:33. ==
+21.3.2014 03:52:33: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:52:33: 
+Loading Orders from Shopify
+21.3.2014 03:52:34: 6 orders loaded.
+21.3.2014 03:52:36:  - Sales Order 10000015 created from order 238474209 (#1011). 
+21.3.2014 03:52:36:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 03:52:36:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 03:52:36:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 03:52:36:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 03:52:36:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 03:52:36: 
+=== Finished update at 21.3.2014 03:52:36.===
+
+
+21.3.2014 03:57:44: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:57:44. ==
+21.3.2014 03:57:44: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:58:04: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:58:04. ==
+21.3.2014 03:58:04: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:59:21: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:59:21. ==
+21.3.2014 03:59:21: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:59:24: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:59:24. ==
+21.3.2014 03:59:24: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:59:26: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:59:26. ==
+21.3.2014 03:59:26: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:59:27: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:59:27. ==
+21.3.2014 03:59:27: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:59:28: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:59:28. ==
+21.3.2014 03:59:28: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 03:59:36: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 03:59:36. ==
+21.3.2014 03:59:36: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:23: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 04:02:23. ==
+21.3.2014 04:02:23: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:23: 
+Loading Orders from Shopify
+21.3.2014 04:02:25: 6 orders loaded.
+21.3.2014 04:02:25:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 04:02:25:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 04:02:25:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 04:02:25:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 04:02:25:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 04:02:25:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 04:02:25: 
+=== Finished update at 21.3.2014 04:02:25.===
+
+
+21.3.2014 04:02:27: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 04:02:27. ==
+21.3.2014 04:02:27: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:27: 
+Loading Orders from Shopify
+21.3.2014 04:02:28: 6 orders loaded.
+21.3.2014 04:02:28:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 04:02:28:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 04:02:28:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 04:02:28:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 04:02:28:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 04:02:28:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 04:02:28: 
+=== Finished update at 21.3.2014 04:02:28.===
+
+
+21.3.2014 04:02:28: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 04:02:28. ==
+21.3.2014 04:02:28: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:28: 
+Loading Orders from Shopify
+21.3.2014 04:02:28: 6 orders loaded.
+21.3.2014 04:02:28:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 04:02:28:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 04:02:28:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 04:02:28:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 04:02:28:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 04:02:28:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 04:02:28: 
+=== Finished update at 21.3.2014 04:02:28.===
+
+
+21.3.2014 04:02:29: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 04:02:29. ==
+21.3.2014 04:02:29: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:29: 
+Loading Orders from Shopify
+21.3.2014 04:02:29: 6 orders loaded.
+21.3.2014 04:02:29:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 04:02:29:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 04:02:29:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 04:02:29:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 04:02:29:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 04:02:29:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 04:02:29: 
+=== Finished update at 21.3.2014 04:02:29.===
+
+
+21.3.2014 04:02:32: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 04:02:32. ==
+21.3.2014 04:02:32: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:32: 
+Loading Orders from Shopify
+21.3.2014 04:02:33: 6 orders loaded.
+21.3.2014 04:02:33:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 04:02:33:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 04:02:33:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 04:02:33:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 04:02:33:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 04:02:33:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 04:02:33: 
+=== Finished update at 21.3.2014 04:02:33.===
+
+
+21.3.2014 04:02:34: 
+== Starting new update for Shop fysioline-fi [1] at 21.3.2014 04:02:34. ==
+21.3.2014 04:02:34: Last Shopify update: 15.1.2014 00:00:00, Last Visma update: 15.1.2014 00:00:00
+
+21.3.2014 04:02:34: 
+Loading Orders from Shopify
+21.3.2014 04:02:34: 6 orders loaded.
+21.3.2014 04:02:34:  - Order 238474209 (#1011) is already in Visma.
+21.3.2014 04:02:34:  - Order 226098149 (#1010) is already in Visma.
+21.3.2014 04:02:34:  - Order 225625837 (#1009) is already in Visma.
+21.3.2014 04:02:34:  - Order 225585993 (#1008) is already in Visma.
+21.3.2014 04:02:34:  - Order 221582817 (#1007) is already in Visma.
+21.3.2014 04:02:34:  - Order 221555113 (#1006) is already in Visma.
+21.3.2014 04:02:34: 
+=== Finished update at 21.3.2014 04:02:34.===
+
+
