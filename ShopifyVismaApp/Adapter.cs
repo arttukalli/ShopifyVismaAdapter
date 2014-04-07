@@ -36,12 +36,21 @@ namespace ShopifyVismaApp
         Shopify shop;
         Visma visma;
 
-        public bool UpdateRecords(int shopID) {
+        /// <summary>
+        /// Run Shopify account update.
+        /// </summary>
+        /// <param name="shopID">Shop ID from the ShopifyVisma Shop table</param>
+        /// <param name="updateType">Update type (1 - regular; 2 - full)</param>
+        /// <returns></returns>
+        public bool UpdateRecords(int shopID, short updateType = 1) {
 
             shopTA = new DataSetTableAdapters.ShopTableAdapter();
             customerTA = new DataSetTableAdapters.CustomerTableAdapter();
             productTA = new DataSetTableAdapters.ProductTableAdapter();
             orderTA = new DataSetTableAdapters.OrderTableAdapter();
+
+            bool isFullUpdate = (updateType > 1);
+            string updateTypeText = (isFullUpdate) ? "full" : "regular";
 
 
             // Initialize connections to Shopify and Visma
@@ -65,15 +74,23 @@ namespace ShopifyVismaApp
             catch (StrongTypingException ex) { }
 
             DateTime? lastVismaUpdateDate = null;
+            DateTime? limitVismaUpdateDate = null;  // Query Visma records with lastVismaUpdateDate - 1 day
             try
             {
                 lastVismaUpdateDate = shop.data.VismaUpdatedDate;
+
+                if (lastShopifyUpdateDate.HasValue)
+                {
+                    limitVismaUpdateDate = lastVismaUpdateDate;
+                    limitVismaUpdateDate = limitVismaUpdateDate.Value.AddDays(-1);
+
+                }
             }
             catch (StrongTypingException ex) { }
 
             DateTime currentUpdateDate = DateTime.Now;
 
-            Log(string.Format("\n== Starting new update for Shop {0} [{1}] at {2}. ==", shop.account, shopID, currentUpdateDate));
+            Log(string.Format("\n== Starting {0} update for Shop {1} [{2}] at {3}. ==", updateTypeText, shop.account, shopID, currentUpdateDate));
             Log(string.Format("Last Shopify update: {0}, Last Visma update: {1}\n", lastShopifyUpdateDate, lastVismaUpdateDate));
 
             StatusUpdate(string.Format("Starting new update for shop {0} [{1}].", shop.account, shopID));
@@ -82,13 +99,13 @@ namespace ShopifyVismaApp
             {
 
                 // Update Customers
-                bool resultCustomers = UpdateCustomers(lastVismaUpdateDate, 0);
+                bool resultCustomers = UpdateCustomers(limitVismaUpdateDate, 0);
 
                 // Update Products
-                bool resultProducts = UpdateProducts(lastVismaUpdateDate, 0, true);
+                bool resultProducts = UpdateProducts(limitVismaUpdateDate, 0, true, isFullUpdate);
 
                 // Update Specific Prices
-                bool resultPrices = UpdateSpecificPrices(lastVismaUpdateDate, 50, 0);
+                bool resultPrices = UpdateSpecificPrices(limitVismaUpdateDate, 50, 0);        
 
                 // Update Orders
                 bool resultOrders = UpdateOrders(lastShopifyUpdateDate, 0);
@@ -154,8 +171,8 @@ namespace ShopifyVismaApp
 
                             if (customerDT.Count == 0)
                             {
-                                string data = shop.GetCustomertDataFromVismaCustomer(customer, contact, invoiceCustomer, null);
-                                Log(data);
+                                string data = shop.GetCustomerDataFromVismaCustomer(customer, contact, invoiceCustomer, null);
+                                //Log(data);
                                 object response = shop.CreateCustomer(data);
 
                                 //Log("Response " + response.ToString());
@@ -173,7 +190,7 @@ namespace ShopifyVismaApp
 
                                 long shopifyID = customerDT[0].ShopifyCustomerID;
                                 long addressID = customerDT[0].ShopifyAddressID;
-                                string data = shop.GetCustomertDataFromVismaCustomer(customer, contact, invoiceCustomer, addressID);
+                                string data = shop.GetCustomerDataFromVismaCustomer(customer, contact, invoiceCustomer, addressID);
                                 //Log(data);
                                 object response = shop.UpdateCustomer(data, shopifyID);
 
@@ -207,14 +224,14 @@ namespace ShopifyVismaApp
 
 
 
-        public bool UpdateProducts(DateTime? startDate, int articleLimit = 0, bool updateArticleImages = false)
+        public bool UpdateProducts(DateTime? startDate, int articleLimit = 0, bool updateArticleImages = false, bool updateStockData = false)
         {
             int articlesCount = 0;
             int articleUpdates = 0;
           
 
-            // Get a list of Visma Articles
-            ArticleList list = visma.GetArticleList(startDate);
+            // Get a list of Visma Articles - get all product in case of a Full update
+            ArticleList list = visma.GetArticleList(updateStockData ? null : startDate);
             Log(string.Format("\n{0} products found in Visma database.", list.Count));
 
             StatusUpdate(string.Format("Updating {0} products.", list.Count));
@@ -254,7 +271,33 @@ namespace ShopifyVismaApp
                             articleName = visma.GetCommonArticleNameForFamilyCode(article.FamilyCode);
                         }
 
+                        // VAT Rate
                         vatRate = visma.GetVatRate(article.ArticleCode);
+
+                        // Video URL
+                        string videoUrl = null;
+                        string videoPath = visma.GetVideoFilePath(article.ArticleCode);
+                        if (File.Exists(videoPath))
+                        {
+
+                            try
+                            {
+                                using (StreamReader sr = new StreamReader(videoPath))
+                                {
+                                    videoUrl = sr.ReadLine();
+                                    Log(string.Format(" - Video URL: {0}", videoUrl));
+
+                                }
+
+
+                            }
+                            catch (System.Exception exp)
+                            {
+                                // Error creating stream or reading from it.
+                                Log(string.Format("Unable to open video file - {0}", exp.Message));
+
+                            }
+                        }
 
                         DataSet.ProductDataTable productDT = productTA.GetDataByArticleCode(shop.ID, articleCode);
                         if (productDT.Count == 0)
@@ -282,7 +325,7 @@ namespace ShopifyVismaApp
                                     DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
                                     //Log(" - Delivery date: " + deliveryDate.ToString());
 
-                                    shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate);
+                                    shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrl);
                                     Log(string.Format(" - Shopify Product [{0}] created.", shopifyProductID));
 
                                     //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
@@ -328,7 +371,7 @@ namespace ShopifyVismaApp
                                 DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
                                 //Log(" - Delivery date: " + deliveryDate.ToString());
 
-                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate);
+                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrl);
 
                                 Log(string.Format(" - Shopify Product [{0}] updated.", shopifyProductID));
 
@@ -404,7 +447,10 @@ namespace ShopifyVismaApp
                                 }
 
                             }
-                            
+                  
+
+                       
+
                         }
                     }
                     else
@@ -615,7 +661,6 @@ namespace ShopifyVismaApp
             return true;
         }
 
-       
 
         public bool UpdateOrders(DateTime? startDate, int orderLimit = 0)
         {
@@ -654,7 +699,7 @@ namespace ShopifyVismaApp
                     sales.OrderDate = order.created_at;
                     sales.OrderType = salesOrderType;
 
-
+                    
                     // Terms of Payment
                     int? termsOfPayment = shop.GetValueIDFromShopData(shop.termsOfPayment, order.gateway);
                     if (termsOfPayment.HasValue)
@@ -668,7 +713,7 @@ namespace ShopifyVismaApp
 
                     //Log(string.Format("  {0} > {1}", order.gateway, termsOfPayment.ToString()));
                     //Log(string.Format("  {0} > {1}", order.shipping_lines.Count() > 0 ? order.shipping_lines[0].code : "", deliveryMethod.ToString()));
-
+                    
                     // Customer
                     Customer orderCustomer = null;
                     if (order.customer != null)
@@ -677,36 +722,105 @@ namespace ShopifyVismaApp
                         //Log(customerTags);
                         if (!string.IsNullOrEmpty(customerTags))
                         {
-                            string customerTag = customerTags.Split(',').Where(x => x.Trim().StartsWith("+C")).First();
+                            string customerTag = customerTags.Split(',').Where(x => x.Trim().StartsWith("+C")).FirstOrDefault();
                             customerTag = (!string.IsNullOrEmpty(customerTag)) ? customerTag.Replace("+C", "") : customerTag;
                             int customerID = -1;
                             if (int.TryParse(customerTag, out customerID))
                             {
+                                // Use existing customer from Visma
                                 orderCustomer = visma.GetCustomerByNumber(customerID);
                                 sales.CustomerNumber = customerID;
+                            }
+                            else
+                            {
+                            
+                                DataSet.CustomerDataTable customerDT = customerTA.GetDataByShopifyCustomerID(shop.ID, order.customer.id);
+
+                                if (customerDT.Count > 0)
+                                {
+                                    customerID = customerDT[0].VismaCustomerNumber;
+                                    orderCustomer = visma.GetCustomerByNumber(customerID);
+                                    sales.CustomerNumber = customerID;
+
+                                    Log(string.Format("   - Order customer [#{0}] already exists in Visma as Customer {1}", order.customer.id, orderCustomer.Number));
+                           
+                                }
+                                else
+                                {
+
+                                    // Create new customer in Visma
+                                    orderCustomer = Customer.CreateNew(visma._context);
+                                    string orderCustomerName = string.Format("{0} {1}", order.customer.first_name, order.customer.last_name);
+                                    orderCustomer.Name1 = orderCustomerName;
+                                    
+                                    //orderCustomer.InvoiceEmail = order.customer.email;
+
+                                    Contact orderContact = orderCustomer.Contacts.AddNew();
+                                    orderContact.Email = order.customer.email;
+                                    
+                                    // Default address
+                                    long addressID = 0;
+                                    if (order.customer.default_address != null)
+                                    {
+                         
+                                        ShopifyAddress address = order.customer.default_address;
+                                        addressID = address.id.HasValue ? address.id.Value : 0;
+                                        orderCustomer.StreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
+                                        orderCustomer.City = string.Format("{0} {1}", address.zip, address.city).Trim();
+                                        orderCustomer.Country = address.country_code;
+
+                                        // If customer has a company name -> store it as the main visma Customer name
+                                        if (!string.IsNullOrEmpty(address.company))
+                                        {
+                                            orderContact.Name = orderCustomerName;
+                                            orderCustomer.Name1 = address.company;
+                                        }
+
+                                        orderCustomer.PhoneNumber = address.phone;
+                                        orderContact.Phone = address.phone;
+
+                                    }
+
+                                    // Save additional customer tags such as VAT number
+
+                                    
+                                    orderCustomer.Save();
+                                    sales.CustomerNumber = orderCustomer.Number;
+
+                                    // Save new customer mapping to ShopifyVisma database
+                                    customerTA.InsertCustomer(shop.ID, order.customer.id, orderCustomer.Number, addressID, 1);
+
+                                    Log(string.Format("   - Order customer [#{0}] saved to Visma as Customer {1}", order.customer.id, orderCustomer.Number));
+                                }
+
                             }
 
                         }
                     }
 
+                    
                     sales.TermsOfDeliveryId = shop.data.TermsOfDelivery;
                     sales.SellerId = orderCustomer != null ? orderCustomer.SellerID : shop.data.Seller;
+                     
 
                     // Order delivery date
                     DateTime orderDeliveryDate = order.created_at.AddYears(1);
                     sales.DeliveryDate = orderDeliveryDate;
 
+                    
                     // Unifaun
                     string locationIDText = order.GetNoteAttribute("Unifaun Location ID");
-                    int locationID;
-                    if (int.TryParse(locationIDText, out locationID))
+                    short locationID;
+                    if (short.TryParse(locationIDText, out locationID))
                     {
                         sales.DriverId = locationID;
                     }
-
-                    string locationStreetAddress = order.GetNoteAttribute("Unifaun Location Name");
+                    
+                    string locationName = order.GetNoteAttribute("Unifaun Location Name");
+                    string locationStreetAddress = order.GetNoteAttribute("Unifaun Location Street");
                     string locationCity = order.GetNoteAttribute("Unifaun Location City");
-
+                    string locationZIP = order.GetNoteAttribute("Unifaun Location ZIP");
+                    
 
                     // Billing address
                     if (order.billing_address != null)
@@ -732,8 +846,9 @@ namespace ShopifyVismaApp
                         if (!string.IsNullOrEmpty(locationStreetAddress) && !string.IsNullOrEmpty(locationCity))
                         {
                             sales.DeliveryName2 = "c/o R-Kioski";
-                            sales.DeliveryStreetAddress = locationStreetAddress;
-                            sales.DeliveryCity = locationCity;
+                            sales.DeliveryStreetAddress = string.Format("{0}", locationStreetAddress);
+                            sales.DeliveryCity = string.Format("{0} {1}", locationZIP, locationCity);
+                
                         }
 
                     }

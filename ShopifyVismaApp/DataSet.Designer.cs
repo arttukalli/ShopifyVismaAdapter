@@ -12112,7 +12112,7 @@ SELECT ID, ShopID, ShopifyCustomerID, VismaCustomerNumber, CreatedDate, UpdatedD
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT * FROM dbo.Customer";
@@ -12136,16 +12136,24 @@ SELECT ID, ShopID, ShopifyCustomerID, VismaCustomerNumber, CreatedDate, UpdatedD
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"INSERT INTO Customer
-                         (ShopID, ShopifyCustomerID, VismaCustomerNumber, ShopifyAddressID, VismaContactPosition, CreatedDate, UpdatedDate)
-VALUES        (@ShopID,@ShopifyCustomerID,@VismaCustomerNumber,@ShopifyAddressID, @VismaContactPosition, GETDATE(),GETDATE()); 
-";
+            this._commandCollection[3].CommandText = "SELECT CreatedDate, ID, ShopID, ShopifyAddressID, ShopifyCustomerID, UpdatedDate," +
+                " VismaContactPosition, VismaCustomerNumber FROM Customer WHERE (ShopID = @ShopID" +
+                ") AND (ShopifyCustomerID = @ShopifyCustomerID)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyCustomerID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyCustomerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VismaCustomerNumber", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "VismaCustomerNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyAddressID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyAddressID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VismaContactPosition", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "VismaContactPosition", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"INSERT INTO Customer
+                         (ShopID, ShopifyCustomerID, VismaCustomerNumber, ShopifyAddressID, VismaContactPosition, CreatedDate, UpdatedDate)
+VALUES        (@ShopID,@ShopifyCustomerID,@VismaCustomerNumber,@ShopifyAddressID, @VismaContactPosition, GETDATE(),GETDATE()); 
+";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyCustomerID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyCustomerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VismaCustomerNumber", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "VismaCustomerNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyAddressID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyAddressID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VismaContactPosition", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "VismaContactPosition", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12211,6 +12219,24 @@ VALUES        (@ShopID,@ShopifyCustomerID,@VismaCustomerNumber,@ShopifyAddressID
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet.CustomerDataTable GetDataByShopifyCustomerID(int ShopID, global::System.Nullable<long> ShopifyCustomerID) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ShopID));
+            if ((ShopifyCustomerID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((long)(ShopifyCustomerID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            DataSet.CustomerDataTable dataTable = new DataSet.CustomerDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DataSet.CustomerDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
@@ -12242,7 +12268,7 @@ VALUES        (@ShopID,@ShopifyCustomerID,@VismaCustomerNumber,@ShopifyAddressID
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
         public virtual int InsertCustomer(int ShopID, global::System.Nullable<long> ShopifyCustomerID, global::System.Nullable<int> VismaCustomerNumber, global::System.Nullable<long> ShopifyAddressID, global::System.Nullable<int> VismaContactPosition) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
             command.Parameters[0].Value = ((int)(ShopID));
             if ((ShopifyCustomerID.HasValue == true)) {
                 command.Parameters[1].Value = ((long)(ShopifyCustomerID.Value));

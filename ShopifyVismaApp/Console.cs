@@ -35,6 +35,10 @@ namespace ShopifyVismaApp
                 StatusLabel.Text = "Select account to update.";
                 return;
             }
+
+            // Update type - regular or full
+            short updateType = (short)(checkBoxFullUpdate.Checked ? 2 : 1);
+
             BackgroundWorker bw = new BackgroundWorker();
 
             Adapter adapter = new Adapter();
@@ -47,7 +51,7 @@ namespace ShopifyVismaApp
             this.RunButton.Enabled = false;
 
             bw.DoWork += delegate(object bwSender, DoWorkEventArgs bwe)
-            { ((Adapter)bwe.Argument).UpdateRecords(shopID); };
+            { ((Adapter)bwe.Argument).UpdateRecords(shopID, updateType); };
             bw.RunWorkerCompleted += worker_RunWorkerCompleted;
             bw.WorkerSupportsCancellation = true;
             bw.RunWorkerAsync(adapter);

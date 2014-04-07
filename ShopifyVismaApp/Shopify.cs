@@ -323,7 +323,7 @@ namespace ShopifyVismaApp
         /// </summary>
         /// <param name="article">Visma Article object</param>
         /// <returns>Product JSON string</returns>
-        public string GetProductDataFromVismaArticle(Article article, DateTime? deliveryDate, string articleName, decimal? vatRate, bool includeVariants)
+        public string GetProductDataFromVismaArticle(Article article, DateTime? deliveryDate, string articleName, decimal? vatRate, string videoUrl, bool includeVariants)
         {
 
  
@@ -370,6 +370,19 @@ namespace ShopifyVismaApp
 
             obj.tags = tags;
 
+            // Video URL as metafield
+            List<Metafield> metafields = new List<Metafield>();
+            if (!string.IsNullOrEmpty(videoUrl))
+            {
+                Metafield videoMeta = new Metafield();
+                videoMeta.@namespace = "app";
+                videoMeta.key = "video";
+                videoMeta.value_type = "string";
+                videoMeta.value = videoUrl;
+                metafields.Add(videoMeta);
+            }
+            obj.metafields = metafields;
+
             //if (variantID.HasValue)
             //    variant.id = variantID.Value;
 
@@ -395,7 +408,7 @@ namespace ShopifyVismaApp
         /// </summary>
         /// <param name="article">Visma Customer object</param>
         /// <returns>Customer JSON string</returns>
-        public string GetCustomertDataFromVismaCustomer(Customer customer, Contact contact, Customer invoiceCustomer, long? addressID)
+        public string GetCustomerDataFromVismaCustomer(Customer customer, Contact contact, Customer invoiceCustomer, long? addressID)
         {
             Customer addressCustomer = (invoiceCustomer == null) ? customer : invoiceCustomer;
 
@@ -443,7 +456,9 @@ namespace ShopifyVismaApp
 
             adr.first_name = contactFirstName;
             adr.last_name = contactLastName;
-            adr.company = customer.Name1;
+            // Save company name if different than conact name
+            if (contact.Name != customer.Name1)
+                adr.company = customer.Name1;
             adr.address1 = addressCustomer.StreetAddress;
             adr.city = city;
             adr.zip = zip;
@@ -565,7 +580,7 @@ namespace ShopifyVismaApp
 
         }
 
-        public void CreateUpdateProduct(Article article, ref long? shopifyProductID, ref long? shopifyVariantID, ref long? shopifyVariantVatID, DateTime? deliveryDate, string articleName, decimal? vatRate)
+        public void CreateUpdateProduct(Article article, ref long? shopifyProductID, ref long? shopifyVariantID, ref long? shopifyVariantVatID, DateTime? deliveryDate, string articleName, decimal? vatRate, string videoUrl)
         {
             
             object response = null;
@@ -576,7 +591,7 @@ namespace ShopifyVismaApp
             if (!shopifyProductID.HasValue)
             {
                 // Create new Product
-                string productData = GetProductDataFromVismaArticle(article, deliveryDate,  articleName, vatRate, true);
+                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, videoUrl, true);
                 response = CreateProduct(productData);
 
                 JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
@@ -591,7 +606,7 @@ namespace ShopifyVismaApp
             else
             {
                 // Update existing Product
-                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, false);
+                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, videoUrl, false);
                 response = UpdateProduct(productData, shopifyProductID.Value);
 
                 JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());

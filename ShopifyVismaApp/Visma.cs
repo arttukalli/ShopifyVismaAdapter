@@ -95,7 +95,7 @@ namespace ShopifyVismaApp
         public string GetImagePath()
         {
             string path = ConfigurationSettings.AppSettings["Visma.ImagesPath"];
-            int vismaCompany = int.Parse(ConfigurationSettings.AppSettings["Visma.Company"]);
+            int vismaCompany = this.company;
 
             return string.Format(path, vismaCompany);
 
@@ -104,6 +104,11 @@ namespace ShopifyVismaApp
         public string GetImageFilePath(string code)
         {
             return string.Format("{0}{1}.jpg", this.GetImagePath(), code);
+        }
+
+        public string GetVideoFilePath(string code)
+        {
+            return string.Format("{0}{1}.txt", this.GetImagePath(), code);
         }
 
         /// <summary>

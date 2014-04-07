@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.shopTableAdapter = new ShopifyVismaApp.DataSetTableAdapters.ShopTableAdapter();
             this.StatusLabel = new System.Windows.Forms.Label();
+            this.checkBoxFullUpdate = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.shopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
             this.SuspendLayout();
@@ -106,11 +107,22 @@
             this.StatusLabel.TabIndex = 4;
             this.StatusLabel.Text = "Ready.";
             // 
+            // checkBoxFullUpdate
+            // 
+            this.checkBoxFullUpdate.AutoSize = true;
+            this.checkBoxFullUpdate.Location = new System.Drawing.Point(357, 17);
+            this.checkBoxFullUpdate.Name = "checkBoxFullUpdate";
+            this.checkBoxFullUpdate.Size = new System.Drawing.Size(80, 17);
+            this.checkBoxFullUpdate.TabIndex = 5;
+            this.checkBoxFullUpdate.Text = "Full Update";
+            this.checkBoxFullUpdate.UseVisualStyleBackColor = true;
+            // 
             // Console
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 369);
+            this.Controls.Add(this.checkBoxFullUpdate);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.accountBox);
@@ -136,6 +148,7 @@
         private System.Windows.Forms.BindingSource shopBindingSource;
         private DataSetTableAdapters.ShopTableAdapter shopTableAdapter;
         private System.Windows.Forms.Label StatusLabel;
+        private System.Windows.Forms.CheckBox checkBoxFullUpdate;
     }
 }
 

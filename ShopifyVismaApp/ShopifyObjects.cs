@@ -24,6 +24,7 @@ namespace ShopifyVismaApp
         public List<Variant> variants { get; set; }
         public List<ShopifyProductImage> images { get; set; }
         public List<Options> options { get; set; }
+        public List<Metafield> metafields { get; set; }
     }
 
     public class ShopifyProductSimple
@@ -35,6 +36,7 @@ namespace ShopifyVismaApp
         public string title { get; set; }
         public string tags { get; set; }
         public List<Variant> variants { get; set; }
+        public List<Metafield> metafields { get; set; }
     }
 
     public class Variant
@@ -81,6 +83,15 @@ namespace ShopifyVismaApp
 
         public int id { get; set; }
         public string name { get; set; }
+    }
+
+    public class Metafield
+    {
+
+        public string key { get; set; }
+        public string @namespace { get; set; }
+        public string value { get; set; }
+        public string value_type { get; set; }
     }
 
     public class ShopifyCustomerSimple
