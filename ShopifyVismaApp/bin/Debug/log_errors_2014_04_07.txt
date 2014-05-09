@@ -1,0 +1,40 @@
+7.4.2014 01:04:32: *** ERROR ****
+Error updating shop fysioline-fiSystem.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 680
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 94**************
+7.4.2014 01:07:59: *** ERROR ****
+Error updating shop fysioline-fiSystem.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 682
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 94**************
+7.4.2014 02:47:22: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ShopifyVismaApp.Visma.GetImagePath() in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 98
+   at ShopifyVismaApp.Visma.GetVideoFilePath(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 111
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 271
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 97**************
+7.4.2014 02:50:19: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ShopifyVismaApp.Visma.GetImagePath() in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 98
+   at ShopifyVismaApp.Visma.GetVideoFilePath(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 111
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 271
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 97**************
+7.4.2014 02:51:43: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ShopifyVismaApp.Visma.GetImagePath() in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 98
+   at ShopifyVismaApp.Visma.GetVideoFilePath(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 111
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 272
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 97**************

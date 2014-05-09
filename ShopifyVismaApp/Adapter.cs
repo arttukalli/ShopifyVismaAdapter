@@ -389,7 +389,13 @@ namespace ShopifyVismaApp
                         // Product image
                         if ((shopifyProductID != null) && (updateArticleImages) && ((shopifyImageID == null) || (shopifyImageID == 0)))
                         {
-                            string imagePath = visma.GetImageFilePath(articleCode);
+                            string imagesFilter = visma.GetImageFilesFilter(articleCode);
+
+                            string[] imagesNames = Directory.GetFiles(visma.GetImagePath(), imagesFilter);
+                            Log(imagesFilter);
+                            Log(imagesNames.ToString());
+
+                            string imagePath = "x";
                             if (File.Exists(imagePath))
                             {
                                 Log("   - Image exists: " + imagePath);
@@ -718,6 +724,7 @@ namespace ShopifyVismaApp
                     Customer orderCustomer = null;
                     if (order.customer != null)
                     {
+                      
                         string customerTags = order.customer.tags;
                         //Log(customerTags);
                         if (!string.IsNullOrEmpty(customerTags))
@@ -745,57 +752,59 @@ namespace ShopifyVismaApp
                                     Log(string.Format("   - Order customer [#{0}] already exists in Visma as Customer {1}", order.customer.id, orderCustomer.Number));
                            
                                 }
-                                else
+                            }
+                        }
+
+
+                        if (orderCustomer == null)
+                        {
+                            // Create new customer in Visma
+                            orderCustomer = Customer.CreateNew(visma._context);
+                            string orderCustomerName = string.Format("{0} {1}", order.customer.first_name, order.customer.last_name);
+                            orderCustomer.Name1 = orderCustomerName;
+
+                            //orderCustomer.InvoiceEmail = order.customer.email;
+
+                            Contact orderContact = orderCustomer.Contacts.AddNew();
+                            orderContact.Email = order.customer.email;
+
+                            // Default address
+                            long addressID = 0;
+                            if (order.customer.default_address != null)
+                            {
+
+                                ShopifyAddress address = order.customer.default_address;
+                                addressID = address.id.HasValue ? address.id.Value : 0;
+                                orderCustomer.StreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
+                                orderCustomer.City = string.Format("{0} {1}", address.zip, address.city).Trim();
+                                orderCustomer.Country = address.country_code;
+
+                                // If customer has a company name -> store it as the main visma Customer name
+                                if (!string.IsNullOrEmpty(address.company))
                                 {
-
-                                    // Create new customer in Visma
-                                    orderCustomer = Customer.CreateNew(visma._context);
-                                    string orderCustomerName = string.Format("{0} {1}", order.customer.first_name, order.customer.last_name);
-                                    orderCustomer.Name1 = orderCustomerName;
-                                    
-                                    //orderCustomer.InvoiceEmail = order.customer.email;
-
-                                    Contact orderContact = orderCustomer.Contacts.AddNew();
-                                    orderContact.Email = order.customer.email;
-                                    
-                                    // Default address
-                                    long addressID = 0;
-                                    if (order.customer.default_address != null)
-                                    {
-                         
-                                        ShopifyAddress address = order.customer.default_address;
-                                        addressID = address.id.HasValue ? address.id.Value : 0;
-                                        orderCustomer.StreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
-                                        orderCustomer.City = string.Format("{0} {1}", address.zip, address.city).Trim();
-                                        orderCustomer.Country = address.country_code;
-
-                                        // If customer has a company name -> store it as the main visma Customer name
-                                        if (!string.IsNullOrEmpty(address.company))
-                                        {
-                                            orderContact.Name = orderCustomerName;
-                                            orderCustomer.Name1 = address.company;
-                                        }
-
-                                        orderCustomer.PhoneNumber = address.phone;
-                                        orderContact.Phone = address.phone;
-
-                                    }
-
-                                    // Save additional customer tags such as VAT number
-
-                                    
-                                    orderCustomer.Save();
-                                    sales.CustomerNumber = orderCustomer.Number;
-
-                                    // Save new customer mapping to ShopifyVisma database
-                                    customerTA.InsertCustomer(shop.ID, order.customer.id, orderCustomer.Number, addressID, 1);
-
-                                    Log(string.Format("   - Order customer [#{0}] saved to Visma as Customer {1}", order.customer.id, orderCustomer.Number));
+                                    orderContact.Name = orderCustomerName;
+                                    orderCustomer.Name1 = address.company;
                                 }
+
+                                orderCustomer.PhoneNumber = address.phone;
+                                orderContact.Phone = address.phone;
 
                             }
 
+                            // Save additional customer tags such as VAT number
+
+
+                            orderCustomer.Save();
+                            sales.CustomerNumber = orderCustomer.Number;
+
+                            // Save new customer mapping to ShopifyVisma database
+                            customerTA.InsertCustomer(shop.ID, order.customer.id, orderCustomer.Number, addressID, 1);
+
+                            Log(string.Format("   - Order customer [#{0}] saved to Visma as Customer {1}", order.customer.id, orderCustomer.Number));
                         }
+
+                            
+                        
                     }
 
                     
@@ -820,6 +829,9 @@ namespace ShopifyVismaApp
                     string locationStreetAddress = order.GetNoteAttribute("Unifaun Location Street");
                     string locationCity = order.GetNoteAttribute("Unifaun Location City");
                     string locationZIP = order.GetNoteAttribute("Unifaun Location ZIP");
+
+                    //sales.OrdererNumber
+
                     
 
                     // Billing address
@@ -830,7 +842,19 @@ namespace ShopifyVismaApp
                         sales.OrdererStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
                         sales.OrdererCity = string.Format("{0} {1}", address.zip, address.city).Trim();
 
+                        sales.CustomerName = sales.OrdererName;
+                        sales.CustomerStreetAddress = sales.OrdererStreetAddress;
+                        sales.CustomerCity = sales.OrdererCity;
+
+                        if (orderCustomer != null)
+                        {
+                            sales.OrdererNumber = orderCustomer.Number;
+                            sales.CustomerNumber = orderCustomer.Number;
+                        }
+
                     }
+
+
 
 
 
@@ -851,6 +875,11 @@ namespace ShopifyVismaApp
                 
                         }
 
+                        if (orderCustomer != null)
+                        {
+                            sales.DeliveryNumber = orderCustomer.Number;
+                        }
+
                     }
 
 
@@ -865,6 +894,31 @@ namespace ShopifyVismaApp
                         //salesRow.VatPercent = 0;
                         if (lineItem.price.HasValue)
                             salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
+                    }
+
+                    // Shipping items
+                    foreach (var lineItem in order.shipping_lines)
+                    {
+                        SalesOrderRow salesRow = sales.SalesorderRows.AddNew();
+                        salesRow.ArticleCode = "207";
+                        salesRow.ArticleName = lineItem.title.Substring(0, 50);
+                        salesRow.Amount = 1; // lineItem.quantity;
+                        salesRow.DeliveryStart = orderDeliveryDate;
+                        //salesRow.VatPercent = 0;
+                        if (lineItem.price.HasValue)
+                            salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
+                    }
+
+                    // CoD payment method
+                    if (sales.TermsOfPaymentId == 20) // TODO: Move value to Shop table
+                    {
+                        SalesOrderRow salesRow = sales.SalesorderRows.AddNew();
+                        salesRow.ArticleCode = "204";
+                        salesRow.ArticleName = order.gateway.Substring(0, 50);
+                        salesRow.Amount = 1; // lineItem.quantity;
+                        salesRow.DeliveryStart = orderDeliveryDate;
+                        //salesRow.VatPercent = 0;
+                        salesRow.UnitPrice = 5; // TODO: Move value to Shop table
                     }
 
 

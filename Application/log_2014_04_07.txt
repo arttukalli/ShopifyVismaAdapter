@@ -1,0 +1,12 @@
+7.4.2014 01:03:53: 
+== Starting new update for Shop fysioline-fi [1] at 7.4.2014 01:03:53. ==
+7.4.2014 01:03:53: Last Shopify update: , Last Visma update: 
+
+7.4.2014 01:03:54: 
+Loading Orders from Shopify
+7.4.2014 01:03:57: 11 orders loaded.
+7.4.2014 01:03:57: *** ERROR ****
+Error updating shop fysioline-fiSystem.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 680
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 94**************

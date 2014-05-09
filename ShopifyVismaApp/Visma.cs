@@ -101,9 +101,9 @@ namespace ShopifyVismaApp
 
         }
 
-        public string GetImageFilePath(string code)
+        public string GetImageFilesFilter(string code)
         {
-            return string.Format("{0}{1}.jpg", this.GetImagePath(), code);
+            return string.Format("{0}*.*", code);
         }
 
         public string GetVideoFilePath(string code)

@@ -1,0 +1,176 @@
+8.4.2014 00:34:38: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateCustomer(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 224
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 195**************
+8.4.2014 00:41:58: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 00:42:32: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:02:40: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:02:41: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:03:10: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:03:11: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:07:48: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:07:49: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:08:02: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:08:02: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:09:32: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:09:33: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:09:35: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:15:58: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:15:59: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:16:00: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:18:19: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:18:20: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:20:56: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:20:56: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:20:58: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************

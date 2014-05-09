@@ -1,0 +1,108 @@
+9.5.2014 02:16:19: *** ERROR ****
+Error updating shop fysioline-fiCsla.DataPortalException: DataPortal.Update failed ---> Csla.Server.CallMethodException: DataPortal_Insert method call failed ---> System.ApplicationException: Common error ---> System.Data.SqlClient.SqlException: Error converting data type int to smallint.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CSLAVismaEnvironment.DataAccessHelper.ExecuteNonQueryCommand(IDbCommand& oCommand)
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   at Csla.DataPortal.Update(Object obj)
+   at Csla.DataPortal.Update[T](T obj)
+   at Csla.BusinessBase`1.Save()
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Save()
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 906
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 111**************
+9.5.2014 02:21:48: *** ERROR ****
+Error updating shop fysioline-fiCsla.DataPortalException: DataPortal.Update failed ---> Csla.Server.CallMethodException: DataPortal_Insert method call failed ---> System.ApplicationException: Common error ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CSLAVismaEnvironment.DataAccessHelper.ExecuteNonQueryCommand(IDbCommand& oCommand)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRow.Insert(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRows.Update(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   at Csla.DataPortal.Update(Object obj)
+   at Csla.DataPortal.Update[T](T obj)
+   at Csla.BusinessBase`1.Save()
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Save()
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 919
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 111**************
+9.5.2014 02:26:37: *** ERROR ****
+Error updating shop fysioline-fiCsla.DataPortalException: DataPortal.Update failed ---> Csla.Server.CallMethodException: DataPortal_Insert method call failed ---> System.ApplicationException: Common error ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CSLAVismaEnvironment.DataAccessHelper.ExecuteNonQueryCommand(IDbCommand& oCommand)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRow.Insert(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRows.Update(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   at Csla.DataPortal.Update(Object obj)
+   at Csla.DataPortal.Update[T](T obj)
+   at Csla.BusinessBase`1.Save()
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Save()
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 920
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 111**************

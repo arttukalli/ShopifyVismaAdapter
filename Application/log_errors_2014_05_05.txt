@@ -1,0 +1,112 @@
+5.5.2014 01:01:19: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+5.5.2014 01:01:20: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+5.5.2014 01:01:21: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+5.5.2014 01:01:33: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:21:38: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:39:00: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentException: Illegal characters in path.
+   at System.Security.Permissions.FileIOPermission.HasIllegalCharacters(String[] str)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   at System.IO.Directory.GetFiles(String path)
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 394
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:41:01: *** ERROR ****
+Error updating shop fysioline-fiSystem.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object arg0)
+   at ShopifyVismaApp.Visma.GetImageFilesFilter(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 106
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 392
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:42:03: *** ERROR ****
+Error updating shop fysioline-fiSystem.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object arg0)
+   at ShopifyVismaApp.Visma.GetImageFilesFilter(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 106
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 392
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:42:22: *** ERROR ****
+Error updating shop fysioline-testSystem.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object arg0)
+   at ShopifyVismaApp.Visma.GetImageFilesFilter(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 106
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 392
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:43:15: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:43:59: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:49:28: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:59:40: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************

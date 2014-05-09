@@ -1,0 +1,654 @@
+5.5.2014 01:01:02: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:01:02. ==
+5.5.2014 01:01:02: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+5.5.2014 01:01:11: 
+34 customers found in Visma database.
+5.5.2014 01:01:15: - Customer Pekka Nyholm test - 1 [926816]
+5.5.2014 01:01:15:  - Unable to create customer - No email value
+5.5.2014 01:01:16: - Customer Pekka Nyholm test - 1 [926817]
+5.5.2014 01:01:16:  - Unable to create customer - No email value
+5.5.2014 01:01:16: - Customer Pekka Nyholm test - 1 [926818]
+5.5.2014 01:01:18:  - Shopify Customer [232330337] updated.
+5.5.2014 01:01:18: - Customer Pekka Nyholm test - 1 [926819]
+5.5.2014 01:01:19: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+5.5.2014 01:01:19: - Customer Wrange - 1 [926820]
+5.5.2014 01:01:20: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+5.5.2014 01:01:20: - Customer  - 1 [926548]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [926584]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [926071]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer SALLAN KUNTA - 1 [82967]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [925707]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [922073]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [925523]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [926062]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [926045]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [26727]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [923150]
+5.5.2014 01:01:20:  - Unable to create customer - No email value
+5.5.2014 01:01:20: - Customer  - 1 [923246]
+5.5.2014 01:01:21: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+5.5.2014 01:01:21: - Customer PELLON KUNTA - 1 [382318]
+5.5.2014 01:01:21:  - Unable to create customer - No email value
+5.5.2014 01:01:21: - Customer  - 1 [923759]
+5.5.2014 01:01:21:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [923751]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [925105]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [924763]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [921646]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [923320]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [922949]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [925887]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [923025]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [90075]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [921137]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [920317]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [924981]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:22: - Customer  - 1 [920811]
+5.5.2014 01:01:22:  - Unable to create customer - No email value
+5.5.2014 01:01:26: 
+140 products found in Visma database.
+5.5.2014 01:01:29:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:01:32:  - Shopify Product [284376881] updated.
+5.5.2014 01:01:32:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:01:32:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+5.5.2014 01:01:33: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:01:33:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+5.5.2014 01:01:35:  - Shopify Product [284376905] updated.
+5.5.2014 01:01:35:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+5.5.2014 01:01:37:  - Shopify Product [284376913] updated.
+5.5.2014 01:01:37:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+5.5.2014 01:01:38:  - Shopify Product [284376921] updated.
+5.5.2014 01:01:38:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+5.5.2014 01:01:40:  - Shopify Product [284376929] updated.
+5.5.2014 01:01:40:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+5.5.2014 01:01:42:  - Shopify Product [284376941] updated.
+5.5.2014 01:01:42:  - Article COMMERCIAL SELF GENERATING ELLIPTICAL [WR37007]
+5.5.2014 01:01:44:  - Shopify Product [284376949] updated.
+5.5.2014 01:01:44:  - Article HOME USE ADJUSTABLE STRIDE [WR37008]
+5.5.2014 01:01:46:  - Shopify Product [284376957] updated.
+5.5.2014 01:01:46:  - Article HOME USE FIXED STRIDE [WR37009]
+5.5.2014 01:01:47:  - Shopify Product [284376965] updated.
+5.5.2014 01:01:47:  - Article BEST FITNESS FIXED STRID [WR37010]
+5.5.2014 01:01:49:  - Shopify Product [284376973] updated.
+5.5.2014 01:01:49:  - Article ENDURANCE COMMERCIAL SPIN STYLE BIKE [WR37011]
+5.5.2014 01:01:51:  - Shopify Product [284376981] updated.
+5.5.2014 01:01:51:  - Article COMMERCIAL TREADMILL [WR37012]
+5.5.2014 01:01:53:  - Shopify Product [284376993] updated.
+5.5.2014 01:01:53:  - Article BEST FITNESS SPINNER [WR37013]
+5.5.2014 01:01:55:  - Shopify Product [284377001] updated.
+5.5.2014 01:01:55:  - Article BEST FITNESS CROSS TRAINER [WR37014]
+5.5.2014 01:01:56:  - Shopify Product [284377009] updated.
+5.5.2014 01:01:56:  - Article BEST FITNESS UPRIGHT BIKE [WR37015]
+5.5.2014 01:01:58:  - Shopify Product [284377017] updated.
+5.5.2014 01:01:58:  - Article BEST FITNESS CHAIN DRIVE SPIN STYLE BIKE [WR37016]
+5.5.2014 01:02:00:  - Shopify Product [284377029] updated.
+5.5.2014 01:02:00:  - Article FUSION PERSONAL TRAINER W/210LB STACK [WR37020]
+5.5.2014 01:02:02:  - Shopify Product [284377033] updated.
+5.5.2014 01:02:02:  - Article FUSION PERSONAL TRAINER W/ 310LB STACK [WR37021]
+5.5.2014 01:02:04:  - Shopify Product [284377045] updated.
+5.5.2014 01:02:04:  - Article FUSION PERSONAL TRAINER BI-ANGULAR W/210LB [WR37022]
+5.5.2014 01:02:05:  - Shopify Product [284377057] updated.
+5.5.2014 01:02:05:  - Article FUSION PERSONAL TRAINER BIANGULAR W/ 310LB [WR37023]
+5.5.2014 01:02:07:  - Shopify Product [284377065] updated.
+5.5.2014 01:02:07:  - Article LEG PRESS ATTACHMENT [WR37024]
+5.5.2014 01:02:09:  - Shopify Product [284377077] updated.
+5.5.2014 01:02:09:  - Article MULTI HIP ATTACHMENT [WR37025]
+5.5.2014 01:02:11:  - Shopify Product [284377085] updated.
+5.5.2014 01:02:11:  - Article PULLEY AREA SHROUD PLASTIC [WR37027]
+5.5.2014 01:02:13:  - Shopify Product [284377105] updated.
+5.5.2014 01:02:13:  - Article PULLEY AREA SHROUD METAL [WR37028]
+5.5.2014 01:02:14:  - Shopify Product [284377117] updated.
+5.5.2014 01:02:14:  - Article CABLE COLUMN ATTACHENT [WR37031]
+5.5.2014 01:02:16:  - Shopify Product [284377129] updated.
+5.5.2014 01:02:16:  - Article OPTIONAL VKR/DIP STATION [WR37032]
+5.5.2014 01:02:17:  - Shopify Product [304705957] created.
+5.5.2014 01:02:17:  - Article CABLE COLUMN ATTACHENT [WR37036]
+5.5.2014 01:02:18:  - Shopify Product [304705969] created.
+5.5.2014 01:02:18:  - Article DOOR FRAME W/ 200LB STACK FOR ATTACHMENTS [WR37037]
+5.5.2014 01:02:18:  - Shopify Product [304705977] created.
+5.5.2014 01:02:18:  - Article OPTIONAL VKR/DIP FOR EXM3000 [WR37043]
+5.5.2014 01:02:19:  - Shopify Product [304705981] created.
+5.5.2014 01:02:19:  - Article OPTIONAL LEG PRESS/CALF INCLUDES 210LB [WR37045]
+5.5.2014 01:02:20:  - Shopify Product [304705989] created.
+5.5.2014 01:02:20:  - Article POWERLINE FREE WEIGHT HOME GYM [WR37047]
+5.5.2014 01:02:20:  - Shopify Product [304705997] created.
+5.5.2014 01:02:20:  - Article POWERLINE LEG PRESS FOR P1X/P2X [WR37050]
+5.5.2014 01:02:21:  - Shopify Product [304706001] created.
+5.5.2014 01:02:21:  - Article P2X METAL SHROUD OPTION [WR37051]
+5.5.2014 01:02:21:  - Shopify Product [304706017] created.
+5.5.2014 01:02:21:  - Article LEG PRESS FOR BSG10X [WR37053]
+5.5.2014 01:02:22:  - Shopify Product [304706025] created.
+5.5.2014 01:02:22:  - Article LEVERAGE CALF SQUAT ATTACHMENT [WR37058]
+5.5.2014 01:02:23:  - Shopify Product [304706033] created.
+5.5.2014 01:02:23:  - Article SERIES 7 SMITH SYSTEM ALL OPTIONS PACKAGE [WR37062]
+5.5.2014 01:02:23:  - Shopify Product [304706041] created.
+5.5.2014 01:02:23:  - Article 150LB STACK [WR37064]
+5.5.2014 01:02:24:  - Shopify Product [304706045] created.
+5.5.2014 01:02:24:  - Article POWERLINE SMITH MACHINE SYSTEM [WR37065]
+5.5.2014 01:02:24:  - Shopify Product [304706053] created.
+5.5.2014 01:02:24:  - Article LAT ATTACHMENT FOR GPR378 [WR37067]
+5.5.2014 01:02:25:  - Shopify Product [304706057] created.
+5.5.2014 01:02:25:  - Article 200LB STACK  FOR GLA378 [WR37068]
+5.5.2014 01:02:26:  - Shopify Product [304706061] created.
+5.5.2014 01:02:26:  - Article POWERLINE SQUAT RACK [WR37071]
+5.5.2014 01:02:26:  - Shopify Product [304706065] created.
+5.5.2014 01:02:26:  - Article LEVERAGE FID BENCH W/ LEG DEVELOPER [WR37078]
+5.5.2014 01:02:27:  - Shopify Product [304706073] created.
+5.5.2014 01:02:27:  - Article LEG DEV/PREACHER CURL FOR BFFID10 [WR37081]
+5.5.2014 01:02:27:  - Shopify Product [304706077] created.
+5.5.2014 01:02:27:  - Article OPTIONAL PULL-UP/CHIN-UP HANDLES [WR37085]
+5.5.2014 01:02:28:  - Shopify Product [304706089] created.
+5.5.2014 01:02:28:  - Article 50LB ADD-ON WEIGHT [WR37087]
+5.5.2014 01:02:29:  - Shopify Product [304706097] created.
+5.5.2014 01:02:29:  - Article ACCESSORY RACK FOR GCC200/210 [WR37089]
+5.5.2014 01:02:29:  - Shopify Product [304706101] created.
+5.5.2014 01:02:29:  - Article 4´ PADDED BAR FOR GDCC200/210 [WR37090]
+5.5.2014 01:02:30:  - Shopify Product [304706109] created.
+5.5.2014 01:02:30:  - Article BI/TRI MACHINE WITH 210LB STACK [WR37095]
+5.5.2014 01:02:31:  - Shopify Product [304706117] created.
+5.5.2014 01:02:31:  - Article POWERLINE AB BOARD [WR37099]
+5.5.2014 01:02:31:  - Shopify Product [304706121] created.
+5.5.2014 01:02:31:  - Article INVERSION TABLE [WR37105]
+5.5.2014 01:02:32:  - Shopify Product [304706125] created.
+5.5.2014 01:02:32:  - Article AB BACK MACHINE WITH 210LB STACK [WR37106]
+5.5.2014 01:02:32:  - Shopify Product [304706133] created.
+5.5.2014 01:02:32:  - Article INNER/OUTER THIGH W/ 210LB STACK [WR37121]
+5.5.2014 01:02:33:  - Shopify Product [304706141] created.
+5.5.2014 01:02:33:  - Article EZ LOAD WEIGHT TREE STANDARD [WR37138]
+5.5.2014 01:02:33:  - Shopify Product [304706145] created.
+5.5.2014 01:02:33:  - Article CHEST PRESS MACHINE WITH 210LB STACK [WR37150]
+5.5.2014 01:02:34:  - Shopify Product [304706153] created.
+5.5.2014 01:02:34:  - Article CHEST PRESS MACHINE WITH 310LB STACK [WR37151]
+5.5.2014 01:02:35:  - Shopify Product [304706157] created.
+5.5.2014 01:02:35:  - Article DUAL CABLE COLUMN WITH (2) 165LB STACKS [WR37152]
+5.5.2014 01:02:35:  - Shopify Product [304706161] created.
+5.5.2014 01:02:35:  - Article DUAL CABLE COLUMN WITH (2) 235LB STACKS [WR37153]
+5.5.2014 01:02:36:  - Shopify Product [304706165] created.
+5.5.2014 01:02:36:  - Article LEG CURL MACHINE WITH 210LB. STACK [WR37154]
+5.5.2014 01:02:37:  - Shopify Product [304706177] created.
+5.5.2014 01:02:37:  - Article LEG CURL MACHINE WITH 310LB. STACK [WR37155]
+5.5.2014 01:02:37:  - Shopify Product [304706181] created.
+5.5.2014 01:02:37:  - Article LEG EXTENSION MACHINE WITH 210LB. STACK [WR37156]
+5.5.2014 01:02:38:  - Shopify Product [304706189] created.
+5.5.2014 01:02:38:  - Article LEG EXTENSION MACHINE WITH 310LB. STACK [WR37157]
+5.5.2014 01:02:38:  - Shopify Product [304706201] created.
+5.5.2014 01:02:38:  - Article LAT MACHINE WITH MID ROW 210LB STACK [WR37158]
+5.5.2014 01:02:39:  - Shopify Product [304706205] created.
+5.5.2014 01:02:39:  - Article LAT MACHINE WITH MID ROW 310LB STACK [WR37159]
+5.5.2014 01:02:39:  - Shopify Product [304706209] created.
+5.5.2014 01:02:39:  - Article LEG PRESS MACHINE 210LB STACK [WR37160]
+5.5.2014 01:02:40:  - Shopify Product [304706217] created.
+5.5.2014 01:02:40:  - Article LEG PRESS MACHINE 310LB STACK [WR37161]
+5.5.2014 01:02:41:  - Shopify Product [304706221] created.
+5.5.2014 01:02:41:  - Article CABLE CROSSOVER W/ 2 160LB STACKS [WR37162]
+5.5.2014 01:02:41:  - Shopify Product [304706225] created.
+5.5.2014 01:02:41:  - Article CABLE CROSSOVER W/ 2 235LB STACKS [WR37163]
+5.5.2014 01:02:42:  - Shopify Product [304706237] created.
+5.5.2014 01:02:42:  - Article COMMERCIAL SHOULDER PRESS BENCH [WR37166]
+5.5.2014 01:02:43:  - Shopify Product [304706241] created.
+5.5.2014 01:02:43:  - Article COUNTERBALANCED SMITH MACHINE [WR37167]
+5.5.2014 01:02:43:  - Shopify Product [304706245] created.
+5.5.2014 01:02:43:  - Article MULTI RACK POWER SYSTEM [WR37168]
+5.5.2014 01:02:44:  - Shopify Product [304706253] created.
+5.5.2014 01:02:44:  - Article COMMERCIAL FID BENCH [WR37169]
+5.5.2014 01:02:44:  - Shopify Product [304706257] created.
+5.5.2014 01:02:44:  - Article 4 STACK BASE NO WEIGHTS [WR37174]
+5.5.2014 01:02:45:  - Shopify Product [304706265] created.
+5.5.2014 01:02:45:  - Article INNER OUTER  ATTACHMENT W/ WEIGHTS [WR37176]
+5.5.2014 01:02:46:  - Shopify Product [304706269] created.
+5.5.2014 01:02:46:  - Article MULTI PRESS ATTACHMENT W/WEIGHTS [WR37178]
+5.5.2014 01:02:46:  - Shopify Product [304706277] created.
+5.5.2014 01:02:46:  - Article LAT/MID ROW ATTACHMENT W/ WEIGHTS [WR37180]
+5.5.2014 01:02:47:  - Shopify Product [304706281] created.
+5.5.2014 01:02:47:  - Article PEC/ REAR DELT ATTAACHMENT W/ WEIGHTS [WR37182]
+5.5.2014 01:02:47:  - Shopify Product [304706293] created.
+5.5.2014 01:02:47:  - Article LEG PRESS/CALF WITH WEIGHTS [WR37184]
+5.5.2014 01:02:48:  - Shopify Product [304706301] created.
+5.5.2014 01:02:48:  - Article BICEP /TRICEP ATTACHMENT W/ WEIGHTS [WR37186]
+5.5.2014 01:02:49:  - Shopify Product [304706309] created.
+5.5.2014 01:02:49:  - Article LEG EXT/ LEG CURL ATTACHMENT W/ WEIGHTS [WR37188]
+5.5.2014 01:02:49:  - Shopify Product [304706313] created.
+5.5.2014 01:02:49:  - Article AB/ BACK ATTACHMENT W/ WEIGHTS [WR37190]
+5.5.2014 01:02:50:  - Shopify Product [304706321] created.
+5.5.2014 01:02:50:  - Article CABLE COLUMN ATTACHMENT W/ WEIGHTS [WR37192]
+5.5.2014 01:02:50:  - Shopify Product [304706325] created.
+5.5.2014 01:02:50:  - Article CHEST/LAT/ROW ATTACHMENT W/ WEIGHTS [WR37194]
+5.5.2014 01:02:51:  - Shopify Product [304706329] created.
+5.5.2014 01:02:51:  - Article 300LB WEIGHT STACK OPTION [WR37197]
+5.5.2014 01:02:52:  - Shopify Product [304706337] created.
+5.5.2014 01:02:52:  - Article LEVERAGE CHEST PRESS [WR37200]
+5.5.2014 01:02:52:  - Shopify Product [304706341] created.
+5.5.2014 01:02:52:  - Article LEVERAGE INCLINE PRESS [WR37201]
+5.5.2014 01:02:53:  - Shopify Product [304706349] created.
+5.5.2014 01:02:53:  - Article LEVERAGE SHOULDER PRESS [WR37202]
+5.5.2014 01:02:53:  - Shopify Product [304706357] created.
+5.5.2014 01:02:53:  - Article LEVERAGE LEG PRESS [WR37203]
+5.5.2014 01:02:54:  - Shopify Product [304706365] created.
+5.5.2014 01:02:54:  - Article LEVERAGE LEG EXTENSION [WR37204]
+5.5.2014 01:02:55:  - Shopify Product [304706369] created.
+5.5.2014 01:02:55:  - Article LEVERAGE LEG CURL [WR37205]
+5.5.2014 01:02:55:  - Shopify Product [304706377] created.
+5.5.2014 01:02:55:  - Article LEVERAGE SEATED ROW [WR37206]
+5.5.2014 01:02:56:  - Shopify Product [304706381] created.
+5.5.2014 01:02:56:  - Article LEVERAGE LAT PULLDOWN [WR37207]
+5.5.2014 01:02:56:  - Shopify Product [304706385] created.
+5.5.2014 01:02:56:  - Article 6LB/2.72KG BLACK [WR37240]
+5.5.2014 01:02:57:  - Shopify Product [304706389] created.
+5.5.2014 01:02:57:  - Article 8LB/3.63KG BLACK [WR37241]
+5.5.2014 01:02:58:  - Shopify Product [304706397] created.
+5.5.2014 01:02:58:  - Article 10LB/4.54KG BLACK [WR37242]
+5.5.2014 01:02:58:  - Shopify Product [304706401] created.
+5.5.2014 01:02:58:  - Article 12LB/5.45KG BLACK [WR37243]
+5.5.2014 01:02:59:  - Shopify Product [304706405] created.
+5.5.2014 01:02:59:  - Article 14LB/6.36KG BLACK [WR37244]
+5.5.2014 01:02:59:  - Shopify Product [304706409] created.
+5.5.2014 01:02:59:  - Article 18LB/8.18KG BLACK [WR37245]
+5.5.2014 01:03:00:  - Shopify Product [304706417] created.
+5.5.2014 01:03:00:  - Article 20LB/9.09KG BLACK [WR37246]
+5.5.2014 01:03:01:  - Shopify Product [304706421] created.
+5.5.2014 01:03:01:  - Article 25LB/11.36KG BLACK [WR37247]
+5.5.2014 01:03:01:  - Shopify Product [304706425] created.
+5.5.2014 01:03:01:  - Article 45CM GREEN (WEIGHTS AND DIMS IN 12PACK QUANT) [WR37251]
+5.5.2014 01:03:02:  - Shopify Product [304706429] created.
+5.5.2014 01:03:02:  - Article 55CM GRAY(WEIGHTS AND DIMS IN 12 PACK QUAN) [WR37252]
+5.5.2014 01:03:02:  - Shopify Product [304706437] created.
+5.5.2014 01:03:02:  - Article 65CM RED (WEIGHTS AND DIMS IN 12 PACK QUAN) [WR37253]
+5.5.2014 01:03:03:  - Shopify Product [304706441] created.
+5.5.2014 01:03:03:  - Article 75CM BLUE (WEIGHTS AND DIMS IN 12 PACK QUAN) [WR37254]
+5.5.2014 01:03:04:  - Shopify Product [304706449] created.
+5.5.2014 01:03:04:  - Article 4LB ORANGE [WR37257]
+5.5.2014 01:03:04:  - Shopify Product [304706457] created.
+5.5.2014 01:03:04:  - Article 6LB LIGHT PURPLE [WR37258]
+5.5.2014 01:03:05:  - Shopify Product [304706465] created.
+5.5.2014 01:03:05:  - Article 9LB YELLOW [WR37259]
+5.5.2014 01:03:06:  - Shopify Product [304706469] created.
+5.5.2014 01:03:06:  - Article 12 LB GREEN [WR37260]
+5.5.2014 01:03:06:  - Shopify Product [304706473] created.
+5.5.2014 01:03:06:  - Article 15LB RED [WR37261]
+5.5.2014 01:03:07:  - Shopify Product [304706485] created.
+5.5.2014 01:03:07:  - Article 18LB BLUE [WR37262]
+5.5.2014 01:03:07:  - Shopify Product [304706489] created.
+5.5.2014 01:03:07:  - Article 24LB LIGHT PURPLE [WR37263]
+5.5.2014 01:03:08:  - Shopify Product [304706493] created.
+5.5.2014 01:03:08:  - Article 30LB MAGENTA [WR37264]
+5.5.2014 01:03:09:  - Shopify Product [304706497] created.
+5.5.2014 01:03:09:  - Article 36LB LIGHT GRAY [WR37265]
+5.5.2014 01:03:09:  - Shopify Product [304706505] created.
+5.5.2014 01:03:09:  - Article CLOCK [WR37277]
+5.5.2014 01:03:10:  - Shopify Product [304706521] created.
+5.5.2014 01:03:10:  - Article INVERSION BOOTS [WR37279]
+5.5.2014 01:03:10:  - Shopify Product [304706529] created.
+5.5.2014 01:03:10:  - Article "14"" ADAPTER SLEEVE" [WR37295]
+5.5.2014 01:03:11:  - Shopify Product [304706533] created.
+5.5.2014 01:03:11:  - Article THIGH STRAPS [WR37299]
+5.5.2014 01:03:11:  - Shopify Product [304706545] created.
+5.5.2014 01:03:12:  - Article 2.5LB ADD ON WEIGHT [WR37300]
+5.5.2014 01:03:12:  - Shopify Product [304706549] created.
+5.5.2014 01:03:12:  - Article 5LB ADD ON WEIGHT [WR37301]
+5.5.2014 01:03:13:  - Shopify Product [304706557] created.
+5.5.2014 01:03:13:  - Article "36""FULL FOAM ROLLER" [WR37307]
+5.5.2014 01:03:13:  - Shopify Product [304706561] created.
+5.5.2014 01:03:13:  - Article "36""HALF FOAM ROLLER" [WR37308]
+5.5.2014 01:03:14:  - Shopify Product [304706569] created.
+5.5.2014 01:03:14:  - Article YOGA MAT BLUE 3MM [WR37310]
+5.5.2014 01:03:14:  - Shopify Product [304706573] created.
+5.5.2014 01:03:15:  - Article YOGA MAT RED 5MM [WR37311]
+5.5.2014 01:03:15:  - Shopify Product [304706581] created.
+5.5.2014 01:03:15:  - Article WEIGHTED VEST 40LBS [WR37313]
+5.5.2014 01:03:16:  - Shopify Product [304706585] created.
+5.5.2014 01:03:16:  - Article SQUAT CALF BLOCK [WR37316]
+5.5.2014 01:03:16:  - Shopify Product [304706593] created.
+5.5.2014 01:03:16:  - Article "4´X6´X 3/8"" RUBBER FLOORING" [WR37320]
+5.5.2014 01:03:17:  - Shopify Product [304706601] created.
+5.5.2014 01:03:17:  - Article TREADMILL MATS [WR37321]
+5.5.2014 01:03:18:  - Shopify Product [304706605] created.
+5.5.2014 01:03:18:  - Article BIKE/ EXERCISE MAT [WR37322]
+5.5.2014 01:03:18:  - Shopify Product [304706609] created.
+5.5.2014 01:03:18:  - Article "INTERLOCKING 19.5""X19.5""X 3/8""  4 PACK BLACK" [WR37323]
+5.5.2014 01:03:19:  - Shopify Product [304706617] created.
+5.5.2014 01:03:19:  - Article "INTERLOCKING  19.5""X19.5""X3/8"" 4 PACK GRAY" [WR37324]
+5.5.2014 01:03:19:  - Shopify Product [304706621] created.
+5.5.2014 01:03:19:  - Article 260LB BLACK BUMPER SET PR 10,15, 25,35,45 [WR37347]
+5.5.2014 01:03:20:  - Shopify Product [304706625] created.
+5.5.2014 01:03:20:  - Article 260LB COLORED BUMPER SET PR , 10,15, 25,35,45 [WR37355]
+5.5.2014 01:03:21:  - Shopify Product [304706633] created.
+5.5.2014 01:03:21: 
+Loading Pricelist specific prices.
+5.5.2014 01:03:24: Pricelist 18 - no pricelist
+5.5.2014 01:03:24: Pricelist 19 - no pricelist
+5.5.2014 01:03:24: Pricelist 20 - no pricelist
+5.5.2014 01:03:24: Pricelist 21 - no pricelist
+5.5.2014 01:03:24: Pricelist 22 - no pricelist
+5.5.2014 01:03:24: Pricelist 23 - no pricelist
+5.5.2014 01:03:24: Pricelist 24 - no pricelist
+5.5.2014 01:03:24: Pricelist 25 - no pricelist
+5.5.2014 01:03:24: Pricelist 26 - no pricelist
+5.5.2014 01:03:24: Pricelist 27 - no pricelist
+5.5.2014 01:03:24: Pricelist 28 - no pricelist
+5.5.2014 01:03:25: Pricelist 29 - no pricelist
+5.5.2014 01:03:25: Pricelist 30 - no pricelist
+5.5.2014 01:03:25: Pricelist 31 - no pricelist
+5.5.2014 01:03:25: Pricelist 32 - no pricelist
+5.5.2014 01:03:25: Pricelist 33 - no pricelist
+5.5.2014 01:03:25: Pricelist 34 - no pricelist
+5.5.2014 01:03:25: Pricelist 36 - no pricelist
+5.5.2014 01:03:25: Pricelist 37 - no pricelist
+5.5.2014 01:03:25: Pricelist 38 - no pricelist
+5.5.2014 01:03:25: Pricelist 39 - no pricelist
+5.5.2014 01:03:25: Pricelist 40 - no pricelist
+5.5.2014 01:03:27: Pricelist 45 - no pricelist
+5.5.2014 01:03:27: Pricelist 46 - no pricelist
+5.5.2014 01:03:27: Pricelist 47 - no pricelist
+5.5.2014 01:03:28: Pricelist 48 - no pricelist
+5.5.2014 01:03:28: Pricelist 49 - no pricelist
+5.5.2014 01:03:28: Pricelist 50 - no pricelist
+5.5.2014 01:03:28: 
+Loading Customer specific prices
+5.5.2014 01:03:28: 
+Loading Orders from Shopify
+5.5.2014 01:03:28: 2 orders loaded.
+5.5.2014 01:03:37:  - Sales Order 10000037 created from order 257193545 (#1005). 
+5.5.2014 01:03:37:  - Sales Order 10000038 created from order 254102865 (#1004). 
+5.5.2014 01:03:37: 
+=== Finished update at 5.5.2014 01:03:37.===
+
+
+5.5.2014 01:21:33: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:21:33. ==
+5.5.2014 01:21:33: Last Shopify update: 5.5.2014 01:01:02, Last Visma update: 5.5.2014 01:01:02
+
+5.5.2014 01:21:34: 
+140 products found in Visma database.
+5.5.2014 01:21:35:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:21:38:  - Shopify Product [284376881] updated.
+5.5.2014 01:21:38:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:21:38:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+5.5.2014 01:21:38: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:21:38: 
+=== Finished update at 5.5.2014 01:21:38.===
+
+
+5.5.2014 01:38:53: 
+== Starting regular update for Shop fysioline-fi [1] at 5.5.2014 01:38:53. ==
+5.5.2014 01:38:53: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+5.5.2014 01:38:53: 
+140 products found in Visma database.
+5.5.2014 01:38:55:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:39:00:  - Shopify Product [261377857] updated.
+5.5.2014 01:39:00: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentException: Illegal characters in path.
+   at System.Security.Permissions.FileIOPermission.HasIllegalCharacters(String[] str)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   at System.IO.Directory.GetFiles(String path)
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 394
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:40:56: 
+== Starting regular update for Shop fysioline-fi [1] at 5.5.2014 01:40:56. ==
+5.5.2014 01:40:56: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+5.5.2014 01:40:56: 
+140 products found in Visma database.
+5.5.2014 01:40:58:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:41:01:  - Shopify Product [261377857] updated.
+5.5.2014 01:41:01: *** ERROR ****
+Error updating shop fysioline-fiSystem.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object arg0)
+   at ShopifyVismaApp.Visma.GetImageFilesFilter(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 106
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 392
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:41:59: 
+== Starting regular update for Shop fysioline-fi [1] at 5.5.2014 01:41:59. ==
+5.5.2014 01:41:59: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+5.5.2014 01:41:59: 
+140 products found in Visma database.
+5.5.2014 01:42:00:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:42:03:  - Shopify Product [261377857] updated.
+5.5.2014 01:42:03: *** ERROR ****
+Error updating shop fysioline-fiSystem.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object arg0)
+   at ShopifyVismaApp.Visma.GetImageFilesFilter(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 106
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 392
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:42:20: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:42:20. ==
+5.5.2014 01:42:20: Last Shopify update: 5.5.2014 01:21:33, Last Visma update: 5.5.2014 01:21:33
+
+5.5.2014 01:42:20: 
+140 products found in Visma database.
+5.5.2014 01:42:20:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:42:22:  - Shopify Product [284376881] updated.
+5.5.2014 01:42:22: *** ERROR ****
+Error updating shop fysioline-testSystem.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object arg0)
+   at ShopifyVismaApp.Visma.GetImageFilesFilter(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 106
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 392
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 105**************
+5.5.2014 01:42:27: 
+== Starting full update for Shop fysioline-test [2] at 5.5.2014 01:42:27. ==
+5.5.2014 01:42:27: Last Shopify update: 5.5.2014 01:21:33, Last Visma update: 5.5.2014 01:21:33
+
+5.5.2014 01:42:27: 
+17205 products found in Visma database.
+5.5.2014 01:42:27: 
+=== Finished update at 5.5.2014 01:42:27.===
+
+
+5.5.2014 01:43:11: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:43:11. ==
+5.5.2014 01:43:11: Last Shopify update: 5.5.2014 01:42:27, Last Visma update: 5.5.2014 01:42:27
+
+5.5.2014 01:43:11: 
+140 products found in Visma database.
+5.5.2014 01:43:11:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:43:15:  - Shopify Product [284376881] updated.
+5.5.2014 01:43:15: KRANKCYCle*.*
+5.5.2014 01:43:15: System.String[]
+5.5.2014 01:43:15:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:43:15:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+5.5.2014 01:43:15: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:43:15: WR37001*.*
+5.5.2014 01:43:15: System.String[]
+5.5.2014 01:43:15: 
+=== Finished update at 5.5.2014 01:43:15.===
+
+
+5.5.2014 01:43:57: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:43:57. ==
+5.5.2014 01:43:57: Last Shopify update: 5.5.2014 01:43:11, Last Visma update: 5.5.2014 01:43:11
+
+5.5.2014 01:43:57: 
+140 products found in Visma database.
+5.5.2014 01:43:57:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:43:59:  - Shopify Product [284376881] updated.
+5.5.2014 01:43:59: KRANKCYCle*.*
+5.5.2014 01:43:59: System.String[]
+5.5.2014 01:43:59:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:43:59:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+5.5.2014 01:43:59: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:43:59: WR37001*.*
+5.5.2014 01:43:59: System.String[]
+5.5.2014 01:43:59: 
+=== Finished update at 5.5.2014 01:43:59.===
+
+
+5.5.2014 01:47:57: 
+== Starting regular update for Shop fysioline-fi [1] at 5.5.2014 01:47:57. ==
+5.5.2014 01:47:57: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+5.5.2014 01:47:58: 
+140 products found in Visma database.
+5.5.2014 01:47:59:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:48:02:  - Shopify Product [261377857] updated.
+5.5.2014 01:48:02: KRANKCYCle*.*
+5.5.2014 01:48:02: System.String[]
+5.5.2014 01:48:02:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:48:03:  - Shopify Product [261383825] updated.
+5.5.2014 01:48:03: WR37001*.*
+5.5.2014 01:48:03: System.String[]
+5.5.2014 01:48:03: 
+=== Finished update at 5.5.2014 01:48:03.===
+
+
+5.5.2014 01:48:56: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:48:56. ==
+5.5.2014 01:48:56: Last Shopify update: 5.5.2014 01:43:57, Last Visma update: 5.5.2014 01:43:57
+
+5.5.2014 01:48:56: 
+140 products found in Visma database.
+5.5.2014 01:48:58:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:49:01:  - Shopify Product [284376881] updated.
+5.5.2014 01:49:01: KRANKCYCle*.*
+5.5.2014 01:49:01: System.String[]
+5.5.2014 01:49:01:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:49:02:  - Shopify Product [284376893] updated.
+5.5.2014 01:49:02: WR37001*.*
+5.5.2014 01:49:02: System.String[]
+5.5.2014 01:49:02: 
+=== Finished update at 5.5.2014 01:49:02.===
+
+
+5.5.2014 01:49:23: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:49:23. ==
+5.5.2014 01:49:24: Last Shopify update: 5.5.2014 01:48:56, Last Visma update: 5.5.2014 01:48:56
+
+5.5.2014 01:49:24: 
+140 products found in Visma database.
+5.5.2014 01:49:24:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:49:28:  - Shopify Product [284376881] updated.
+5.5.2014 01:49:28: KRANKCYCle*.*
+5.5.2014 01:49:28: System.String[]
+5.5.2014 01:49:28:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:49:28:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+5.5.2014 01:49:28: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:49:28: WR37001*.*
+5.5.2014 01:49:28: System.String[]
+5.5.2014 01:49:28: 
+=== Finished update at 5.5.2014 01:49:28.===
+
+
+5.5.2014 01:59:35: 
+== Starting regular update for Shop fysioline-test [2] at 5.5.2014 01:59:35. ==
+5.5.2014 01:59:35: Last Shopify update: 5.5.2014 01:49:23, Last Visma update: 5.5.2014 01:49:23
+
+5.5.2014 01:59:35: 
+140 products found in Visma database.
+5.5.2014 01:59:36:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+5.5.2014 01:59:40:  - Shopify Product [284376881] updated.
+5.5.2014 01:59:40: KRANKCYCle*.*
+5.5.2014 01:59:40: System.String[]
+5.5.2014 01:59:40:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+5.5.2014 01:59:40:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+5.5.2014 01:59:40: *** ERROR ****
+Unable to update Shopify ProductSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateProduct(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 169
+   at ShopifyVismaApp.Shopify.CreateUpdateProduct(Article article, Nullable`1& shopifyProductID, Nullable`1& shopifyVariantID, Nullable`1& shopifyVariantVatID, Nullable`1 deliveryDate, String articleName, Nullable`1 vatRate, String videoUrl) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 610
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 374**************
+5.5.2014 01:59:40: WR37001*.*
+5.5.2014 01:59:40: System.String[]
+5.5.2014 01:59:40: 
+=== Finished update at 5.5.2014 01:59:40.===
+
+

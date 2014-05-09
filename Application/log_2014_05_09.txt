@@ -1,0 +1,223 @@
+9.5.2014 01:34:02: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 01:34:02. ==
+9.5.2014 01:34:02: Last Shopify update: 5.5.2014 01:47:57, Last Visma update: 5.5.2014 01:47:57
+
+9.5.2014 01:34:02: 
+Loading Orders from Shopify
+9.5.2014 01:34:04: 1 orders loaded.
+9.5.2014 01:34:09:  - Sales Order 10000039 created from order 270179361 (#1015). 
+9.5.2014 01:34:09: 
+=== Finished update at 9.5.2014 01:34:09.===
+
+
+9.5.2014 01:58:49: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 01:58:49. ==
+9.5.2014 01:58:49: Last Shopify update: 9.5.2014 01:34:02, Last Visma update: 9.5.2014 01:34:02
+
+9.5.2014 01:58:49: 
+Loading Orders from Shopify
+9.5.2014 01:58:51: 0 orders loaded.
+9.5.2014 01:58:51: 
+=== Finished update at 9.5.2014 01:58:51.===
+
+
+9.5.2014 01:59:23: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 01:59:22. ==
+9.5.2014 01:59:23: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 01:59:23: 
+Loading Orders from Shopify
+9.5.2014 01:59:25: 1 orders loaded.
+9.5.2014 01:59:26:  - Sales Order 10000040 created from order 270179361 (#1015). 
+9.5.2014 01:59:26: 
+=== Finished update at 9.5.2014 01:59:26.===
+
+
+9.5.2014 02:06:19: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:06:19. ==
+9.5.2014 02:06:19: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:06:19: 
+Loading Orders from Shopify
+9.5.2014 02:06:21: 1 orders loaded.
+9.5.2014 02:06:22: Tags
+9.5.2014 02:06:22: 
+9.5.2014 02:06:23:  - Sales Order 10000041 created from order 270179361 (#1015). 
+9.5.2014 02:06:23: 
+=== Finished update at 9.5.2014 02:06:23.===
+
+
+9.5.2014 02:10:13: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:10:13. ==
+9.5.2014 02:10:13: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:10:13: 
+Loading Orders from Shopify
+9.5.2014 02:10:14: 1 orders loaded.
+9.5.2014 02:10:23:    - Order customer [#249234157] saved to Visma as Customer 926821
+9.5.2014 02:10:25:  - Sales Order 10000042 created from order 270179361 (#1015). 
+9.5.2014 02:10:25: 
+=== Finished update at 9.5.2014 02:10:25.===
+
+
+9.5.2014 02:16:14: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:16:14. ==
+9.5.2014 02:16:15: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:16:15: 
+Loading Orders from Shopify
+9.5.2014 02:16:17: 1 orders loaded.
+9.5.2014 02:16:18:    - Order customer [#249234157] saved to Visma as Customer 926822
+9.5.2014 02:16:18: 331053201
+9.5.2014 02:16:19: *** ERROR ****
+Error updating shop fysioline-fiCsla.DataPortalException: DataPortal.Update failed ---> Csla.Server.CallMethodException: DataPortal_Insert method call failed ---> System.ApplicationException: Common error ---> System.Data.SqlClient.SqlException: Error converting data type int to smallint.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CSLAVismaEnvironment.DataAccessHelper.ExecuteNonQueryCommand(IDbCommand& oCommand)
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   at Csla.DataPortal.Update(Object obj)
+   at Csla.DataPortal.Update[T](T obj)
+   at Csla.BusinessBase`1.Save()
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Save()
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 906
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 111**************
+9.5.2014 02:21:44: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:21:44. ==
+9.5.2014 02:21:44: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:21:44: 
+Loading Orders from Shopify
+9.5.2014 02:21:45: 1 orders loaded.
+9.5.2014 02:21:46:    - Order customer [#249234157] saved to Visma as Customer 926823
+9.5.2014 02:21:48: *** ERROR ****
+Error updating shop fysioline-fiCsla.DataPortalException: DataPortal.Update failed ---> Csla.Server.CallMethodException: DataPortal_Insert method call failed ---> System.ApplicationException: Common error ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CSLAVismaEnvironment.DataAccessHelper.ExecuteNonQueryCommand(IDbCommand& oCommand)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRow.Insert(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRows.Update(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   at Csla.DataPortal.Update(Object obj)
+   at Csla.DataPortal.Update[T](T obj)
+   at Csla.BusinessBase`1.Save()
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Save()
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 919
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 111**************
+9.5.2014 02:26:33: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:26:33. ==
+9.5.2014 02:26:33: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:26:33: 
+Loading Orders from Shopify
+9.5.2014 02:26:35: 1 orders loaded.
+9.5.2014 02:26:35:    - Order customer [#249234157] saved to Visma as Customer 926824
+9.5.2014 02:26:35: Itella SmartPost, nouto haluamastasi pakettiautomaatista
+9.5.2014 02:26:37: *** ERROR ****
+Error updating shop fysioline-fiCsla.DataPortalException: DataPortal.Update failed ---> Csla.Server.CallMethodException: DataPortal_Insert method call failed ---> System.ApplicationException: Common error ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at CSLAVismaEnvironment.DataAccessHelper.ExecuteNonQueryCommand(IDbCommand& oCommand)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRow.Insert(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.SalesOrderRows.Update(INovaContext context)
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   --- End of inner exception stack trace ---
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Insert()
+   at Nova.SalesOrderMgmtLibrary.SalesOrder.DataPortal_Insert()
+   at Csla.MethodCaller.CallMethod(Object obj, MethodInfo info, Object[] parameters)
+   at Csla.MethodCaller.CallMethod(Object obj, String method, Object[] parameters)
+   at Csla.Server.SimpleDataPortal.Update(Object obj, DataPortalContext context)
+   at Csla.DataPortal.Update(Object obj)
+   at Csla.DataPortal.Update[T](T obj)
+   at Csla.BusinessBase`1.Save()
+   at Nova.SalesOrderMgmtLibrary.AbstractSalesObject`1.Save()
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 920
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 111**************
+9.5.2014 02:28:55: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:28:55. ==
+9.5.2014 02:28:55: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:28:55: 
+Loading Orders from Shopify
+9.5.2014 02:28:57: 1 orders loaded.
+9.5.2014 02:28:57:    - Order customer [#249234157] saved to Visma as Customer 926825
+9.5.2014 02:28:57: Itella SmartPost, nouto haluamastasi pakettiautomaatista
+9.5.2014 02:28:59:  - Sales Order 10000045 created from order 270179361 (#1015). 
+9.5.2014 02:28:59: 
+=== Finished update at 9.5.2014 02:28:59.===
+
+
+9.5.2014 02:41:28: 
+== Starting regular update for Shop fysioline-fi [1] at 9.5.2014 02:41:28. ==
+9.5.2014 02:41:28: Last Shopify update: 1.5.2014 00:00:00, Last Visma update: 1.5.2014 00:00:00
+
+9.5.2014 02:41:29: 
+Loading Orders from Shopify
+9.5.2014 02:41:31: 1 orders loaded.
+9.5.2014 02:41:32:    - Order customer [#249234157] saved to Visma as Customer 926826
+9.5.2014 02:41:34:  - Sales Order 10000046 created from order 270179361 (#1015). 
+9.5.2014 02:41:34: 
+=== Finished update at 9.5.2014 02:41:34.===
+
+

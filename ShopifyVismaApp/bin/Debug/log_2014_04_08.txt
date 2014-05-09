@@ -1,0 +1,1786 @@
+8.4.2014 00:04:10: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:04:10. ==
+8.4.2014 00:04:10: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:04:11: 
+31 customers found in Visma database.
+8.4.2014 00:04:11: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: arhot@kotiposti.net
+8.4.2014 00:04:11: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: arhot@kotiposti.net
+8.4.2014 00:04:11: - Customer  - 1 [926548]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: 
+8.4.2014 00:04:11: - Customer  - 1 [926584]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: 
+8.4.2014 00:04:11: - Customer  - 1 [926071]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: 
+8.4.2014 00:04:11: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: 
+8.4.2014 00:04:11: - Customer  - 1 [925707]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: 
+8.4.2014 00:04:11: - Customer  - 1 [922073]
+8.4.2014 00:04:11:  - Unable to create customer - No email value
+8.4.2014 00:04:11: 
+8.4.2014 00:04:12: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 00:04:12:  - Unable to create customer - No email value
+8.4.2014 00:04:12: 
+8.4.2014 00:04:12: - Customer  - 1 [925523]
+8.4.2014 00:04:12:  - Unable to create customer - No email value
+8.4.2014 00:04:12: 
+8.4.2014 00:04:12: - Customer  - 1 [926062]
+8.4.2014 00:04:12:  - Unable to create customer - No email value
+8.4.2014 00:04:12: 
+8.4.2014 00:04:12: - Customer  - 1 [926045]
+8.4.2014 00:04:12:  - Unable to create customer - No email value
+8.4.2014 00:04:12: 
+8.4.2014 00:04:12: - Customer  - 1 [26727]
+8.4.2014 00:04:12:  - Unable to create customer - No email value
+8.4.2014 00:04:12: 
+8.4.2014 00:04:12: - Customer  - 1 [923150]
+8.4.2014 00:04:12:  - Unable to create customer - No email value
+8.4.2014 00:04:12: 
+8.4.2014 00:04:12: - Customer  - 1 [923246]
+8.4.2014 00:04:14:  - Shopify Customer [216851273] updated.
+8.4.2014 00:04:14: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:14: - Customer  - 1 [923759]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:14: - Customer  - 1 [923751]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:14: - Customer  - 1 [925105]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:14: - Customer  - 1 [924763]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:14: - Customer  - 1 [921646]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:14: - Customer  - 1 [923320]
+8.4.2014 00:04:14:  - Unable to create customer - No email value
+8.4.2014 00:04:14: 
+8.4.2014 00:04:15: - Customer  - 1 [922949]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [925887]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [923025]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [90075]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [921137]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [920317]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [924981]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: - Customer  - 1 [920811]
+8.4.2014 00:04:15:  - Unable to create customer - No email value
+8.4.2014 00:04:15: 
+8.4.2014 00:04:15: 
+Loading Orders from Shopify
+8.4.2014 00:04:15: 2 orders loaded.
+8.4.2014 00:04:15:  - Order 253101997 (#1012) is already in Visma.
+8.4.2014 00:04:15:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:04:15: 
+=== Finished update at 8.4.2014 00:04:15.===
+
+
+8.4.2014 00:04:56: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:04:56. ==
+8.4.2014 00:04:56: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:04:56: 
+Loading Orders from Shopify
+8.4.2014 00:04:58: 2 orders loaded.
+8.4.2014 00:04:58:    - Order customer [#225050105] already exists in Visma as Customer 926816
+8.4.2014 00:05:01:  - Sales Order 10000032 created from order 253101997 (#1012). 
+8.4.2014 00:05:01:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:05:01: 
+=== Finished update at 8.4.2014 00:05:01.===
+
+
+8.4.2014 00:05:31: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:05:31. ==
+8.4.2014 00:05:31: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:05:31: 
+Loading Orders from Shopify
+8.4.2014 00:05:33: 2 orders loaded.
+8.4.2014 00:05:33:  - Order 253101997 (#1012) is already in Visma.
+8.4.2014 00:05:33:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:05:33: 
+=== Finished update at 8.4.2014 00:05:33.===
+
+
+8.4.2014 00:05:38: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:05:38. ==
+8.4.2014 00:05:38: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:05:38: 
+Loading Orders from Shopify
+8.4.2014 00:05:39: 2 orders loaded.
+8.4.2014 00:05:39:    - Order customer [#225050105] already exists in Visma as Customer 926816
+8.4.2014 00:05:41:  - Sales Order 10000033 created from order 253101997 (#1012). 
+8.4.2014 00:05:41:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:05:42: 
+=== Finished update at 8.4.2014 00:05:41.===
+
+
+8.4.2014 00:33:12: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:33:12. ==
+8.4.2014 00:33:12: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:33:12: 
+Loading Orders from Shopify
+8.4.2014 00:33:14: 2 orders loaded.
+8.4.2014 00:33:15:    - Order customer [#225050105] saved to Visma as Customer 926818
+8.4.2014 00:33:17:  - Sales Order 10000034 created from order 253101997 (#1012). 
+8.4.2014 00:33:17:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:33:17: 
+=== Finished update at 8.4.2014 00:33:17.===
+
+
+8.4.2014 00:34:36: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:34:36. ==
+8.4.2014 00:34:36: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:34:36: 
+32 customers found in Visma database.
+8.4.2014 00:34:36: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 00:34:36:  - Unable to create customer - No email value
+8.4.2014 00:34:36: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 00:34:36:  - Unable to create customer - No email value
+8.4.2014 00:34:36: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 00:34:38: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Put(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 171
+   at ShopifyVismaApp.Shopify.ShopifyPut(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 269
+   at ShopifyVismaApp.Shopify.UpdateCustomer(Object data, Int64 id) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 224
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 195**************
+8.4.2014 00:34:38: - Customer  - 1 [926548]
+8.4.2014 00:34:38:  - Unable to create customer - No email value
+8.4.2014 00:34:38: - Customer  - 1 [926584]
+8.4.2014 00:34:38:  - Unable to create customer - No email value
+8.4.2014 00:34:38: - Customer  - 1 [926071]
+8.4.2014 00:34:38:  - Unable to create customer - No email value
+8.4.2014 00:34:38: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 00:34:38:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [925707]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [922073]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [925523]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [926062]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [926045]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [26727]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [923150]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:39: - Customer  - 1 [923246]
+8.4.2014 00:34:39:  - Shopify Customer [216851273] updated.
+8.4.2014 00:34:39: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 00:34:39:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [923759]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [923751]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [925105]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [924763]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [921646]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [923320]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [922949]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [925887]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [923025]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:40: - Customer  - 1 [90075]
+8.4.2014 00:34:40:  - Unable to create customer - No email value
+8.4.2014 00:34:41: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 00:34:41:  - Unable to create customer - No email value
+8.4.2014 00:34:41: - Customer  - 1 [921137]
+8.4.2014 00:34:41:  - Unable to create customer - No email value
+8.4.2014 00:34:41: - Customer  - 1 [920317]
+8.4.2014 00:34:41:  - Unable to create customer - No email value
+8.4.2014 00:34:41: - Customer  - 1 [924981]
+8.4.2014 00:34:41:  - Unable to create customer - No email value
+8.4.2014 00:34:41: - Customer  - 1 [920811]
+8.4.2014 00:34:41:  - Unable to create customer - No email value
+8.4.2014 00:34:41: 
+Loading Orders from Shopify
+8.4.2014 00:34:41: 2 orders loaded.
+8.4.2014 00:34:41:  - Order 253101997 (#1012) is already in Visma.
+8.4.2014 00:34:41:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:34:41: 
+=== Finished update at 8.4.2014 00:34:41.===
+
+
+8.4.2014 00:41:54: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:41:54. ==
+8.4.2014 00:41:54: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:41:55: 
+32 customers found in Visma database.
+8.4.2014 00:41:55: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 00:41:55:  - Unable to create customer - No email value
+8.4.2014 00:41:55: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 00:41:55:  - Unable to create customer - No email value
+8.4.2014 00:41:55: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 00:41:56: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 00:41:58: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 00:41:58: - Customer  - 1 [926548]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer  - 1 [926584]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer  - 1 [926071]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer  - 1 [925707]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer  - 1 [922073]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer  - 1 [925523]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:58: - Customer  - 1 [926062]
+8.4.2014 00:41:58:  - Unable to create customer - No email value
+8.4.2014 00:41:59: - Customer  - 1 [926045]
+8.4.2014 00:41:59:  - Unable to create customer - No email value
+8.4.2014 00:41:59: - Customer  - 1 [26727]
+8.4.2014 00:41:59:  - Unable to create customer - No email value
+8.4.2014 00:41:59: - Customer  - 1 [923150]
+8.4.2014 00:41:59:  - Unable to create customer - No email value
+8.4.2014 00:41:59: - Customer  - 1 [923246]
+8.4.2014 00:41:59:  - Shopify Customer [216851273] updated.
+8.4.2014 00:41:59: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 00:41:59:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [923759]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [923751]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [925105]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [924763]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [921646]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [923320]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [922949]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [925887]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [923025]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [90075]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [921137]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [920317]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [924981]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: - Customer  - 1 [920811]
+8.4.2014 00:42:00:  - Unable to create customer - No email value
+8.4.2014 00:42:00: 
+Loading Orders from Shopify
+8.4.2014 00:42:01: 2 orders loaded.
+8.4.2014 00:42:01:    - Order customer [#225050105] saved to Visma as Customer 926819
+8.4.2014 00:42:03:  - Sales Order 10000035 created from order 253101997 (#1012). 
+8.4.2014 00:42:03:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:42:03: 
+=== Finished update at 8.4.2014 00:42:03.===
+
+
+8.4.2014 00:42:31: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 00:42:31. ==
+8.4.2014 00:42:31: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 00:42:31: 
+33 customers found in Visma database.
+8.4.2014 00:42:31: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 00:42:31:  - Unable to create customer - No email value
+8.4.2014 00:42:31: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 00:42:32:  - Unable to create customer - No email value
+8.4.2014 00:42:32: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 00:42:32: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 00:42:32: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 00:42:32: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 00:42:33:  - Shopify Customer [225050105] updated.
+8.4.2014 00:42:33: - Customer  - 1 [926548]
+8.4.2014 00:42:33:  - Unable to create customer - No email value
+8.4.2014 00:42:33: - Customer  - 1 [926584]
+8.4.2014 00:42:33:  - Unable to create customer - No email value
+8.4.2014 00:42:33: - Customer  - 1 [926071]
+8.4.2014 00:42:33:  - Unable to create customer - No email value
+8.4.2014 00:42:33: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 00:42:33:  - Unable to create customer - No email value
+8.4.2014 00:42:33: - Customer  - 1 [925707]
+8.4.2014 00:42:33:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [922073]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [925523]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [926062]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [926045]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [26727]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [923150]
+8.4.2014 00:42:34:  - Unable to create customer - No email value
+8.4.2014 00:42:34: - Customer  - 1 [923246]
+8.4.2014 00:42:35:  - Shopify Customer [216851273] updated.
+8.4.2014 00:42:35: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [923759]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [923751]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [925105]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [924763]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [921646]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [923320]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [922949]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [925887]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [923025]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [90075]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [921137]
+8.4.2014 00:42:35:  - Unable to create customer - No email value
+8.4.2014 00:42:35: - Customer  - 1 [920317]
+8.4.2014 00:42:36:  - Unable to create customer - No email value
+8.4.2014 00:42:36: - Customer  - 1 [924981]
+8.4.2014 00:42:36:  - Unable to create customer - No email value
+8.4.2014 00:42:36: - Customer  - 1 [920811]
+8.4.2014 00:42:36:  - Unable to create customer - No email value
+8.4.2014 00:42:36: 
+Loading Orders from Shopify
+8.4.2014 00:42:36: 2 orders loaded.
+8.4.2014 00:42:36:  - Order 253101997 (#1012) is already in Visma.
+8.4.2014 00:42:36:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 00:42:36: 
+=== Finished update at 8.4.2014 00:42:36.===
+
+
+8.4.2014 01:01:45: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 01:01:45. ==
+8.4.2014 01:01:45: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:01:45: 
+Loading Orders from Shopify
+8.4.2014 01:01:47: 2 orders loaded.
+8.4.2014 01:01:47:    - Order customer [#225050105] saved to Visma as Customer 926820
+8.4.2014 01:01:49:  - Sales Order 10000036 created from order 253101997 (#1012). 
+8.4.2014 01:01:50:  - Order 225625837 (#1009) is already in Visma.
+8.4.2014 01:01:50: 
+=== Finished update at 8.4.2014 01:01:50.===
+
+
+8.4.2014 01:02:38: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 01:02:38. ==
+8.4.2014 01:02:38: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:02:38: 
+34 customers found in Visma database.
+8.4.2014 01:02:38: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:02:38:  - Unable to create customer - No email value
+8.4.2014 01:02:38: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:02:38:  - Unable to create customer - No email value
+8.4.2014 01:02:38: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:02:39: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:02:40: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:02:40: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:02:40: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926819",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:02:41: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:02:41: - Customer Wrange - 1 [926820]
+8.4.2014 01:02:42:  - Shopify Customer [225050105] updated.
+8.4.2014 01:02:42: - Customer  - 1 [926548]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [926584]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [926071]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [925707]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [922073]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [925523]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [926062]
+8.4.2014 01:02:42:  - Unable to create customer - No email value
+8.4.2014 01:02:42: - Customer  - 1 [926045]
+8.4.2014 01:02:43:  - Unable to create customer - No email value
+8.4.2014 01:02:43: - Customer  - 1 [26727]
+8.4.2014 01:02:43:  - Unable to create customer - No email value
+8.4.2014 01:02:43: - Customer  - 1 [923150]
+8.4.2014 01:02:43:  - Unable to create customer - No email value
+8.4.2014 01:02:43: - Customer  - 1 [923246]
+8.4.2014 01:02:43:  - Shopify Customer [216851273] updated.
+8.4.2014 01:02:43: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:02:43:  - Unable to create customer - No email value
+8.4.2014 01:02:43: - Customer  - 1 [923759]
+8.4.2014 01:02:43:  - Unable to create customer - No email value
+8.4.2014 01:02:43: - Customer  - 1 [923751]
+8.4.2014 01:02:43:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [925105]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [924763]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [921646]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [923320]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [922949]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [925887]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [923025]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [90075]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [921137]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [920317]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [924981]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: - Customer  - 1 [920811]
+8.4.2014 01:02:44:  - Unable to create customer - No email value
+8.4.2014 01:02:44: 
+=== Finished update at 8.4.2014 01:02:44.===
+
+
+8.4.2014 01:03:09: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 01:03:09. ==
+8.4.2014 01:03:09: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:03:09: 
+34 customers found in Visma database.
+8.4.2014 01:03:09: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:03:09:  - Unable to create customer - No email value
+8.4.2014 01:03:09: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:03:09:  - Unable to create customer - No email value
+8.4.2014 01:03:10: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:03:10: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:03:10: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:03:11: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:03:11: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926819",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:03:11: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:03:11: - Customer Wrange - 1 [926820]
+8.4.2014 01:03:12:  - Shopify Customer [225050105] updated.
+8.4.2014 01:03:12: - Customer  - 1 [926548]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:12: - Customer  - 1 [926584]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:12: - Customer  - 1 [926071]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:12: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:12: - Customer  - 1 [925707]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:12: - Customer  - 1 [922073]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:12: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:03:12:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [925523]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [926062]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [926045]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [26727]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [923150]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [923246]
+8.4.2014 01:03:13:  - Shopify Customer [216851273] updated.
+8.4.2014 01:03:13: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:13: - Customer  - 1 [923759]
+8.4.2014 01:03:13:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [923751]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [925105]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [924763]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [921646]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [923320]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [922949]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [925887]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [923025]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [90075]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [921137]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [920317]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [924981]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: - Customer  - 1 [920811]
+8.4.2014 01:03:14:  - Unable to create customer - No email value
+8.4.2014 01:03:14: 
+=== Finished update at 8.4.2014 01:03:14.===
+
+
+8.4.2014 01:07:46: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 01:07:46. ==
+8.4.2014 01:07:46: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:07:47: 
+34 customers found in Visma database.
+8.4.2014 01:07:47: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:07:47:  - Unable to create customer - No email value
+8.4.2014 01:07:47: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:07:47:  - Unable to create customer - No email value
+8.4.2014 01:07:47: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:07:47: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:07:48: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:07:48: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:07:48: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926819",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:07:49: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:07:49: - Customer Wrange - 1 [926820]
+8.4.2014 01:07:50:  - Shopify Customer [225050105] updated.
+8.4.2014 01:07:50: - Customer  - 1 [926548]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer  - 1 [926584]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer  - 1 [926071]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer  - 1 [925707]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer  - 1 [922073]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:50: - Customer  - 1 [925523]
+8.4.2014 01:07:50:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [926062]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [926045]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [26727]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [923150]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [923246]
+8.4.2014 01:07:51:  - Shopify Customer [216851273] updated.
+8.4.2014 01:07:51: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [923759]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:51: - Customer  - 1 [923751]
+8.4.2014 01:07:51:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [925105]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [924763]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [921646]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [923320]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [922949]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [925887]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [923025]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [90075]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [921137]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [920317]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [924981]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: - Customer  - 1 [920811]
+8.4.2014 01:07:52:  - Unable to create customer - No email value
+8.4.2014 01:07:52: 
+=== Finished update at 8.4.2014 01:07:52.===
+
+
+8.4.2014 01:08:00: 
+== Starting full update for Shop fysioline-fi [1] at 8.4.2014 01:08:00. ==
+8.4.2014 01:08:00: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:08:01: 
+34 customers found in Visma database.
+8.4.2014 01:08:01: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:08:01:  - Unable to create customer - No email value
+8.4.2014 01:08:01: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:08:01:  - Unable to create customer - No email value
+8.4.2014 01:08:01: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:08:01: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:08:02: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:08:02: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:08:02: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926819",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:08:02: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:08:02: - Customer Wrange - 1 [926820]
+8.4.2014 01:08:03:  - Shopify Customer [225050105] updated.
+8.4.2014 01:08:03: - Customer  - 1 [926548]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [926584]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [926071]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [925707]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [922073]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [925523]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [926062]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [926045]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [26727]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [923150]
+8.4.2014 01:08:03:  - Unable to create customer - No email value
+8.4.2014 01:08:03: - Customer  - 1 [923246]
+8.4.2014 01:08:04:  - Shopify Customer [216851273] updated.
+8.4.2014 01:08:04: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:08:04:  - Unable to create customer - No email value
+8.4.2014 01:08:04: - Customer  - 1 [923759]
+8.4.2014 01:08:04:  - Unable to create customer - No email value
+8.4.2014 01:08:04: - Customer  - 1 [923751]
+8.4.2014 01:08:04:  - Unable to create customer - No email value
+8.4.2014 01:08:04: - Customer  - 1 [925105]
+8.4.2014 01:08:04:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [924763]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [921646]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [923320]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [922949]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [925887]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [923025]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [90075]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [921137]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [920317]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [924981]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: - Customer  - 1 [920811]
+8.4.2014 01:08:05:  - Unable to create customer - No email value
+8.4.2014 01:08:05: 
+=== Finished update at 8.4.2014 01:08:05.===
+
+
+8.4.2014 01:09:30: 
+== Starting regular update for Shop fysioline-test [2] at 8.4.2014 01:09:30. ==
+8.4.2014 01:09:30: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:09:30: 
+34 customers found in Visma database.
+8.4.2014 01:09:30: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:09:30:  - Unable to create customer - No email value
+8.4.2014 01:09:30: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:09:30:  - Unable to create customer - No email value
+8.4.2014 01:09:30: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:09:30: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926818",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:09:32:  - Shopify Customer [232330337] created.
+8.4.2014 01:09:32: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:09:32: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Pekka Nyholm test",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926819",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Pekka Nyholm test",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:09:32: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:09:32: - Customer Wrange - 1 [926820]
+8.4.2014 01:09:32: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "Itälahdenkatu 22 A",
+    "address2": null,
+    "city": "Helsinki",
+    "company": "Wrange",
+    "country_code": "FI",
+    "default": true,
+    "first_name": "Pekka",
+    "id": null,
+    "last_name": "Nyholm test",
+    "phone": "0503552683",
+    "province_code": null,
+    "zip": "00910"
+  },
+  "first_name": "Pekka",
+  "last_name": "Nyholm test",
+  "email": "arhot@kotiposti.net",
+  "tags": "+C926820",
+  "addresses": [
+    {
+      "address1": "Itälahdenkatu 22 A",
+      "address2": null,
+      "city": "Helsinki",
+      "company": "Wrange",
+      "country_code": "FI",
+      "default": true,
+      "first_name": "Pekka",
+      "id": null,
+      "last_name": "Nyholm test",
+      "phone": "0503552683",
+      "province_code": null,
+      "zip": "00910"
+    }
+  ]
+}}
+8.4.2014 01:09:33: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:09:33: - Customer  - 1 [926548]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer  - 1 [926584]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer  - 1 [926071]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer  - 1 [925707]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer  - 1 [922073]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:33: - Customer  - 1 [925523]
+8.4.2014 01:09:33:  - Unable to create customer - No email value
+8.4.2014 01:09:34: - Customer  - 1 [926062]
+8.4.2014 01:09:34:  - Unable to create customer - No email value
+8.4.2014 01:09:34: - Customer  - 1 [926045]
+8.4.2014 01:09:34:  - Unable to create customer - No email value
+8.4.2014 01:09:34: - Customer  - 1 [26727]
+8.4.2014 01:09:34:  - Unable to create customer - No email value
+8.4.2014 01:09:34: - Customer  - 1 [923150]
+8.4.2014 01:09:34:  - Unable to create customer - No email value
+8.4.2014 01:09:34: - Customer  - 1 [923246]
+8.4.2014 01:09:34: { "customer": {
+  "id": 0,
+  "default_address": {
+    "address1": "",
+    "address2": null,
+    "city": "",
+    "company": null,
+    "country_code": "FI",
+    "default": true,
+    "first_name": "",
+    "id": null,
+    "last_name": "",
+    "phone": "0503706249",
+    "province_code": null,
+    "zip": ""
+  },
+  "first_name": "",
+  "last_name": "",
+  "email": "kuntosalivilperi@gmail.com",
+  "tags": "+C923246",
+  "addresses": [
+    {
+      "address1": "",
+      "address2": null,
+      "city": "",
+      "company": null,
+      "country_code": "FI",
+      "default": true,
+      "first_name": "",
+      "id": null,
+      "last_name": "",
+      "phone": "0503706249",
+      "province_code": null,
+      "zip": ""
+    }
+  ]
+}}
+8.4.2014 01:09:35: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:09:35: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [923759]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [923751]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [925105]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [924763]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [921646]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [923320]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [922949]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [925887]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [923025]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [90075]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [921137]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [920317]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [924981]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:35: - Customer  - 1 [920811]
+8.4.2014 01:09:35:  - Unable to create customer - No email value
+8.4.2014 01:09:37: 
+140 products found in Visma database.
+8.4.2014 01:09:37:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+8.4.2014 01:09:38:  - Shopify Product [284376881] created.
+8.4.2014 01:09:39:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+8.4.2014 01:09:39:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+8.4.2014 01:09:39:  - Shopify Product [284376893] created.
+8.4.2014 01:09:39:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+8.4.2014 01:09:40:  - Shopify Product [284376905] created.
+8.4.2014 01:09:40:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+8.4.2014 01:09:41:  - Shopify Product [284376913] created.
+8.4.2014 01:09:41:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+8.4.2014 01:09:41:  - Shopify Product [284376921] created.
+8.4.2014 01:09:41:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+8.4.2014 01:09:42:  - Shopify Product [284376929] created.
+8.4.2014 01:09:42:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+8.4.2014 01:09:42:  - Shopify Product [284376941] created.
+8.4.2014 01:09:42:  - Article COMMERCIAL SELF GENERATING ELLIPTICAL [WR37007]
+8.4.2014 01:09:43:  - Shopify Product [284376949] created.
+8.4.2014 01:09:43:  - Article HOME USE ADJUSTABLE STRIDE [WR37008]
+8.4.2014 01:09:44:  - Shopify Product [284376957] created.
+8.4.2014 01:09:44:  - Article HOME USE FIXED STRIDE [WR37009]
+8.4.2014 01:09:44:  - Shopify Product [284376965] created.
+8.4.2014 01:09:44:  - Article BEST FITNESS FIXED STRID [WR37010]
+8.4.2014 01:09:45:  - Shopify Product [284376973] created.
+8.4.2014 01:09:45:  - Article ENDURANCE COMMERCIAL SPIN STYLE BIKE [WR37011]
+8.4.2014 01:09:46:  - Shopify Product [284376981] created.
+8.4.2014 01:09:46:  - Article COMMERCIAL TREADMILL [WR37012]
+8.4.2014 01:09:46:  - Shopify Product [284376993] created.
+8.4.2014 01:09:46:  - Article BEST FITNESS SPINNER [WR37013]
+8.4.2014 01:09:47:  - Shopify Product [284377001] created.
+8.4.2014 01:09:47:  - Article BEST FITNESS CROSS TRAINER [WR37014]
+8.4.2014 01:09:47:  - Shopify Product [284377009] created.
+8.4.2014 01:09:47:  - Article BEST FITNESS UPRIGHT BIKE [WR37015]
+8.4.2014 01:09:48:  - Shopify Product [284377017] created.
+8.4.2014 01:09:48:  - Article BEST FITNESS CHAIN DRIVE SPIN STYLE BIKE [WR37016]
+8.4.2014 01:09:49:  - Shopify Product [284377029] created.
+8.4.2014 01:09:49:  - Article FUSION PERSONAL TRAINER W/210LB STACK [WR37020]
+8.4.2014 01:09:49:  - Shopify Product [284377033] created.
+8.4.2014 01:09:49:  - Article FUSION PERSONAL TRAINER W/ 310LB STACK [WR37021]
+8.4.2014 01:09:50:  - Shopify Product [284377045] created.
+8.4.2014 01:09:50:  - Article FUSION PERSONAL TRAINER BI-ANGULAR W/210LB [WR37022]
+8.4.2014 01:09:50:  - Shopify Product [284377057] created.
+8.4.2014 01:09:50:  - Article FUSION PERSONAL TRAINER BIANGULAR W/ 310LB [WR37023]
+8.4.2014 01:09:51:  - Shopify Product [284377065] created.
+8.4.2014 01:09:51:  - Article LEG PRESS ATTACHMENT [WR37024]
+8.4.2014 01:09:52:  - Shopify Product [284377077] created.
+8.4.2014 01:09:52:  - Article MULTI HIP ATTACHMENT [WR37025]
+8.4.2014 01:09:52:  - Shopify Product [284377085] created.
+8.4.2014 01:09:52:  - Article PULLEY AREA SHROUD PLASTIC [WR37027]
+8.4.2014 01:09:53:  - Shopify Product [284377105] created.
+8.4.2014 01:09:53:  - Article PULLEY AREA SHROUD METAL [WR37028]
+8.4.2014 01:09:54:  - Shopify Product [284377117] created.
+8.4.2014 01:09:54:  - Article CABLE COLUMN ATTACHENT [WR37031]
+8.4.2014 01:09:54:  - Shopify Product [284377129] created.
+8.4.2014 01:09:54:  - Article OPTIONAL VKR/DIP STATION [WR37032]
+8.4.2014 01:15:53: 
+== Starting regular update for Shop fysioline-test [2] at 8.4.2014 01:15:53. ==
+8.4.2014 01:15:53: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:15:53: 
+34 customers found in Visma database.
+8.4.2014 01:15:53: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:15:53:  - Unable to create customer - No email value
+8.4.2014 01:15:53: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:15:53:  - Unable to create customer - No email value
+8.4.2014 01:15:53: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:15:58:  - Shopify Customer [232330337] updated.
+8.4.2014 01:15:58: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:15:58: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:15:58: - Customer Wrange - 1 [926820]
+8.4.2014 01:15:59: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:15:59: - Customer  - 1 [926548]
+8.4.2014 01:15:59:  - Unable to create customer - No email value
+8.4.2014 01:15:59: - Customer  - 1 [926584]
+8.4.2014 01:15:59:  - Unable to create customer - No email value
+8.4.2014 01:15:59: - Customer  - 1 [926071]
+8.4.2014 01:15:59:  - Unable to create customer - No email value
+8.4.2014 01:15:59: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:15:59:  - Unable to create customer - No email value
+8.4.2014 01:15:59: - Customer  - 1 [925707]
+8.4.2014 01:15:59:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [922073]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [925523]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [926062]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [926045]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [26727]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [923150]
+8.4.2014 01:16:00:  - Unable to create customer - No email value
+8.4.2014 01:16:00: - Customer  - 1 [923246]
+8.4.2014 01:16:00: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:16:01: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [923759]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [923751]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [925105]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [924763]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [921646]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [923320]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [922949]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [925887]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [923025]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [90075]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [921137]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [920317]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [924981]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:01: - Customer  - 1 [920811]
+8.4.2014 01:16:01:  - Unable to create customer - No email value
+8.4.2014 01:16:02: 
+140 products found in Visma database.
+8.4.2014 01:16:03:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+8.4.2014 01:18:17: 
+== Starting regular update for Shop fysioline-fi [1] at 8.4.2014 01:18:17. ==
+8.4.2014 01:18:17: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:18:17: 
+34 customers found in Visma database.
+8.4.2014 01:18:18: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:18:18:  - Unable to create customer - No email value
+8.4.2014 01:18:18: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:18:18:  - Unable to create customer - No email value
+8.4.2014 01:18:18: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:18:19: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:18:19: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:18:20: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:18:20: - Customer Wrange - 1 [926820]
+8.4.2014 01:18:21:  - Shopify Customer [225050105] updated.
+8.4.2014 01:18:21: - Customer  - 1 [926548]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [926584]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [926071]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [925707]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [922073]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [925523]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [926062]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [926045]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:21: - Customer  - 1 [26727]
+8.4.2014 01:18:21:  - Unable to create customer - No email value
+8.4.2014 01:18:22: - Customer  - 1 [923150]
+8.4.2014 01:18:22:  - Unable to create customer - No email value
+8.4.2014 01:18:22: - Customer  - 1 [923246]
+8.4.2014 01:18:22:  - Shopify Customer [216851273] updated.
+8.4.2014 01:18:22: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:18:22:  - Unable to create customer - No email value
+8.4.2014 01:20:53: 
+== Starting full update for Shop fysioline-test [2] at 8.4.2014 01:20:53. ==
+8.4.2014 01:20:53: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+8.4.2014 01:20:54: 
+34 customers found in Visma database.
+8.4.2014 01:20:54: - Customer Pekka Nyholm test - 1 [926816]
+8.4.2014 01:20:54:  - Unable to create customer - No email value
+8.4.2014 01:20:54: - Customer Pekka Nyholm test - 1 [926817]
+8.4.2014 01:20:54:  - Unable to create customer - No email value
+8.4.2014 01:20:54: - Customer Pekka Nyholm test - 1 [926818]
+8.4.2014 01:20:55:  - Shopify Customer [232330337] updated.
+8.4.2014 01:20:55: - Customer Pekka Nyholm test - 1 [926819]
+8.4.2014 01:20:56: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:20:56: - Customer Wrange - 1 [926820]
+8.4.2014 01:20:56: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:20:56: - Customer  - 1 [926548]
+8.4.2014 01:20:56:  - Unable to create customer - No email value
+8.4.2014 01:20:56: - Customer  - 1 [926584]
+8.4.2014 01:20:56:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [926071]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer SALLAN KUNTA - 1 [82967]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [925707]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [922073]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [925523]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [926062]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [926045]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [26727]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [923150]
+8.4.2014 01:20:57:  - Unable to create customer - No email value
+8.4.2014 01:20:57: - Customer  - 1 [923246]
+8.4.2014 01:20:58: *** ERROR ****
+Unable to create or update CustomerSystem.Net.WebException: The remote server returned an error: (422) Unprocessable Entity.
+   at System.Net.HttpWebRequest.GetResponse()
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Call(HttpMethods method, String path, Object callParams) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 110
+   at ShopifyAPIAdapterLibrary.ShopifyAPIClient.Post(String path, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyAPIAdapterLibrary\ShopifyAPIClient.cs:line 159
+   at ShopifyVismaApp.Shopify.ShopifyPost(String url, Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 259
+   at ShopifyVismaApp.Shopify.CreateCustomer(Object data) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Shopify.cs:line 218
+   at ShopifyVismaApp.Adapter.UpdateCustomers(Nullable`1 startDate, Int32 customerLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 176**************
+8.4.2014 01:20:58: - Customer PELLON KUNTA - 1 [382318]
+8.4.2014 01:20:58:  - Unable to create customer - No email value
+8.4.2014 01:20:58: - Customer  - 1 [923759]
+8.4.2014 01:20:58:  - Unable to create customer - No email value
+8.4.2014 01:20:58: - Customer  - 1 [923751]
+8.4.2014 01:20:58:  - Unable to create customer - No email value
+8.4.2014 01:20:58: - Customer  - 1 [925105]
+8.4.2014 01:20:58:  - Unable to create customer - No email value
+8.4.2014 01:20:58: - Customer  - 1 [924763]
+8.4.2014 01:20:58:  - Unable to create customer - No email value
+8.4.2014 01:20:58: - Customer  - 1 [921646]
+8.4.2014 01:20:58:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [923320]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [922949]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [925887]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [923025]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [90075]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [921137]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [920317]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [924981]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:20:59: - Customer  - 1 [920811]
+8.4.2014 01:20:59:  - Unable to create customer - No email value
+8.4.2014 01:21:00: 
+17205 products found in Visma database.
+8.4.2014 01:21:02:  - Article S3000 EVOLO LUKKOMEKANISMI RIIPPULUKOLLE [0002_02]
+8.4.2014 01:21:03:  - Shopify Product [284382209] created.
+8.4.2014 01:21:03:  - Article S3000 EVOLO RIIPPULUKKO [0002_10]
+8.4.2014 01:21:04:  - Shopify Product [284382217] created.
+8.4.2014 01:21:04:  - Article AQUAJOGGER CLASSIC VESIJUOKSUVYÖ [00101]
+8.4.2014 01:21:05:  - Shopify Product [284382225] created.
+8.4.2014 01:21:05:    - Image exists: J:\Nova6\YR5\pics\00101.jpg
+8.4.2014 01:21:06:   - New product image created 681531677
+8.4.2014 01:21:06:  - Article AQUAJOGGER VARAOSAVYÖ [00101belt]
+8.4.2014 01:21:07:  - Shopify Product [284382249] created.
+8.4.2014 01:21:09:  - Article Cortex Personal-Use Mask incl Harness [010_00_041]
+8.4.2014 01:21:10:  - Shopify Product [284382269] created.
+8.4.2014 01:21:10:  - Article WRANGE LEVYPAINO 1,25KG MUSTA [0125]
+8.4.2014 01:21:11:  - Shopify Product [284382277] created.
+8.4.2014 01:21:12:  - Article Ergolet Luna basic horizontal [015-01910]
+8.4.2014 01:21:13:  - Shopify Product [284382289] created.
+8.4.2014 01:21:13:  - Article Käyttöohjain Ergolet Luna [015-01950]
+8.4.2014 01:21:14:  - Shopify Product [284382293] created.
+8.4.2014 01:21:14:  - Article Käsiohjain laturi Ergolet Luna [015-01961]
+8.4.2014 01:21:14:  - Shopify Product [284382301] created.
+8.4.2014 01:21:14:  - Article Henkari 58cm hihnalle [015-01970]
+8.4.2014 01:21:15:  - Shopify Product [284382305] created.
+8.4.2014 01:21:15:  - Article Henkari 58cm bayonet [015-01975]
+8.4.2014 01:21:16:  - Shopify Product [284382309] created.
+8.4.2014 01:21:16:  - Article Ergolet Luna dynaaminen painokevennyslaitteisto [015-04000]
+8.4.2014 01:21:16:  - Shopify Product [284382313] created.
+8.4.2014 01:21:16:  - Article TOMAHAWK MUTTERI M10x075 [0150AM]
+8.4.2014 01:21:17:  - Shopify Product [284382321] created.
+8.4.2014 01:21:17:  - Article Ergolet Luna Kisko 7m 103mm [016-01010]
+8.4.2014 01:21:19:  - Shopify Product [284382333] created.
+8.4.2014 01:21:19:  - Article Ergolet Luna Kisko 5m 103mm [016-01011]
+8.4.2014 01:21:19:  - Shopify Product [284382341] created.
+8.4.2014 01:21:19:  - Article Ergolet Luna Kisko 4m 103mm [016-01012]
+8.4.2014 01:21:20:  - Shopify Product [284382345] created.
+8.4.2014 01:21:20:  - Article Ergolet Luna Kisko 3,2m 103mm [016-01013]
+8.4.2014 01:21:20:  - Shopify Product [284382349] created.
+8.4.2014 01:21:20:  - Article Ergolet Luna Kisko 2,5m 103mm [016-01014]
+8.4.2014 01:21:21:  - Shopify Product [284382361] created.
+8.4.2014 01:21:21:  - Article Ergolet Luna Kisko 7m 75mm [016-01020]
+8.4.2014 01:21:22:  - Shopify Product [284382369] created.
+8.4.2014 01:21:22:  - Article Ergolet Luna Kisko 5m 75mm [016-01021]
+8.4.2014 01:21:22:  - Shopify Product [284382377] created.
+8.4.2014 01:21:22:  - Article Ergolet Luna Kisko 4m 75mm [016-01022]
+8.4.2014 01:21:23:  - Shopify Product [284382389] created.
+8.4.2014 01:21:23:  - Article Ergolet Luna Kisko 3,2m 75mm [016-01023]
+8.4.2014 01:21:23:  - Shopify Product [284382397] created.
+8.4.2014 01:21:24:  - Article Ergolet Luna Kisko 2,5m 75mm [016-01024]
+8.4.2014 01:21:24:  - Shopify Product [284382401] created.
+8.4.2014 01:21:24:  - Article Ergolet Luna Kiskon liitos 75mm [016-01036]
+8.4.2014 01:21:25:  - Shopify Product [284382413] created.
+8.4.2014 01:21:25:  - Article Ergolet Luna 90 asteen säätökulma R1000 75mm [016-0104]
+8.4.2014 01:21:25:  - Shopify Product [284382417] created.
+8.4.2014 01:21:25:  - Article Suojakansi kiskon päihin 103mm [016-01121]
+8.4.2014 01:21:26:  - Shopify Product [284382425] created.
+8.4.2014 01:21:26:  - Article Suojakansi Kiskon päihin 75mm [016-01122]
+8.4.2014 01:21:27:  - Shopify Product [284382429] created.
+8.4.2014 01:21:27:  - Article Stopparit kiskon päihin 103mm [016-01131]
+8.4.2014 01:21:27:  - Shopify Product [284382441] created.
+8.4.2014 01:21:27:  - Article Stopparit Kiskon päihin 75mm [016-01132]

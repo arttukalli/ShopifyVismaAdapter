@@ -1,0 +1,557 @@
+7.4.2014 01:04:30: 
+== Starting new update for Shop fysioline-fi [1] at 7.4.2014 01:04:30. ==
+7.4.2014 01:04:30: Last Shopify update: , Last Visma update: 
+
+7.4.2014 01:04:30: 
+Loading Orders from Shopify
+7.4.2014 01:04:32: 11 orders loaded.
+7.4.2014 01:04:32: *** ERROR ****
+Error updating shop fysioline-fiSystem.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 680
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 94**************
+7.4.2014 01:07:57: 
+== Starting new update for Shop fysioline-fi [1] at 7.4.2014 01:07:57. ==
+7.4.2014 01:07:57: Last Shopify update: , Last Visma update: 
+
+7.4.2014 01:07:57: 
+Loading Orders from Shopify
+7.4.2014 01:07:59: 11 orders loaded.
+7.4.2014 01:07:59: *** ERROR ****
+Error updating shop fysioline-fiSystem.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ShopifyVismaApp.Adapter.UpdateOrders(Nullable`1 startDate, Int32 orderLimit) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 682
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 94**************
+7.4.2014 01:08:50: 
+== Starting new update for Shop fysioline-fi [1] at 7.4.2014 01:08:50. ==
+7.4.2014 01:08:50: Last Shopify update: , Last Visma update: 
+
+7.4.2014 01:08:50: 
+Loading Orders from Shopify
+7.4.2014 01:08:52: 11 orders loaded.
+7.4.2014 01:08:55:  - Sales Order 10000029 created from order 253101997 (#1012). 
+7.4.2014 01:08:55:  - Order 238474209 (#1011) is already in Visma.
+7.4.2014 01:08:55:  - Order 226098149 (#1010) is already in Visma.
+7.4.2014 01:08:55:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 01:08:55:  - Order 225585993 (#1008) is already in Visma.
+7.4.2014 01:08:55:  - Order 221582817 (#1007) is already in Visma.
+7.4.2014 01:08:55:  - Order 221555113 (#1006) is already in Visma.
+7.4.2014 01:08:55:  - Order 221191973 (#1005) is already in Visma.
+7.4.2014 01:08:55:  - Order 205311681 (#1004) is already in Visma.
+7.4.2014 01:08:55:  - Order 205295081 (#1003) is already in Visma.
+7.4.2014 01:08:55:  - Order 182981839 (#1001) is already in Visma.
+7.4.2014 01:08:55: 
+=== Finished update at 7.4.2014 01:08:55.===
+
+
+7.4.2014 02:46:23: 
+== Starting full update for Shop fysioline-fi [1] at 7.4.2014 02:46:23. ==
+7.4.2014 02:46:23: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:46:28: 
+17205 products found in Visma database.
+7.4.2014 02:46:29: 
+=== Finished update at 7.4.2014 02:46:29.===
+
+
+7.4.2014 02:46:58: 
+== Starting full update for Shop fysioline-fi [1] at 7.4.2014 02:46:58. ==
+7.4.2014 02:46:58: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:46:59: 
+17205 products found in Visma database.
+7.4.2014 02:47:01: 
+=== Finished update at 7.4.2014 02:47:01.===
+
+
+7.4.2014 02:47:20: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:47:20. ==
+7.4.2014 02:47:20: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:47:20: 
+140 products found in Visma database.
+7.4.2014 02:47:21:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 02:47:22: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ShopifyVismaApp.Visma.GetImagePath() in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 98
+   at ShopifyVismaApp.Visma.GetVideoFilePath(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 111
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 271
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 97**************
+7.4.2014 02:50:18: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:50:18. ==
+7.4.2014 02:50:18: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:50:18: 
+140 products found in Visma database.
+7.4.2014 02:50:19:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 02:50:19: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ShopifyVismaApp.Visma.GetImagePath() in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 98
+   at ShopifyVismaApp.Visma.GetVideoFilePath(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 111
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 271
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 97**************
+7.4.2014 02:51:41: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:51:41. ==
+7.4.2014 02:51:41: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:51:41: 
+140 products found in Visma database.
+7.4.2014 02:51:42:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 02:51:43: KRANKCYCle
+7.4.2014 02:51:43: *** ERROR ****
+Error updating shop fysioline-fiSystem.ArgumentNullException: Value cannot be null.
+Parameter name: String
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ShopifyVismaApp.Visma.GetImagePath() in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 98
+   at ShopifyVismaApp.Visma.GetVideoFilePath(String code) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Visma.cs:line 111
+   at ShopifyVismaApp.Adapter.UpdateProducts(Nullable`1 startDate, Int32 articleLimit, Boolean updateArticleImages, Boolean updateStockData) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 272
+   at ShopifyVismaApp.Adapter.UpdateRecords(Int32 shopID, Int16 updateType) in Z:\Dropbox\Ideatags\Projects\Fysionline\ShopifyVismaAdapter\ShopifyVismaApp\Adapter.cs:line 97**************
+7.4.2014 02:52:49: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:52:49. ==
+7.4.2014 02:52:49: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:52:49: 
+140 products found in Visma database.
+7.4.2014 02:52:50:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 02:56:19: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:56:19. ==
+7.4.2014 02:56:19: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:56:20: 
+140 products found in Visma database.
+7.4.2014 02:56:20:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 02:56:39:  - Shopify Product [261377857] updated.
+7.4.2014 02:56:39:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+7.4.2014 02:56:40:  - Shopify Product [261383825] updated.
+7.4.2014 02:56:40:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+7.4.2014 02:56:42:  - Shopify Product [261383833] updated.
+7.4.2014 02:56:42:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+7.4.2014 02:56:44:  - Shopify Product [261383845] updated.
+7.4.2014 02:56:44:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+7.4.2014 02:56:46:  - Shopify Product [261383861] updated.
+7.4.2014 02:56:46:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+7.4.2014 02:56:48:  - Shopify Product [261383873] updated.
+7.4.2014 02:56:48:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+7.4.2014 02:57:16: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:57:16. ==
+7.4.2014 02:57:16: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:57:16: 
+140 products found in Visma database.
+7.4.2014 02:57:18: 
+=== Finished update at 7.4.2014 02:57:18.===
+
+
+7.4.2014 02:57:36: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 02:57:36. ==
+7.4.2014 02:57:36: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 02:57:36: 
+140 products found in Visma database.
+7.4.2014 02:57:37:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 02:57:40:  - Shopify Product [261377857] updated.
+7.4.2014 02:57:40:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+7.4.2014 02:57:42:  - Shopify Product [261383825] updated.
+7.4.2014 02:57:42:  - Article ENDURANCE RECUMBENT BIKE [WR37002]
+7.4.2014 02:57:44:  - Shopify Product [261383833] updated.
+7.4.2014 02:57:44:  - Article COMMERCIAL UPRIGHT BIKE [WR37003]
+7.4.2014 02:57:45:  - Shopify Product [261383845] updated.
+7.4.2014 02:57:45:  - Article COMMERCIAL RECUMBENT BIKE [WR37004]
+7.4.2014 02:57:47:  - Shopify Product [261383861] updated.
+7.4.2014 02:57:47:  - Article COMMERCIAL UPRIGHT BIKE [WR37005]
+7.4.2014 02:57:49:  - Shopify Product [261383873] updated.
+7.4.2014 02:57:49:  - Article COMMERCIAL RECUMBENT BIKE [WR37006]
+7.4.2014 02:57:51:  - Shopify Product [261383889] updated.
+7.4.2014 02:57:51: 
+=== Finished update at 7.4.2014 02:57:51.===
+
+
+7.4.2014 03:00:46: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 03:00:46. ==
+7.4.2014 03:00:46: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 03:00:46: 
+140 products found in Visma database.
+7.4.2014 03:00:47:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 03:00:50:  - Shopify Product [261377857] updated.
+7.4.2014 03:00:50:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+7.4.2014 03:00:50:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+7.4.2014 03:00:52:  - Shopify Product [261383825] updated.
+7.4.2014 03:00:52: 
+=== Finished update at 7.4.2014 03:00:52.===
+
+
+7.4.2014 23:12:00: 6.4.2014 01:08:50
+7.4.2014 23:12:00: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:12:00. ==
+7.4.2014 23:12:00: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 23:12:09: 
+140 products found in Visma database.
+7.4.2014 23:13:22: 7.4.2014 01:08:50
+7.4.2014 23:13:22: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:13:22. ==
+7.4.2014 23:13:22: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 23:13:24: 
+140 products found in Visma database.
+7.4.2014 23:13:25:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 23:13:44: 7.4.2014 01:08:50
+7.4.2014 23:13:44: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:13:44. ==
+7.4.2014 23:13:44: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 23:13:46: 
+140 products found in Visma database.
+7.4.2014 23:13:47:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 23:14:18: DEC
+7.4.2014 23:14:18: 6.4.2014 01:08:50
+7.4.2014 23:14:18: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:14:18. ==
+7.4.2014 23:14:18: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 23:14:18: 
+140 products found in Visma database.
+7.4.2014 23:14:19:  - Article Matrix Johnny G KRANKcycle  [KRANKCYCle]
+7.4.2014 23:14:23:  - Shopify Product [261377857] updated.
+7.4.2014 23:14:23:  - Article ENDURANCE UPRIGHT BIKE [WR37001]
+7.4.2014 23:14:23:  - Video URL: http://www.youtube.com/watch?v=0ePHyVlGHfM
+7.4.2014 23:14:25:  - Shopify Product [261383825] updated.
+7.4.2014 23:14:25: 
+=== Finished update at 7.4.2014 23:14:25.===
+
+
+7.4.2014 23:17:17: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:17:17. ==
+7.4.2014 23:17:17: Last Shopify update: 7.4.2014 01:08:50, Last Visma update: 7.4.2014 01:08:50
+
+7.4.2014 23:17:17: 
+Loading Orders from Shopify
+7.4.2014 23:17:18: 0 orders loaded.
+7.4.2014 23:17:18: 
+=== Finished update at 7.4.2014 23:17:18.===
+
+
+7.4.2014 23:17:57: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:17:57. ==
+7.4.2014 23:17:57: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:17:57: 
+Loading Orders from Shopify
+7.4.2014 23:17:58: 2 orders loaded.
+7.4.2014 23:17:58:  - Order 253101997 (#1012) is already in Visma.
+7.4.2014 23:17:58:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:17:58: 
+=== Finished update at 7.4.2014 23:17:58.===
+
+
+7.4.2014 23:18:03: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:18:03. ==
+7.4.2014 23:18:03: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:18:03: 
+Loading Orders from Shopify
+7.4.2014 23:18:03: 2 orders loaded.
+7.4.2014 23:18:03:  - Order 253101997 (#1012) is already in Visma.
+7.4.2014 23:18:03:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:18:03: 
+=== Finished update at 7.4.2014 23:18:03.===
+
+
+7.4.2014 23:30:30: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:30:30. ==
+7.4.2014 23:30:31: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:30:31: 
+Loading Orders from Shopify
+7.4.2014 23:30:32: 2 orders loaded.
+7.4.2014 23:30:45:    - Order customer [#225050105] saved to Visma as Customer 926816
+7.4.2014 23:30:58:  - Sales Order 10000030 created from order 253101997 (#1012). 
+7.4.2014 23:30:58:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:30:58: 
+=== Finished update at 7.4.2014 23:30:58.===
+
+
+7.4.2014 23:49:16: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:49:16. ==
+7.4.2014 23:49:16: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:49:17: 
+30 customers found in Visma database.
+7.4.2014 23:49:17: - Customer Pekka Nyholm test - 1 [926816]
+7.4.2014 23:49:17:  - Unable to create customer - No email value
+7.4.2014 23:49:17: - Customer  - 1 [926548]
+7.4.2014 23:49:17:  - Unable to create customer - No email value
+7.4.2014 23:49:18: - Customer  - 1 [926584]
+7.4.2014 23:49:18:  - Unable to create customer - No email value
+7.4.2014 23:49:18: - Customer  - 1 [926071]
+7.4.2014 23:49:18:  - Unable to create customer - No email value
+7.4.2014 23:49:18: - Customer SALLAN KUNTA - 1 [82967]
+7.4.2014 23:49:18:  - Unable to create customer - No email value
+7.4.2014 23:49:18: - Customer  - 1 [925707]
+7.4.2014 23:49:18:  - Unable to create customer - No email value
+7.4.2014 23:49:18: - Customer  - 1 [922073]
+7.4.2014 23:49:18:  - Unable to create customer - No email value
+7.4.2014 23:49:18: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+7.4.2014 23:49:18:  - Unable to create customer - No email value
+7.4.2014 23:49:19: - Customer  - 1 [925523]
+7.4.2014 23:49:19:  - Unable to create customer - No email value
+7.4.2014 23:49:19: - Customer  - 1 [926062]
+7.4.2014 23:49:19:  - Unable to create customer - No email value
+7.4.2014 23:49:19: - Customer  - 1 [926045]
+7.4.2014 23:49:19:  - Unable to create customer - No email value
+7.4.2014 23:49:19: - Customer  - 1 [26727]
+7.4.2014 23:49:19:  - Unable to create customer - No email value
+7.4.2014 23:49:19: - Customer  - 1 [923150]
+7.4.2014 23:49:19:  - Unable to create customer - No email value
+7.4.2014 23:49:19: - Customer  - 1 [923246]
+7.4.2014 23:49:20:  - Shopify Customer [216851273] updated.
+7.4.2014 23:49:20: - Customer PELLON KUNTA - 1 [382318]
+7.4.2014 23:49:20:  - Unable to create customer - No email value
+7.4.2014 23:49:20: - Customer  - 1 [923759]
+7.4.2014 23:49:20:  - Unable to create customer - No email value
+7.4.2014 23:49:20: - Customer  - 1 [923751]
+7.4.2014 23:49:20:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [925105]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [924763]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [921646]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [923320]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [922949]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [925887]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [923025]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [90075]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [921137]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [920317]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [924981]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: - Customer  - 1 [920811]
+7.4.2014 23:49:21:  - Unable to create customer - No email value
+7.4.2014 23:49:21: 
+Loading Orders from Shopify
+7.4.2014 23:49:22: 2 orders loaded.
+7.4.2014 23:49:22:  - Order 253101997 (#1012) is already in Visma.
+7.4.2014 23:49:22:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:49:22: 
+=== Finished update at 7.4.2014 23:49:22.===
+
+
+7.4.2014 23:53:45: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:53:45. ==
+7.4.2014 23:53:45: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:53:46: 
+Loading Orders from Shopify
+7.4.2014 23:53:51: 2 orders loaded.
+7.4.2014 23:53:52:    - Order customer [#225050105] saved to Visma as Customer 926817
+7.4.2014 23:53:54:  - Sales Order 10000031 created from order 253101997 (#1012). 
+7.4.2014 23:53:54:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:53:54: 
+=== Finished update at 7.4.2014 23:53:54.===
+
+
+7.4.2014 23:54:30: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:54:30. ==
+7.4.2014 23:54:30: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:54:30: 
+31 customers found in Visma database.
+7.4.2014 23:54:30: - Customer Pekka Nyholm test - 1 [926816]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer Pekka Nyholm test - 1 [926817]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer  - 1 [926548]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer  - 1 [926584]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer  - 1 [926071]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer SALLAN KUNTA - 1 [82967]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer  - 1 [925707]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:30: - Customer  - 1 [922073]
+7.4.2014 23:54:30:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+7.4.2014 23:54:31:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer  - 1 [925523]
+7.4.2014 23:54:31:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer  - 1 [926062]
+7.4.2014 23:54:31:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer  - 1 [926045]
+7.4.2014 23:54:31:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer  - 1 [26727]
+7.4.2014 23:54:31:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer  - 1 [923150]
+7.4.2014 23:54:31:  - Unable to create customer - No email value
+7.4.2014 23:54:31: - Customer  - 1 [923246]
+7.4.2014 23:54:32:  - Shopify Customer [216851273] updated.
+7.4.2014 23:54:32: - Customer PELLON KUNTA - 1 [382318]
+7.4.2014 23:54:32:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [923759]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [923751]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [925105]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [924763]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [921646]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [923320]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [922949]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [925887]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [923025]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [90075]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [921137]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [920317]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [924981]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: - Customer  - 1 [920811]
+7.4.2014 23:54:33:  - Unable to create customer - No email value
+7.4.2014 23:54:33: 
+Loading Orders from Shopify
+7.4.2014 23:54:34: 2 orders loaded.
+7.4.2014 23:54:34:  - Order 253101997 (#1012) is already in Visma.
+7.4.2014 23:54:34:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:54:34: 
+=== Finished update at 7.4.2014 23:54:34.===
+
+
+7.4.2014 23:55:17: 
+== Starting regular update for Shop fysioline-fi [1] at 7.4.2014 23:55:17. ==
+7.4.2014 23:55:17: Last Shopify update: 1.4.2014 00:00:00, Last Visma update: 1.4.2014 00:00:00
+
+7.4.2014 23:55:18: 
+31 customers found in Visma database.
+7.4.2014 23:55:18: - Customer Pekka Nyholm test - 1 [926816]
+7.4.2014 23:55:18:  - Unable to create customer - No email value
+7.4.2014 23:55:18: arhot@kotiposti.net
+7.4.2014 23:55:18: - Customer Pekka Nyholm test - 1 [926817]
+7.4.2014 23:55:18:  - Unable to create customer - No email value
+7.4.2014 23:55:18: arhot@kotiposti.net
+7.4.2014 23:55:18: - Customer  - 1 [926548]
+7.4.2014 23:55:18:  - Unable to create customer - No email value
+7.4.2014 23:55:18: 
+7.4.2014 23:55:18: - Customer  - 1 [926584]
+7.4.2014 23:55:18:  - Unable to create customer - No email value
+7.4.2014 23:55:18: 
+7.4.2014 23:55:18: - Customer  - 1 [926071]
+7.4.2014 23:55:18:  - Unable to create customer - No email value
+7.4.2014 23:55:18: 
+7.4.2014 23:55:18: - Customer SALLAN KUNTA - 1 [82967]
+7.4.2014 23:55:18:  - Unable to create customer - No email value
+7.4.2014 23:55:18: 
+7.4.2014 23:55:19: - Customer  - 1 [925707]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [922073]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer Golden Family Oy/Kiviranta Aila - 1 [96836]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [925523]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [926062]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [926045]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [26727]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [923150]
+7.4.2014 23:55:19:  - Unable to create customer - No email value
+7.4.2014 23:55:19: 
+7.4.2014 23:55:19: - Customer  - 1 [923246]
+7.4.2014 23:55:21:  - Shopify Customer [216851273] updated.
+7.4.2014 23:55:21: - Customer PELLON KUNTA - 1 [382318]
+7.4.2014 23:55:21:  - Unable to create customer - No email value
+7.4.2014 23:55:21: 
+7.4.2014 23:55:21: - Customer  - 1 [923759]
+7.4.2014 23:55:21:  - Unable to create customer - No email value
+7.4.2014 23:55:21: 
+7.4.2014 23:55:21: - Customer  - 1 [923751]
+7.4.2014 23:55:21:  - Unable to create customer - No email value
+7.4.2014 23:55:21: 
+7.4.2014 23:55:21: - Customer  - 1 [925105]
+7.4.2014 23:55:21:  - Unable to create customer - No email value
+7.4.2014 23:55:21: 
+7.4.2014 23:55:22: - Customer  - 1 [924763]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [921646]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [923320]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [922949]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [925887]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [923025]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [90075]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer LÄÄKÄRIKESKUS SIPOONRANTA - 1 [93342]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [921137]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [920317]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [924981]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: - Customer  - 1 [920811]
+7.4.2014 23:55:22:  - Unable to create customer - No email value
+7.4.2014 23:55:22: 
+7.4.2014 23:55:22: 
+Loading Orders from Shopify
+7.4.2014 23:55:23: 2 orders loaded.
+7.4.2014 23:55:23:  - Order 253101997 (#1012) is already in Visma.
+7.4.2014 23:55:23:  - Order 225625837 (#1009) is already in Visma.
+7.4.2014 23:55:23: 
+=== Finished update at 7.4.2014 23:55:23.===
+
+
