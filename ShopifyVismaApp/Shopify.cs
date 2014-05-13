@@ -332,7 +332,7 @@ namespace ShopifyVismaApp
             obj.title = string.IsNullOrEmpty(articleName) ? article.ArticleName : articleName;
             //obj.body_html = "";
             obj.product_type = "Product";
-            obj.published = (article.Points != 3);
+            obj.published = (article.Points != 2);
 
             string tags = string.Format("+T{0}", article.ArticleType);
 
