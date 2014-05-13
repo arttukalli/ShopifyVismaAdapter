@@ -552,11 +552,12 @@ namespace ShopifyVismaApp
             variant.taxable = taxable;
             //variant.position = 1;
             int inventoryQuantity = this.ToQuantity(article.DefaultWarehouse.Amount - article.DefaultWarehouse.OutwardAmount);
-            if (inventoryQuantity > 0)
-            {
-                variant.inventory_management = "shopify";
-                variant.inventory_quantity = inventoryQuantity;
-            }
+            inventoryQuantity = (inventoryQuantity >= 0) ? inventoryQuantity : 0;
+            //if (inventoryQuantity > 0)
+            //{
+            variant.inventory_management = "shopify";
+            variant.inventory_quantity = inventoryQuantity;
+            //}
 
 
             if (variantID.HasValue)
