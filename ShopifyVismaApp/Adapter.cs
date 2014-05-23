@@ -869,10 +869,11 @@ namespace ShopifyVismaApp
                     
                     // Unifaun
                     string locationIDText = order.GetNoteAttribute("Unifaun Location ID");
-                    short locationID;
-                    if (short.TryParse(locationIDText, out locationID))
+                    int locationID;
+                    if (int.TryParse(locationIDText, out locationID))
                     {
-                        sales.DriverId = locationID;
+                        //sales.DriverId = locationID;
+                        sales.OrdererNumber = locationID;
                     }
                     
                     string locationName = order.GetNoteAttribute("Unifaun Location Name");
@@ -898,7 +899,7 @@ namespace ShopifyVismaApp
 
                         if (orderCustomer != null)
                         {
-                            sales.OrdererNumber = orderCustomer.Number;
+                            //sales.OrdererNumber = orderCustomer.Number;
                             sales.CustomerNumber = orderCustomer.Number;
                         }
 
