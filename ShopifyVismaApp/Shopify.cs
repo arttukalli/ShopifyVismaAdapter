@@ -517,6 +517,18 @@ namespace ShopifyVismaApp
             obj.filename = string.Format("{0}.jpg", article.ArticleCode);
             obj.attachment = imageData;
 
+            List<Metafield> metafields = new List<Metafield>();
+            if (!string.IsNullOrEmpty(article.ArticleCode))
+            {
+                Metafield altMeta = new Metafield();
+                altMeta.@namespace = "tags";
+                altMeta.key = "alt";
+                altMeta.value_type = "string";
+                altMeta.value = article.ArticleCode;
+                metafields.Add(altMeta);
+            }
+            obj.metafields = metafields;
+
             // Serialize to Shopify JSON string
             string data = JsonConvert.SerializeObject(obj, Formatting.Indented);
             data = "{ \"image\": " + data + "}";

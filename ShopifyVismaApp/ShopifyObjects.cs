@@ -76,6 +76,7 @@ namespace ShopifyVismaApp
         //public int product_id { get; set; }
         //public DateTime updated_at { get; set; }
         //public string src { get; set; }
+        public List<Metafield> metafields { get; set; }
     }
 
     public class Options

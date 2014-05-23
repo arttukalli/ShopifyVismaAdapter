@@ -111,6 +111,15 @@ namespace ShopifyVismaApp
             return string.Format("{0}{1}.txt", this.GetImagePath(), code);
         }
 
+
+        public string GetCollectionsPath()
+        {
+            string filename = ConfigurationSettings.AppSettings["Visma.CollectionsFile"];
+
+            return this.GetImagePath() + filename;
+
+        }
+
         /// <summary>
         /// Get a list of all Articles.
         /// </summary>

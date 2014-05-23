@@ -228,7 +228,16 @@ namespace ShopifyVismaApp
         {
             int articlesCount = 0;
             int articleUpdates = 0;
-          
+
+            // Read CSV file with collection mappings
+            string collectionsFileName = visma.GetCollectionsPath();
+            Dictionary<string, string> collectionsDict = new Dictionary<string, string>();
+            try
+            {
+                collectionsDict = File.ReadAllLines(collectionsFileName).Select(line => line.Split(',')).ToDictionary(line => line[0], line => line[2]);
+            } catch(Exception ex) {
+                Log(" Unable to load collections CSV files from " + collectionsFileName);
+            }
 
             // Get a list of Visma Articles - get all product in case of a Full update
             ArticleList list = visma.GetArticleList(updateStockData ? null : startDate);
@@ -243,6 +252,8 @@ namespace ShopifyVismaApp
                 long? shopifyVariantID = null;
                 long? shopifyVariantVatID = null;
                 long? shopifyImageID = null;
+                string images = null;
+                string videos = null;
 
                 string articleCode = articleInfo.ArticleCode;
                 articlesCount += 1;
@@ -299,6 +310,18 @@ namespace ShopifyVismaApp
                             }
                         }
 
+                        /*
+                        if (article.ProductGroup > 0)
+                        {
+                            if (collectionsDict.ContainsKey(article.ProductGroup.ToString()))
+                            {
+                                string collectionName = collectionsDict[article.ProductGroup.ToString()];
+                                Log(collectionName);
+                            }
+                               
+                        }
+                        */
+
                         DataSet.ProductDataTable productDT = productTA.GetDataByArticleCode(shop.ID, articleCode);
                         if (productDT.Count == 0)
                         {
@@ -330,7 +353,7 @@ namespace ShopifyVismaApp
 
                                     //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
 
-                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode, deliveryDate);
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode, deliveryDate, videoUrl);
                                     articleUpdates += 1;
                                 }
                                 catch (System.Net.WebException ex)
@@ -348,7 +371,7 @@ namespace ShopifyVismaApp
 
                                     Log(string.Format(" - Shopify Product Variant [{0}] created.", shopifyVariantID));
 
-                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode, null);
+                                    productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, null, null, null, null, familyCode, null, videoUrl);
 
                                 }
                                 catch (System.Net.WebException ex)
@@ -367,11 +390,15 @@ namespace ShopifyVismaApp
                                 shopifyVariantID = productDT[0].ShopifyVariantID;
                                 shopifyVariantVatID = productDT[0].ShopifyVariantVatID;
                                 shopifyImageID = productDT[0].ShopifyImageID;
+                                images = productDT[0].Images;
+                                videos = productDT[0].Videos;
+
+                                string videoUrlNew = (string.IsNullOrEmpty(videos)) ? videoUrl : null;
 
                                 DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
                                 //Log(" - Delivery date: " + deliveryDate.ToString());
 
-                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrl);
+                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrlNew);
 
                                 Log(string.Format(" - Shopify Product [{0}] updated.", shopifyProductID));
 
@@ -386,73 +413,96 @@ namespace ShopifyVismaApp
                             //Log(" - Shopify Product already exists.");
                         }
 
-                        // Product image
-                        if ((shopifyProductID != null) && (updateArticleImages) && ((shopifyImageID == null) || (shopifyImageID == 0)))
+                        // Product images
+                        images = (images == null) ? "" : images;
+                        List<string> productImageNameIDs = images.Split('|').Where(x => !string.IsNullOrEmpty(x)).ToList();
+                        List<string> productImageNames = productImageNameIDs.Select(x => x.Split(':').FirstOrDefault()).ToList();
+
+                        if ((shopifyProductID != null) && (updateArticleImages)) // && ((shopifyImageID == null) || (shopifyImageID == 0)))
                         {
                             string imagesFilter = visma.GetImageFilesFilter(articleCode);
 
                             string[] imagesNames = Directory.GetFiles(visma.GetImagePath(), imagesFilter);
-                            Log(imagesFilter);
-                            Log(imagesNames.ToString());
 
-                            string imagePath = "x";
-                            if (File.Exists(imagePath))
+                            foreach (string imagePath in imagesNames)
                             {
-                                Log("   - Image exists: " + imagePath);
+                                string imageName = imagePath.Replace(visma.GetImagePath(), "");
 
-                                System.IO.FileStream inFile;
-                                byte[] binaryData;
-                                string base64String;
-
-                                try
+                                // Check file extension
+                                if ((imageName.ToLower().EndsWith("jpeg")) || (imageName.ToLower().EndsWith("jpg")) || (imageName.ToLower().EndsWith("png")))
                                 {
-                                    inFile = new System.IO.FileStream(imagePath,
-                                                              System.IO.FileMode.Open,
-                                                              System.IO.FileAccess.Read);
-                                    binaryData = new Byte[inFile.Length];
-                                    long bytesRead = inFile.Read(binaryData, 0,
-                                                         (int)inFile.Length);
-                                    inFile.Close();
-
-                                    base64String = System.Convert.ToBase64String(binaryData, 0, binaryData.Length);
-
-                                    string productImageData = shop.GetProductImageData(article, base64String);
-
-                                    //Log(productImageData);
-
-
-                                    try
-                                    {
-                                        object response = shop.CreateProductImage(shopifyProductID.Value, productImageData);
-                                        //Log("Response " + response.ToString());
-
-                                        JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
-                                        long imageID;
-                                        long.TryParse(productResponse["image"]["id"].ToString(), out imageID);
-                                        shopifyImageID = imageID;
-                                        Log(string.Format("  - New product image created {0}", shopifyImageID));
-
-                                        if (shopifyImageID > 0)
-                                        {
-                                            productTA.UpdateProductImageID(shopifyImageID, shop.ID, shopifyProductID);
-                                        }
-  
-                                    }
-                                    catch (System.Net.WebException ex)
-                                    {
-                                        LogError("Unable to create product Image", ex);
-                                    }
-
                                     
-                                }
-                                catch (System.Exception exp)
-                                {
-                                    // Error creating stream or reading from it.
-                                    Log(string.Format("Unable to open image file - {0}", exp.Message));
-          
-                                }
+                                    // If image with that name is not already in Shopify 
+                                    if ((File.Exists(imagePath)) && (!productImageNames.Contains(imageName)))
+                                    {
+                                        System.IO.FileStream inFile;
+                                        byte[] binaryData;
+                                        string base64String;
 
+                                        try
+                                        {
+                                            inFile = new System.IO.FileStream(imagePath,
+                                                                      System.IO.FileMode.Open,
+                                                                      System.IO.FileAccess.Read);
+                                            binaryData = new Byte[inFile.Length];
+                                            long bytesRead = inFile.Read(binaryData, 0,
+                                                                 (int)inFile.Length);
+                                            inFile.Close();
+
+                                            base64String = System.Convert.ToBase64String(binaryData, 0, binaryData.Length);
+
+                                            string productImageData = shop.GetProductImageData(article, base64String);
+
+                                            //Log(productImageData);
+
+                                            
+                                            try
+                                            {
+                                                object response = shop.CreateProductImage(shopifyProductID.Value, productImageData);
+                                                //Log("Response " + response.ToString());
+
+                                                JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
+                                                long imageID;
+                                                long.TryParse(productResponse["image"]["id"].ToString(), out imageID);
+                                                shopifyImageID = imageID;
+                                                Log(string.Format("    - New product image created {0}", shopifyImageID));
+
+                                                /*
+                                                if (shopifyImageID > 0)
+                                                {
+                                                    productTA.UpdateProductImageID(shopifyImageID, shop.ID, shopifyProductID);
+                                                }
+                                                 */
+
+                                                string nameID = imageName + ":" + imageID.ToString();
+                                                productImageNameIDs.Add(nameID);
+
+                                            }
+                                            catch (System.Net.WebException ex)
+                                            {
+                                                LogError("Unable to create product Image", ex);
+                                            }
+                                                 
+
+
+                                        }
+                                        catch (System.Exception exp)
+                                        {
+                                            // Error creating stream or reading from it.
+                                            Log(string.Format("Unable to open image file - {0}", exp.Message));
+
+                                        }
+
+                                    }
+                                }
                             }
+
+                            string newImages = string.Join("|", productImageNameIDs.ToArray());
+                            if ((!string.IsNullOrEmpty(newImages)) && (newImages != images))
+                            {
+                                productTA.UpdateImages(newImages, shop.ID, shopifyProductID);
+                            }
+         
                   
 
                        
@@ -627,7 +677,7 @@ namespace ShopifyVismaApp
                             shop.CreateUpdateProductVariants(article, shopifyProductID.Value, ref shopifyVariantID, ref shopifyVariantVatID, pricelistNumber, customerNumber, quantity, price, articleName);
                             Log(string.Format(" - Shopify Product Variant [{0}] created for specific price {1}.", shopifyVariantID, pricelistItemName));
 
-                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, pricelistNumber, customerNumber, quantity, price, famiyCode, null);
+                            productTA.InsertProduct(shop.ID, shopifyProductID, shopifyVariantID, shopifyVariantVatID, articleCode, pricelistNumber, customerNumber, quantity, price, famiyCode, null, null);
 
 
                         }
@@ -904,7 +954,7 @@ namespace ShopifyVismaApp
                         salesRow.ArticleName = lineItem.title.Substring(0, 50);
                         salesRow.Amount = 1; // lineItem.quantity;
                         salesRow.DeliveryStart = orderDeliveryDate;
-                        //salesRow.VatPercent = 0;
+                        salesRow.VatPercent = 24;
                         if (lineItem.price.HasValue)
                             salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
                     }
@@ -917,7 +967,7 @@ namespace ShopifyVismaApp
                         salesRow.ArticleName = order.gateway.Substring(0, 50);
                         salesRow.Amount = 1; // lineItem.quantity;
                         salesRow.DeliveryStart = orderDeliveryDate;
-                        //salesRow.VatPercent = 0;
+                        salesRow.VatPercent = 24;
                         salesRow.UnitPrice = 5; // TODO: Move value to Shop table
                     }
 

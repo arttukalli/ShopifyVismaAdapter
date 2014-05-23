@@ -519,6 +519,10 @@ namespace ShopifyVismaApp {
             
             private global::System.Data.DataColumn columnDeliveryDate;
             
+            private global::System.Data.DataColumn columnImages;
+            
+            private global::System.Data.DataColumn columnVideos;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public ProductDataTable() {
@@ -674,6 +678,22 @@ namespace ShopifyVismaApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ImagesColumn {
+                get {
+                    return this.columnImages;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VideosColumn {
+                get {
+                    return this.columnVideos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -709,7 +729,23 @@ namespace ShopifyVismaApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductRow AddProductRow(int ShopID, long ShopifyProductID, long ShopifyVariantID, string VismaArticleCode, int VismaPricelistNumber, int VismaCustomerNumber, System.DateTime CreatedDate, System.DateTime UpdatedDate, int Quantity, long ShopifyImageID, decimal Price, string FamilyCode, long ShopifyVariantVatID, System.DateTime DeliveryDate) {
+            public ProductRow AddProductRow(
+                        int ShopID, 
+                        long ShopifyProductID, 
+                        long ShopifyVariantID, 
+                        string VismaArticleCode, 
+                        int VismaPricelistNumber, 
+                        int VismaCustomerNumber, 
+                        System.DateTime CreatedDate, 
+                        System.DateTime UpdatedDate, 
+                        int Quantity, 
+                        long ShopifyImageID, 
+                        decimal Price, 
+                        string FamilyCode, 
+                        long ShopifyVariantVatID, 
+                        System.DateTime DeliveryDate, 
+                        string Images, 
+                        string Videos) {
                 ProductRow rowProductRow = ((ProductRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -726,7 +762,9 @@ namespace ShopifyVismaApp {
                         Price,
                         FamilyCode,
                         ShopifyVariantVatID,
-                        DeliveryDate};
+                        DeliveryDate,
+                        Images,
+                        Videos};
                 rowProductRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowProductRow);
                 return rowProductRow;
@@ -771,6 +809,8 @@ namespace ShopifyVismaApp {
                 this.columnFamilyCode = base.Columns["FamilyCode"];
                 this.columnShopifyVariantVatID = base.Columns["ShopifyVariantVatID"];
                 this.columnDeliveryDate = base.Columns["DeliveryDate"];
+                this.columnImages = base.Columns["Images"];
+                this.columnVideos = base.Columns["Videos"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -806,6 +846,10 @@ namespace ShopifyVismaApp {
                 base.Columns.Add(this.columnShopifyVariantVatID);
                 this.columnDeliveryDate = new global::System.Data.DataColumn("DeliveryDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDeliveryDate);
+                this.columnImages = new global::System.Data.DataColumn("Images", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnImages);
+                this.columnVideos = new global::System.Data.DataColumn("Videos", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVideos);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -817,6 +861,8 @@ namespace ShopifyVismaApp {
                 this.columnShopID.AllowDBNull = false;
                 this.columnVismaArticleCode.MaxLength = 30;
                 this.columnFamilyCode.MaxLength = 30;
+                this.columnImages.MaxLength = 500;
+                this.columnVideos.MaxLength = 500;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5611,6 +5657,38 @@ namespace ShopifyVismaApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Images {
+                get {
+                    if (this.IsImagesNull()) {
+                        return string.Empty;
+                    }
+                    else {
+                        return ((string)(this[this.tableProduct.ImagesColumn]));
+                    }
+                }
+                set {
+                    this[this.tableProduct.ImagesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Videos {
+                get {
+                    if (this.IsVideosNull()) {
+                        return string.Empty;
+                    }
+                    else {
+                        return ((string)(this[this.tableProduct.VideosColumn]));
+                    }
+                }
+                set {
+                    this[this.tableProduct.VideosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsShopifyProductIDNull() {
                 return this.IsNull(this.tableProduct.ShopifyProductIDColumn);
             }
@@ -5763,6 +5841,30 @@ namespace ShopifyVismaApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDeliveryDateNull() {
                 this[this.tableProduct.DeliveryDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsImagesNull() {
+                return this.IsNull(this.tableProduct.ImagesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetImagesNull() {
+                this[this.tableProduct.ImagesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVideosNull() {
+                return this.IsNull(this.tableProduct.VideosColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVideosNull() {
+                this[this.tableProduct.VideosColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -11456,6 +11558,8 @@ namespace ShopifyVismaApp.DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("FamilyCode", "FamilyCode");
             tableMapping.ColumnMappings.Add("ShopifyVariantVatID", "ShopifyVariantVatID");
             tableMapping.ColumnMappings.Add("DeliveryDate", "DeliveryDate");
+            tableMapping.ColumnMappings.Add("Images", "Images");
+            tableMapping.ColumnMappings.Add("Videos", "Videos");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -11478,7 +11582,9 @@ namespace ShopifyVismaApp.DataSetTableAdapters {
                 "l_FamilyCode)) AND ((@IsNull_ShopifyVariantVatID = 1 AND [ShopifyVariantVatID] I" +
                 "S NULL) OR ([ShopifyVariantVatID] = @Original_ShopifyVariantVatID)) AND ((@IsNul" +
                 "l_DeliveryDate = 1 AND [DeliveryDate] IS NULL) OR ([DeliveryDate] = @Original_De" +
-                "liveryDate)))";
+                "liveryDate)) AND ((@IsNull_Images = 1 AND [Images] IS NULL) OR ([Images] = @Orig" +
+                "inal_Images)) AND ((@IsNull_Videos = 1 AND [Videos] IS NULL) OR ([Videos] = @Ori" +
+                "ginal_Videos)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ShopID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -11508,10 +11614,14 @@ namespace ShopifyVismaApp.DataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ShopifyVariantVatID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyVariantVatID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DeliveryDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DeliveryDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Images", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Images", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Videos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Videos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Product] ([ShopID], [ShopifyProductID], [ShopifyVariantID], [VismaArticleCode], [VismaPricelistNumber], [VismaCustomerNumber], [CreatedDate], [UpdatedDate], [Quantity], [ShopifyImageID], [Price], [FamilyCode], [ShopifyVariantVatID], [DeliveryDate]) VALUES (@ShopID, @ShopifyProductID, @ShopifyVariantID, @VismaArticleCode, @VismaPricelistNumber, @VismaCustomerNumber, @CreatedDate, @UpdatedDate, @Quantity, @ShopifyImageID, @Price, @FamilyCode, @ShopifyVariantVatID, @DeliveryDate);
-SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPricelistNumber, VismaCustomerNumber, CreatedDate, UpdatedDate, Quantity, ShopifyImageID, Price, FamilyCode, ShopifyVariantVatID, DeliveryDate FROM Product WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Product] ([ShopID], [ShopifyProductID], [ShopifyVariantID], [VismaArticleCode], [VismaPricelistNumber], [VismaCustomerNumber], [CreatedDate], [UpdatedDate], [Quantity], [ShopifyImageID], [Price], [FamilyCode], [ShopifyVariantVatID], [DeliveryDate], [Images], [Videos]) VALUES (@ShopID, @ShopifyProductID, @ShopifyVariantID, @VismaArticleCode, @VismaPricelistNumber, @VismaCustomerNumber, @CreatedDate, @UpdatedDate, @Quantity, @ShopifyImageID, @Price, @FamilyCode, @ShopifyVariantVatID, @DeliveryDate, @Images, @Videos);
+SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPricelistNumber, VismaCustomerNumber, CreatedDate, UpdatedDate, Quantity, ShopifyImageID, Price, FamilyCode, ShopifyVariantVatID, DeliveryDate, Images, Videos FROM Product WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyProductID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyProductID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11527,6 +11637,8 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FamilyCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FamilyCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyVariantVatID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyVariantVatID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeliveryDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Images", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Videos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [Product] SET [ShopID] = @ShopID, [ShopifyProductID] = @ShopifyProductID, " +
@@ -11535,29 +11647,32 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
                 "stomerNumber, [CreatedDate] = @CreatedDate, [UpdatedDate] = @UpdatedDate, [Quant" +
                 "ity] = @Quantity, [ShopifyImageID] = @ShopifyImageID, [Price] = @Price, [FamilyC" +
                 "ode] = @FamilyCode, [ShopifyVariantVatID] = @ShopifyVariantVatID, [DeliveryDate]" +
-                " = @DeliveryDate WHERE (([ID] = @Original_ID) AND ([ShopID] = @Original_ShopID) " +
-                "AND ((@IsNull_ShopifyProductID = 1 AND [ShopifyProductID] IS NULL) OR ([ShopifyP" +
-                "roductID] = @Original_ShopifyProductID)) AND ((@IsNull_ShopifyVariantID = 1 AND " +
-                "[ShopifyVariantID] IS NULL) OR ([ShopifyVariantID] = @Original_ShopifyVariantID)" +
-                ") AND ((@IsNull_VismaArticleCode = 1 AND [VismaArticleCode] IS NULL) OR ([VismaA" +
-                "rticleCode] = @Original_VismaArticleCode)) AND ((@IsNull_VismaPricelistNumber = " +
-                "1 AND [VismaPricelistNumber] IS NULL) OR ([VismaPricelistNumber] = @Original_Vis" +
-                "maPricelistNumber)) AND ((@IsNull_VismaCustomerNumber = 1 AND [VismaCustomerNumb" +
-                "er] IS NULL) OR ([VismaCustomerNumber] = @Original_VismaCustomerNumber)) AND ((@" +
-                "IsNull_CreatedDate = 1 AND [CreatedDate] IS NULL) OR ([CreatedDate] = @Original_" +
-                "CreatedDate)) AND ((@IsNull_UpdatedDate = 1 AND [UpdatedDate] IS NULL) OR ([Upda" +
-                "tedDate] = @Original_UpdatedDate)) AND ((@IsNull_Quantity = 1 AND [Quantity] IS " +
-                "NULL) OR ([Quantity] = @Original_Quantity)) AND ((@IsNull_ShopifyImageID = 1 AND" +
-                " [ShopifyImageID] IS NULL) OR ([ShopifyImageID] = @Original_ShopifyImageID)) AND" +
-                " ((@IsNull_Price = 1 AND [Price] IS NULL) OR ([Price] = @Original_Price)) AND ((" +
-                "@IsNull_FamilyCode = 1 AND [FamilyCode] IS NULL) OR ([FamilyCode] = @Original_Fa" +
-                "milyCode)) AND ((@IsNull_ShopifyVariantVatID = 1 AND [ShopifyVariantVatID] IS NU" +
-                "LL) OR ([ShopifyVariantVatID] = @Original_ShopifyVariantVatID)) AND ((@IsNull_De" +
-                "liveryDate = 1 AND [DeliveryDate] IS NULL) OR ([DeliveryDate] = @Original_Delive" +
-                "ryDate)));\r\nSELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleC" +
-                "ode, VismaPricelistNumber, VismaCustomerNumber, CreatedDate, UpdatedDate, Quanti" +
-                "ty, ShopifyImageID, Price, FamilyCode, ShopifyVariantVatID, DeliveryDate FROM Pr" +
-                "oduct WHERE (ID = @ID)";
+                " = @DeliveryDate, [Images] = @Images, [Videos] = @Videos WHERE (([ID] = @Origina" +
+                "l_ID) AND ([ShopID] = @Original_ShopID) AND ((@IsNull_ShopifyProductID = 1 AND [" +
+                "ShopifyProductID] IS NULL) OR ([ShopifyProductID] = @Original_ShopifyProductID))" +
+                " AND ((@IsNull_ShopifyVariantID = 1 AND [ShopifyVariantID] IS NULL) OR ([Shopify" +
+                "VariantID] = @Original_ShopifyVariantID)) AND ((@IsNull_VismaArticleCode = 1 AND" +
+                " [VismaArticleCode] IS NULL) OR ([VismaArticleCode] = @Original_VismaArticleCode" +
+                ")) AND ((@IsNull_VismaPricelistNumber = 1 AND [VismaPricelistNumber] IS NULL) OR" +
+                " ([VismaPricelistNumber] = @Original_VismaPricelistNumber)) AND ((@IsNull_VismaC" +
+                "ustomerNumber = 1 AND [VismaCustomerNumber] IS NULL) OR ([VismaCustomerNumber] =" +
+                " @Original_VismaCustomerNumber)) AND ((@IsNull_CreatedDate = 1 AND [CreatedDate]" +
+                " IS NULL) OR ([CreatedDate] = @Original_CreatedDate)) AND ((@IsNull_UpdatedDate " +
+                "= 1 AND [UpdatedDate] IS NULL) OR ([UpdatedDate] = @Original_UpdatedDate)) AND (" +
+                "(@IsNull_Quantity = 1 AND [Quantity] IS NULL) OR ([Quantity] = @Original_Quantit" +
+                "y)) AND ((@IsNull_ShopifyImageID = 1 AND [ShopifyImageID] IS NULL) OR ([ShopifyI" +
+                "mageID] = @Original_ShopifyImageID)) AND ((@IsNull_Price = 1 AND [Price] IS NULL" +
+                ") OR ([Price] = @Original_Price)) AND ((@IsNull_FamilyCode = 1 AND [FamilyCode] " +
+                "IS NULL) OR ([FamilyCode] = @Original_FamilyCode)) AND ((@IsNull_ShopifyVariantV" +
+                "atID = 1 AND [ShopifyVariantVatID] IS NULL) OR ([ShopifyVariantVatID] = @Origina" +
+                "l_ShopifyVariantVatID)) AND ((@IsNull_DeliveryDate = 1 AND [DeliveryDate] IS NUL" +
+                "L) OR ([DeliveryDate] = @Original_DeliveryDate)) AND ((@IsNull_Images = 1 AND [I" +
+                "mages] IS NULL) OR ([Images] = @Original_Images)) AND ((@IsNull_Videos = 1 AND [" +
+                "Videos] IS NULL) OR ([Videos] = @Original_Videos)));\r\nSELECT ID, ShopID, Shopify" +
+                "ProductID, ShopifyVariantID, VismaArticleCode, VismaPricelistNumber, VismaCustom" +
+                "erNumber, CreatedDate, UpdatedDate, Quantity, ShopifyImageID, Price, FamilyCode," +
+                " ShopifyVariantVatID, DeliveryDate, Images, Videos FROM Product WHERE (ID = @ID)" +
+                "";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyProductID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyProductID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11573,6 +11688,8 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FamilyCode", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FamilyCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyVariantVatID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyVariantVatID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeliveryDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Images", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Videos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ShopID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ShopifyProductID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyProductID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -11601,6 +11718,10 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ShopifyVariantVatID", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyVariantVatID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DeliveryDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DeliveryDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Images", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Images", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Videos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Videos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -11614,20 +11735,20 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[6];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[8];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT * FROM Product";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT CreatedDate, DeliveryDate, FamilyCode, ID, Price, Quantity, ShopID, ShopifyImageID, ShopifyProductID, ShopifyVariantID, ShopifyVariantVatID, UpdatedDate, VismaArticleCode, VismaCustomerNumber, VismaPricelistNumber FROM Product WHERE (ShopID = @ShopID) AND (VismaArticleCode = @ArticleCode)";
+            this._commandCollection[1].CommandText = @"SELECT CreatedDate, DeliveryDate, FamilyCode, ID, Images, Price, Quantity, ShopID, ShopifyImageID, ShopifyProductID, ShopifyVariantID, ShopifyVariantVatID, UpdatedDate, Videos, VismaArticleCode, VismaCustomerNumber, VismaPricelistNumber FROM Product WHERE (ShopID = @ShopID) AND (VismaArticleCode = @ArticleCode)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArticleCode", global::System.Data.SqlDbType.NChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "VismaArticleCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"SELECT CreatedDate, DeliveryDate, FamilyCode, ID, Price, Quantity, ShopID, ShopifyImageID, ShopifyProductID, ShopifyVariantID, ShopifyVariantVatID, UpdatedDate, VismaArticleCode, VismaCustomerNumber, VismaPricelistNumber FROM Product WHERE (ShopID = @ShopID) AND (VismaArticleCode = @VismaArticleCode) AND (VismaPricelistNumber = @VismaPricelistNumber OR @VismaPricelistNumber IS NULL) AND (VismaCustomerNumber = @VismaCustomerNumber OR @VismaCustomerNumber IS NULL) AND (Quantity = @Quantity OR @Quantity IS NULL)";
+            this._commandCollection[2].CommandText = @"SELECT CreatedDate, DeliveryDate, FamilyCode, ID, Images, Price, Quantity, ShopID, ShopifyImageID, ShopifyProductID, ShopifyVariantID, ShopifyVariantVatID, UpdatedDate, Videos, VismaArticleCode, VismaCustomerNumber, VismaPricelistNumber FROM Product WHERE (ShopID = @ShopID) AND (VismaArticleCode = @VismaArticleCode) AND (VismaPricelistNumber = @VismaPricelistNumber OR @VismaPricelistNumber IS NULL) AND (VismaCustomerNumber = @VismaCustomerNumber OR @VismaCustomerNumber IS NULL) AND (Quantity = @Quantity OR @Quantity IS NULL)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VismaArticleCode", global::System.Data.SqlDbType.NChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "VismaArticleCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11636,13 +11757,13 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"SELECT CreatedDate, DeliveryDate, FamilyCode, ID, Price, Quantity, ShopID, ShopifyImageID, ShopifyProductID, ShopifyVariantID, ShopifyVariantVatID, UpdatedDate, VismaArticleCode, VismaCustomerNumber, VismaPricelistNumber FROM Product WHERE (ShopID = @ShopID) AND (FamilyCode = @FamilyCode)";
+            this._commandCollection[3].CommandText = @"SELECT CreatedDate, DeliveryDate, FamilyCode, ID, Images, Price, Quantity, ShopID, ShopifyImageID, ShopifyProductID, ShopifyVariantID, ShopifyVariantVatID, UpdatedDate, Videos, VismaArticleCode, VismaCustomerNumber, VismaPricelistNumber FROM Product WHERE (ShopID = @ShopID) AND (FamilyCode = @FamilyCode)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FamilyCode", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "FamilyCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = @"INSERT INTO [dbo].[Product] ([ShopID], [ShopifyProductID], [ShopifyVariantID], [ShopifyVariantVatID], [VismaArticleCode], [VismaPricelistNumber], [VismaCustomerNumber], [CreatedDate], [UpdatedDate], [Quantity], [Price], [FamilyCode], [DeliveryDate]) VALUES (@ShopID, @ShopifyProductID, @ShopifyVariantID, @ShopifyVariantVatID, @VismaArticleCode, @VismaPricelistNumber, @VismaCustomerNumber, GETDATE(),GETDATE(), @Quantity, @Price, @FamilyCode, @DeliveryDate);
+            this._commandCollection[4].CommandText = @"INSERT INTO [dbo].[Product] ([ShopID], [ShopifyProductID], [ShopifyVariantID], [ShopifyVariantVatID], [VismaArticleCode], [VismaPricelistNumber], [VismaCustomerNumber], [CreatedDate], [UpdatedDate], [Quantity], [Price], [FamilyCode], [DeliveryDate], [Videos]) VALUES (@ShopID, @ShopifyProductID, @ShopifyVariantID, @ShopifyVariantVatID, @VismaArticleCode, @VismaPricelistNumber, @VismaCustomerNumber, GETDATE(),GETDATE(), @Quantity, @Price, @FamilyCode, @DeliveryDate, @Videos);
 
 ";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
@@ -11657,14 +11778,31 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Price", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 4, "Price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FamilyCode", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "FamilyCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DeliveryDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "DeliveryDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Videos", global::System.Data.SqlDbType.NVarChar, 500, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "UPDATE [dbo].[Product] SET ShopifyImageID= @ShopifyImageID\r\nWHERE (ShopID = @Shop" +
-                "ID AND ShopifyProductID = @ShopifyProductID);\r\n";
+            this._commandCollection[5].CommandText = "UPDATE [dbo].[Product] SET Images=@Images\r\nWHERE (ShopID = @ShopID AND ShopifyPro" +
+                "ductID = @ShopifyProductID);";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyImageID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyImageID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Images", global::System.Data.SqlDbType.NVarChar, 500, global::System.Data.ParameterDirection.Input, 0, 0, "Images", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyProductID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyProductID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = "UPDATE [dbo].[Product] SET ShopifyImageID= @ShopifyImageID\r\nWHERE (ShopID = @Shop" +
+                "ID AND ShopifyProductID = @ShopifyProductID);\r\n";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyImageID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyImageID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyProductID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyProductID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[7].Connection = this.Connection;
+            this._commandCollection[7].CommandText = "UPDATE [dbo].[Product] SET Videos=@Videos\r\nWHERE (ShopID = @ShopID AND ShopifyPro" +
+                "ductID = @ShopifyProductID);";
+            this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Videos", global::System.Data.SqlDbType.NVarChar, 500, global::System.Data.ParameterDirection.Input, 0, 0, "Videos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ShopID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ShopifyProductID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ShopifyProductID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11796,7 +11934,7 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertProduct(int ShopID, global::System.Nullable<long> ShopifyProductID, global::System.Nullable<long> ShopifyVariantID, global::System.Nullable<long> ShopifyVariantVatID, string VismaArticleCode, global::System.Nullable<int> VismaPricelistNumber, global::System.Nullable<int> VismaCustomerNumber, global::System.Nullable<int> Quantity, global::System.Nullable<decimal> Price, string FamilyCode, global::System.Nullable<global::System.DateTime> DeliveryDate) {
+        public virtual int InsertProduct(int ShopID, global::System.Nullable<long> ShopifyProductID, global::System.Nullable<long> ShopifyVariantID, global::System.Nullable<long> ShopifyVariantVatID, string VismaArticleCode, global::System.Nullable<int> VismaPricelistNumber, global::System.Nullable<int> VismaCustomerNumber, global::System.Nullable<int> Quantity, global::System.Nullable<decimal> Price, string FamilyCode, global::System.Nullable<global::System.DateTime> DeliveryDate, string Videos) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
             command.Parameters[0].Value = ((int)(ShopID));
             if ((ShopifyProductID.HasValue == true)) {
@@ -11859,6 +11997,48 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
             else {
                 command.Parameters[10].Value = global::System.DBNull.Value;
             }
+            if ((Videos == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(Videos));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateImages(string Images, int ShopID, global::System.Nullable<long> ShopifyProductID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[5];
+            if ((Images == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Images));
+            }
+            command.Parameters[1].Value = ((int)(ShopID));
+            if ((ShopifyProductID.HasValue == true)) {
+                command.Parameters[2].Value = ((long)(ShopifyProductID.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11881,12 +12061,48 @@ SELECT ID, ShopID, ShopifyProductID, ShopifyVariantID, VismaArticleCode, VismaPr
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int UpdateProductImageID(global::System.Nullable<long> ShopifyImageID, int ShopID, global::System.Nullable<long> ShopifyProductID) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[5];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[6];
             if ((ShopifyImageID.HasValue == true)) {
                 command.Parameters[0].Value = ((long)(ShopifyImageID.Value));
             }
             else {
                 command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            command.Parameters[1].Value = ((int)(ShopID));
+            if ((ShopifyProductID.HasValue == true)) {
+                command.Parameters[2].Value = ((long)(ShopifyProductID.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateVideos(string Videos, int ShopID, global::System.Nullable<long> ShopifyProductID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[7];
+            if ((Videos == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Videos));
             }
             command.Parameters[1].Value = ((int)(ShopID));
             if ((ShopifyProductID.HasValue == true)) {
