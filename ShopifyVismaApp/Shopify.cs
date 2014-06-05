@@ -335,6 +335,7 @@ namespace ShopifyVismaApp
             obj.published = (article.Points != 2);
 
             string tags = string.Format("+T{0}", article.ArticleType);
+            
 
             if (article.Points == 1)
             {
@@ -568,7 +569,9 @@ namespace ShopifyVismaApp
             //if (inventoryQuantity > 0)
             //{
             variant.inventory_management = "shopify";
+            variant.inventory_policy = "continue"; 
             variant.inventory_quantity = inventoryQuantity;
+            
             //}
 
 

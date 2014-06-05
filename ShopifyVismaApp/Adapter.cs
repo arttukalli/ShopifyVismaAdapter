@@ -952,7 +952,7 @@ namespace ShopifyVismaApp
                     {
                         SalesOrderRow salesRow = sales.SalesorderRows.AddNew();
                         salesRow.ArticleCode = "207";
-                        salesRow.ArticleName = lineItem.title.Substring(0, 50);
+                        salesRow.ArticleName = lineItem.title.Length <= 50 ? lineItem.title : lineItem.title.Substring(0, 50);
                         salesRow.Amount = 1; // lineItem.quantity;
                         salesRow.DeliveryStart = orderDeliveryDate;
                         salesRow.VatPercent = 24;
@@ -965,7 +965,7 @@ namespace ShopifyVismaApp
                     {
                         SalesOrderRow salesRow = sales.SalesorderRows.AddNew();
                         salesRow.ArticleCode = "204";
-                        salesRow.ArticleName = order.gateway.Substring(0, 50);
+                        salesRow.ArticleName = order.gateway.Length <= 50 ? order.gateway : order.gateway.Substring(0, 50);
                         salesRow.Amount = 1; // lineItem.quantity;
                         salesRow.DeliveryStart = orderDeliveryDate;
                         salesRow.VatPercent = 24;

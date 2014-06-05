@@ -50,7 +50,7 @@ namespace ShopifyVismaApp
         public double? grams { get; set; }
         public long? id { get; set; }
         public string inventory_management { get; set; }
-        //public string inventory_policy { get; set; }
+        public string inventory_policy { get; set; }
         public string option1 { get; set; }
         //public string option2 { get; set; }
         //public string option3 { get; set; }
