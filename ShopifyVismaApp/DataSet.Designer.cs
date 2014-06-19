@@ -14401,7 +14401,7 @@ SELECT ID, ShopifyStoreAccount, ShopifyAccessToken, VismaCompany, ShopifyUpdated
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT KOODI, NIMIKE, NIMIKE2, PIIRNRO, MYKSIKKO, MYKSKOKO, TILERA, TOIMAIKA, OVH, TOIMITTAJA, ALETOIM, ALEASIA, ALERHM, ALEKDI, MYYNTITILI, OSTOTILI, KPAIKKA, KAMHINTA, EDMHINTA, KAOHINTA, EDOHINTA, EDVALHINTA, VALUUTTA, VKERROIN, TARJOUSOVH, ABCRYHMA, OMAKUST, TXT, HINTAKOODI, TR, NIMIKELAJI, OVH2, SARJANRO, SARJAPAKKO, EANKOODI, EAN, PER, KATE1, KATE2, MUOTTI, PKOODI, ERA, PAINO, KOLLI, MITAT, ERASEURANTA, ERAERITTELY, PITUUS, LEVEYS, KORKEUS, RAKOODI, KOKOLAJI, VARI, TIETUEPVM, TIETUEUSER, TIETUEMPVM, TIETUEMUSER, VERSIO, MINIMIKATE, KULUT, VAK, YK, GUID, EDITSTAMP, EDITUSER, TILAVUUS, TUOTEVASTUU, TYOAIKA, PISTE, TEHDAS, VIITE, KIELI, MERKKI, MALLI, SER, HUKKAKERROIN, MASTERVERSION, TRANSACTIONKEY, TARKEAA FROM dbo.VARASTO";
@@ -14418,11 +14418,16 @@ SELECT ID, ShopifyStoreAccount, ShopifyAccessToken, VismaCompany, ShopifyUpdated
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FamilyCode", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "PKOODI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "select (SELECT TOP 1 VEROKANTA FROM TILI WHERE TILI.TILI = ISNULL(case VARASTO.MY" +
-                "YNTITILI WHEN \'\' THEN NULL ELSE VARASTO.MYYNTITILI END, 3000)) AS VEROKANTA from" +
-                " VARASTO WHERE KOODI=@ArticleCode";
+            this._commandCollection[3].CommandText = "select PISTE from VARASTO WHERE KOODI=@ArticleCode";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArticleCode", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "KOODI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "select (SELECT TOP 1 VEROKANTA FROM TILI WHERE TILI.TILI = ISNULL(case VARASTO.MY" +
+                "YNTITILI WHEN \'\' THEN NULL ELSE VARASTO.MYYNTITILI END, 3000)) AS VEROKANTA from" +
+                " VARASTO WHERE KOODI=@ArticleCode";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ArticleCode", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "KOODI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15079,8 +15084,42 @@ SELECT ID, ShopifyStoreAccount, ShopifyAccessToken, VismaCompany, ShopifyUpdated
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<decimal> GetVATByArticleCode(string ArticleCode) {
+        public virtual global::System.Nullable<decimal> GetPointsByArticleCode(string ArticleCode) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((ArticleCode == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(ArticleCode));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<decimal>();
+            }
+            else {
+                return new global::System.Nullable<decimal>(((decimal)(returnValue)));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<decimal> GetVATByArticleCode(string ArticleCode) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
             if ((ArticleCode == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }

@@ -264,6 +264,7 @@ namespace ShopifyVismaApp
                 string familyCode = article.FamilyCode;
                 string articleName = null;
                 decimal? vatRate = null;
+                decimal? points = null;
 
                 //Log(article.ProductGroupObject.Description.ToString());
 
@@ -284,6 +285,9 @@ namespace ShopifyVismaApp
 
                         // VAT Rate
                         vatRate = visma.GetVatRate(article.ArticleCode);
+
+                        // Points
+                        points = visma.GetPoints(article.ArticleCode);
 
                         // Video URL
                         string videoUrl = null;
@@ -348,7 +352,7 @@ namespace ShopifyVismaApp
                                     DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
                                     //Log(" - Delivery date: " + deliveryDate.ToString());
 
-                                    shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrl);
+                                    shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrl, points);
                                     Log(string.Format(" - Shopify Product [{0}] created.", shopifyProductID));
 
                                     //DataSet.CustomerDataTable customerDT = new DataSet.CustomerDataTable();
@@ -398,7 +402,7 @@ namespace ShopifyVismaApp
                                 DateTime? deliveryDate = visma.GetDeliveryDate(article.ArticleCode);
                                 //Log(" - Delivery date: " + deliveryDate.ToString());
 
-                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrlNew);
+                                shop.CreateUpdateProduct(article, ref shopifyProductID, ref shopifyVariantID, ref shopifyVariantVatID, deliveryDate, articleName, vatRate, videoUrlNew, points);
 
                                 Log(string.Format(" - Shopify Product [{0}] updated.", shopifyProductID));
 
@@ -813,6 +817,9 @@ namespace ShopifyVismaApp
                             string orderCustomerName = string.Format("{0} {1}", order.customer.first_name, order.customer.last_name);
                             orderCustomer.Name1 = orderCustomerName;
 
+                            orderCustomer.SellerID = shop.data.Seller;
+                            orderCustomer.CustomerGroupID = shop.customerGroup;
+
                             //orderCustomer.InvoiceEmail = order.customer.email;
 
                             Contact orderContact = orderCustomer.Contacts.AddNew();
@@ -869,11 +876,11 @@ namespace ShopifyVismaApp
                     
                     // Unifaun
                     string locationIDText = order.GetNoteAttribute("Unifaun Location ID");
-                    int locationID;
+                    int locationID = 0;
                     if (int.TryParse(locationIDText, out locationID))
                     {
                         //sales.DriverId = locationID;
-                        sales.OrdererNumber = locationID;
+                        //sales.OrdererNumber = locationID;
                     }
                     
                     string locationName = order.GetNoteAttribute("Unifaun Location Name");
@@ -889,9 +896,6 @@ namespace ShopifyVismaApp
                     if (order.billing_address != null)
                     {
                         ShopifyAddress address = order.billing_address;
-                        sales.OrdererName = string.Format("{0} {1}", address.first_name, address.last_name).Trim();
-                        sales.OrdererStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
-                        sales.OrdererCity = string.Format("{0} {1}", address.zip, address.city).Trim();
 
                         sales.CustomerName = sales.OrdererName;
                         sales.CustomerStreetAddress = sales.OrdererStreetAddress;
@@ -917,19 +921,29 @@ namespace ShopifyVismaApp
                         sales.DeliveryStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
                         sales.DeliveryCity = string.Format("{0} {1}", address.zip, address.city).Trim();
 
+                        sales.OrdererName = string.Format("{0} {1}", address.first_name, address.last_name).Trim();
+                        sales.OrdererStreetAddress = string.Format("{0} {1}", address.address1, address.address2).Trim();
+                        sales.OrdererCity = string.Format("{0} {1}", address.zip, address.city).Trim();
+
+                        if (locationID > 0)
+                        {
+                            sales.OrdererName = locationID.ToString();
+                            sales.OrdererName2 = locationName;
+                        }
+
                         // Unifaun shipping address
                         if (!string.IsNullOrEmpty(locationStreetAddress) && !string.IsNullOrEmpty(locationCity))
                         {
-                            sales.DeliveryName2 = "c/o R-Kioski";
-                            sales.DeliveryStreetAddress = string.Format("{0}", locationStreetAddress);
-                            sales.DeliveryCity = string.Format("{0} {1}", locationZIP, locationCity);
-                
+                            sales.OrdererStreetAddress = string.Format("{0}", locationStreetAddress);
+                            sales.OrdererCity = string.Format("{0} {1}", locationZIP, locationCity);
                         }
 
                         if (orderCustomer != null)
                         {
                             sales.DeliveryNumber = orderCustomer.Number;
                         }
+
+                        
 
                     }
 
@@ -955,7 +969,7 @@ namespace ShopifyVismaApp
                         salesRow.ArticleName = lineItem.title.Length <= 50 ? lineItem.title : lineItem.title.Substring(0, 50);
                         salesRow.Amount = 1; // lineItem.quantity;
                         salesRow.DeliveryStart = orderDeliveryDate;
-                        salesRow.VatPercent = 24;
+                        salesRow.VatPercent = shop.VatRate;
                         if (lineItem.price.HasValue)
                             salesRow.UnitPrice = visma.ToPrice(lineItem.price.Value);
                     }
@@ -968,7 +982,7 @@ namespace ShopifyVismaApp
                         salesRow.ArticleName = order.gateway.Length <= 50 ? order.gateway : order.gateway.Substring(0, 50);
                         salesRow.Amount = 1; // lineItem.quantity;
                         salesRow.DeliveryStart = orderDeliveryDate;
-                        salesRow.VatPercent = 24;
+                        salesRow.VatPercent = shop.VatRate;
                         salesRow.UnitPrice = 5; // TODO: Move value to Shop table
                     }
 

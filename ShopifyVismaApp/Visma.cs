@@ -222,6 +222,20 @@ namespace ShopifyVismaApp
         }
 
         /// <summary>
+        /// Get points for given Article.
+        /// </summary>
+        /// <param name="articleCode">Article code</param>
+        /// <returns></returns>
+        public decimal? GetPoints(string articleCode)
+        {
+            decimal? points = null;
+
+            points = varastoTA.GetPointsByArticleCode(articleCode);
+
+            return points;
+        }
+
+        /// <summary>
         /// Get common part of multiple Article names with same FamilyCode.
         /// </summary>
         /// <param name="familyCode">Family code</param>

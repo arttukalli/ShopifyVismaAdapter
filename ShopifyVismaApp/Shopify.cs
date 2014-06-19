@@ -31,6 +31,10 @@ namespace ShopifyVismaApp
         public Dictionary<int, string> termsOfPayment = null;
         public Dictionary<int, string> deliveryMethods = null;
 
+        public int customerGroup = 1001;
+        public decimal VatRate = 24;
+         
+
         // Minimum delay between 2 Shopify API calls (to handle Shopify limits of maximum number of requests per second).
         private int apiMinDelay = 600;
 
@@ -323,21 +327,23 @@ namespace ShopifyVismaApp
         /// </summary>
         /// <param name="article">Visma Article object</param>
         /// <returns>Product JSON string</returns>
-        public string GetProductDataFromVismaArticle(Article article, DateTime? deliveryDate, string articleName, decimal? vatRate, string videoUrl, bool includeVariants)
+        public string GetProductDataFromVismaArticle(Article article, DateTime? deliveryDate, string articleName, decimal? vatRate, string videoUrl, decimal? pointsObj, bool includeVariants)
         {
 
- 
+            // Points from SDK does not work
+            //decimal points = article.Points;
+            decimal points = pointsObj.HasValue ? pointsObj.Value : 0; // Default value 0 - published
 
             ShopifyProductSimple obj = new ShopifyProductSimple();
             obj.title = string.IsNullOrEmpty(articleName) ? article.ArticleName : articleName;
             //obj.body_html = "";
             obj.product_type = "Product";
-            obj.published = (article.Points != 2);
+            obj.published = (points != 2);
 
             string tags = string.Format("+T{0}", article.ArticleType);
-            
 
-            if (article.Points == 1)
+
+            if (points == 1)
             {
                 tags += ",Order";
             }
@@ -596,7 +602,7 @@ namespace ShopifyVismaApp
 
         }
 
-        public void CreateUpdateProduct(Article article, ref long? shopifyProductID, ref long? shopifyVariantID, ref long? shopifyVariantVatID, DateTime? deliveryDate, string articleName, decimal? vatRate, string videoUrl)
+        public void CreateUpdateProduct(Article article, ref long? shopifyProductID, ref long? shopifyVariantID, ref long? shopifyVariantVatID, DateTime? deliveryDate, string articleName, decimal? vatRate, string videoUrl, decimal? points)
         {
             
             object response = null;
@@ -607,7 +613,7 @@ namespace ShopifyVismaApp
             if (!shopifyProductID.HasValue)
             {
                 // Create new Product
-                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, videoUrl, true);
+                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, videoUrl, points, true);
                 response = CreateProduct(productData);
 
                 JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
@@ -622,7 +628,7 @@ namespace ShopifyVismaApp
             else
             {
                 // Update existing Product
-                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, videoUrl, false);
+                string productData = GetProductDataFromVismaArticle(article, deliveryDate, articleName, vatRate, videoUrl, points, false);
                 response = UpdateProduct(productData, shopifyProductID.Value);
 
                 JObject productResponse = JsonConvert.DeserializeObject<JObject>(response.ToString());
