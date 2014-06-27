@@ -99,7 +99,7 @@ namespace ShopifyVismaApp
             {
 
                 // Update Customers
-                //bool resultCustomers = UpdateCustomers(limitVismaUpdateDate, 0);
+                bool resultCustomers = UpdateCustomers(limitVismaUpdateDate, 0);
 
                 // Update Products
                 bool resultProducts = UpdateProducts(limitVismaUpdateDate, 0, true, isFullUpdate);
