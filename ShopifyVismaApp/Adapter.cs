@@ -431,11 +431,14 @@ namespace ShopifyVismaApp
                             foreach (string imagePath in imagesNames)
                             {
                                 string imageName = imagePath.Replace(visma.GetImagePath(), "");
+                                string articleCodeEscaped = articleCode.Replace("/", "-");
+                                string articleCodeNoSuffix = articleCodeEscaped + ".";
+                                string articleCodeWithSuffix = articleCodeEscaped + "_img";
 
                                 // Check file extension
-                                if ((imageName.ToLower().EndsWith("jpeg")) || (imageName.ToLower().EndsWith("jpg")) || (imageName.ToLower().EndsWith("png")))
+                                if ((imageName.StartsWith(articleCodeNoSuffix) || imageName.StartsWith(articleCodeWithSuffix)) && ((imageName.ToLower().EndsWith("jpeg")) || (imageName.ToLower().EndsWith("jpg")) || (imageName.ToLower().EndsWith("png"))))
                                 {
-                                    
+                                    Log(imageName);
                                     // If image with that name is not already in Shopify 
                                     if ((File.Exists(imagePath)) && (!productImageNames.Contains(imageName)))
                                     {

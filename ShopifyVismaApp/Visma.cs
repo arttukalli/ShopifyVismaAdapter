@@ -103,13 +103,13 @@ namespace ShopifyVismaApp
 
         public string GetImageFilesFilter(string code)
         {
-            code = code.Replace("/", "_");
+            code = code.Replace("/", "-");
             return string.Format("{0}*.*", code);
         }
 
         public string GetVideoFilePath(string code)
         {
-            code = code.Replace("/", "_");
+            code = code.Replace("/", "-");
             return string.Format("{0}{1}.txt", this.GetImagePath(), code);
         }
 
