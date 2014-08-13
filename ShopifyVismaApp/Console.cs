@@ -15,6 +15,8 @@ namespace ShopifyVismaApp
 {
     public partial class Console : Form
     {
+        bool updateRunning = false;
+
         public Console()
         {
             InitializeComponent();
@@ -36,8 +38,36 @@ namespace ShopifyVismaApp
                 return;
             }
 
-            // Update type - regular or full
-            short updateType = (short)(checkBoxFullUpdate.Checked ? 2 : 1);
+            //short updateType = (short)(checkBoxFullUpdate.Checked ? 2 : 1);
+            short updateType = 1;   // Regular update
+            StartUpdate(shopID, updateType);
+        }
+
+
+        private void FullRunButton_Click(object sender, EventArgs e)
+        {
+            int shopID;
+
+            try
+            {
+                shopID = int.Parse(accountBox.SelectedValue.ToString());
+            }
+            catch (NullReferenceException ex)
+            {
+                StatusLabel.Text = "Select account to update.";
+                return;
+            }
+
+            short updateType = 2;   // Full update
+            StartUpdate(shopID, updateType);
+
+        }
+
+        private void StartUpdate(int shopID, short updateType)
+        {
+            // Sanity check - do not run twice
+            if (this.updateRunning)
+                return;
 
             BackgroundWorker bw = new BackgroundWorker();
 
@@ -49,6 +79,8 @@ namespace ShopifyVismaApp
 
 
             this.RunButton.Enabled = false;
+            this.FullRunButton.Enabled = false;
+            this.updateRunning = true;
 
             bw.DoWork += delegate(object bwSender, DoWorkEventArgs bwe)
             { ((Adapter)bwe.Argument).UpdateRecords(shopID, updateType); };
@@ -63,6 +95,8 @@ namespace ShopifyVismaApp
         void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             this.RunButton.Enabled = true;
+            this.FullRunButton.Enabled = true;
+            this.updateRunning = false;
         }
 
         /// <summary>
@@ -135,6 +169,46 @@ namespace ShopifyVismaApp
             }
 
         }
+
+        private void checkBoxFullUpdate_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void autoUpdateBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (autoUpdateBox.Checked)
+                CheckAutoUpdate();
+
+        }
+
+        private void updateTimer_Tick(object sender, EventArgs e)
+        {
+            if (autoUpdateBox.Checked)
+                CheckAutoUpdate();
+        }
+
+        private void CheckAutoUpdate()
+        {
+            // Do not run if an update is already running
+            if (this.updateRunning)
+                return;
+            
+            int? shopID = Shopify.GetAutoUpdateShopID();
+
+            if (shopID.HasValue)
+            {
+                UpdateTextBox(string.Format("Starting Auto Update for shop {0}", shopID.Value));
+                StartUpdate(shopID.Value, 1);
+            }
+
+        }
+
 
     }
            

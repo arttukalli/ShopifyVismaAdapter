@@ -59,6 +59,24 @@ namespace ShopifyVismaApp
         }
 
         /// <summary>
+        /// Get next shop ID for auto update
+        /// </summary>
+        /// <returns></returns>
+        public static int? GetAutoUpdateShopID()
+        {
+            DataSetTableAdapters.ShopTableAdapter shopTA = new DataSetTableAdapters.ShopTableAdapter();
+            DataSet.ShopDataTable shopDT = shopTA.GetAutoUpdateShops();
+            if (shopDT.Count > 0)
+            {
+                return shopDT[0].ID;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
         /// Initialize Shopify by creating a Shopify API Client object.
         /// </summary>
         public Shopify(int ID, string account, string token)

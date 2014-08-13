@@ -37,28 +37,32 @@
             this.label1 = new System.Windows.Forms.Label();
             this.shopTableAdapter = new ShopifyVismaApp.DataSetTableAdapters.ShopTableAdapter();
             this.StatusLabel = new System.Windows.Forms.Label();
-            this.checkBoxFullUpdate = new System.Windows.Forms.CheckBox();
+            this.FullRunButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.autoUpdateBox = new System.Windows.Forms.CheckBox();
+            this.updateTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.shopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // RunButton
             // 
-            this.RunButton.Location = new System.Drawing.Point(598, 12);
+            this.RunButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RunButton.Location = new System.Drawing.Point(465, 12);
             this.RunButton.Name = "RunButton";
-            this.RunButton.Size = new System.Drawing.Size(117, 23);
+            this.RunButton.Size = new System.Drawing.Size(122, 23);
             this.RunButton.TabIndex = 0;
-            this.RunButton.Text = "Start";
+            this.RunButton.Text = "Start Update";
             this.RunButton.UseVisualStyleBackColor = true;
             this.RunButton.Click += new System.EventHandler(this.RunButton_Click);
             // 
             // OutputTextBox
             // 
-            this.OutputTextBox.Location = new System.Drawing.Point(15, 93);
+            this.OutputTextBox.Location = new System.Drawing.Point(15, 103);
             this.OutputTextBox.Multiline = true;
             this.OutputTextBox.Name = "OutputTextBox";
             this.OutputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.OutputTextBox.Size = new System.Drawing.Size(700, 264);
+            this.OutputTextBox.Size = new System.Drawing.Size(700, 254);
             this.OutputTextBox.TabIndex = 1;
             // 
             // accountBox
@@ -101,28 +105,57 @@
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Location = new System.Drawing.Point(12, 65);
+            this.StatusLabel.Location = new System.Drawing.Point(12, 82);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(41, 13);
             this.StatusLabel.TabIndex = 4;
             this.StatusLabel.Text = "Ready.";
             // 
-            // checkBoxFullUpdate
+            // FullRunButton
             // 
-            this.checkBoxFullUpdate.AutoSize = true;
-            this.checkBoxFullUpdate.Location = new System.Drawing.Point(357, 17);
-            this.checkBoxFullUpdate.Name = "checkBoxFullUpdate";
-            this.checkBoxFullUpdate.Size = new System.Drawing.Size(80, 17);
-            this.checkBoxFullUpdate.TabIndex = 5;
-            this.checkBoxFullUpdate.Text = "Full Update";
-            this.checkBoxFullUpdate.UseVisualStyleBackColor = true;
+            this.FullRunButton.Location = new System.Drawing.Point(593, 12);
+            this.FullRunButton.Name = "FullRunButton";
+            this.FullRunButton.Size = new System.Drawing.Size(122, 23);
+            this.FullRunButton.TabIndex = 6;
+            this.FullRunButton.Text = "Start Full Update";
+            this.FullRunButton.UseVisualStyleBackColor = true;
+            this.FullRunButton.Click += new System.EventHandler(this.FullRunButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Auto Update:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // autoUpdateBox
+            // 
+            this.autoUpdateBox.AutoSize = true;
+            this.autoUpdateBox.Location = new System.Drawing.Point(96, 49);
+            this.autoUpdateBox.Name = "autoUpdateBox";
+            this.autoUpdateBox.Size = new System.Drawing.Size(65, 17);
+            this.autoUpdateBox.TabIndex = 8;
+            this.autoUpdateBox.Text = "Enabled";
+            this.autoUpdateBox.UseVisualStyleBackColor = true;
+            this.autoUpdateBox.CheckedChanged += new System.EventHandler(this.autoUpdateBox_CheckedChanged);
+            // 
+            // updateTimer
+            // 
+            this.updateTimer.Enabled = true;
+            this.updateTimer.Interval = 6000;
+            this.updateTimer.Tick += new System.EventHandler(this.updateTimer_Tick);
             // 
             // Console
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 369);
-            this.Controls.Add(this.checkBoxFullUpdate);
+            this.Controls.Add(this.autoUpdateBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.FullRunButton);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.accountBox);
@@ -148,7 +181,10 @@
         private System.Windows.Forms.BindingSource shopBindingSource;
         private DataSetTableAdapters.ShopTableAdapter shopTableAdapter;
         private System.Windows.Forms.Label StatusLabel;
-        private System.Windows.Forms.CheckBox checkBoxFullUpdate;
+        private System.Windows.Forms.Button FullRunButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox autoUpdateBox;
+        private System.Windows.Forms.Timer updateTimer;
     }
 }
 

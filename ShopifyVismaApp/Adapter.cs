@@ -111,7 +111,10 @@ namespace ShopifyVismaApp
                 bool resultOrders = UpdateOrders(lastShopifyUpdateDate, 0);
 
                 // Update Shop update times
-                UpdateShop(currentUpdateDate, currentUpdateDate);
+                DateTime? fullUpdateDate = null; 
+                if (isFullUpdate)
+                    fullUpdateDate = currentUpdateDate;
+                UpdateShop(currentUpdateDate, currentUpdateDate, fullUpdateDate);
             }
             catch (Exception ex)
             {
@@ -1021,13 +1024,16 @@ namespace ShopifyVismaApp
         /// </summary>
         /// <param name="shopifyUpdatedDate">Shopify update time</param>
         /// <param name="vismaUpdatedDate">Visma update time</param>
-        public void UpdateShop(DateTime? shopifyUpdatedDate, DateTime? vismaUpdatedDate)
+        public void UpdateShop(DateTime? shopifyUpdatedDate, DateTime? vismaUpdatedDate, DateTime? vismaUpdatedFullDate)
         {
             if (shopifyUpdatedDate.HasValue)
                 shopTA.UpdateShopifyUpdatedDate(shopifyUpdatedDate.Value, shop.ID);
 
             if (vismaUpdatedDate.HasValue)
                 shopTA.UpdateVismaUpdatedDate(vismaUpdatedDate.Value, shop.ID);
+
+            if (vismaUpdatedFullDate.HasValue)
+                shopTA.UpdateVismaUpdatedFullDate(vismaUpdatedDate.Value, shop.ID);
         }
 
         /// <summary>
